@@ -535,7 +535,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzY-vh-XZX">
                                 <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-Mw-XHv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FYe-4h-joI"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kI2-AS-xHM">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="674"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="kI2-AS-xHM" firstAttribute="leading" secondItem="kzY-vh-XZX" secondAttribute="leading" id="53y-RX-jAu"/>
+                                    <constraint firstItem="vgP-Mw-XHv" firstAttribute="top" secondItem="kzY-vh-XZX" secondAttribute="top" id="B6b-xW-pR4"/>
+                                    <constraint firstItem="kI2-AS-xHM" firstAttribute="top" secondItem="vgP-Mw-XHv" secondAttribute="bottom" id="Bfa-fV-ypC"/>
+                                    <constraint firstAttribute="trailing" secondItem="vgP-Mw-XHv" secondAttribute="trailing" id="Jy3-2i-aJS"/>
+                                    <constraint firstAttribute="bottom" secondItem="kI2-AS-xHM" secondAttribute="bottom" id="NMq-FP-Us0"/>
+                                    <constraint firstItem="vgP-Mw-XHv" firstAttribute="leading" secondItem="kzY-vh-XZX" secondAttribute="leading" id="bac-RC-q83"/>
+                                    <constraint firstAttribute="trailing" secondItem="kI2-AS-xHM" secondAttribute="trailing" id="fG9-Wp-FCS"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rMz-Xz-4cR"/>
@@ -547,10 +569,13 @@
                             <constraint firstItem="kzY-vh-XZX" firstAttribute="bottom" secondItem="rMz-Xz-4cR" secondAttribute="bottom" id="nvQ-b4-Vo0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="kI2-AS-xHM" id="OeG-dO-Yk0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4q-6q-F71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="1158"/>
+            <point key="canvasLocation" x="2173.913043478261" y="1157.8125"/>
         </scene>
         <!--MoneyVC-->
         <scene sceneID="vTj-Jo-wV0">

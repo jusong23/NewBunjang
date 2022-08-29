@@ -89,6 +89,10 @@
 		9B95469028BD142C0076C798 /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468F28BD142C0076C798 /* BuyVC.swift */; };
 		9B95469228BD14430076C798 /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469128BD14430076C798 /* SellVC.swift */; };
 		9B95469428BD14500076C798 /* MoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469328BD14500076C798 /* MoneyVC.swift */; };
+		9B95469728BD15390076C798 /* ST_Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469628BD15390076C798 /* ST_Purchase.swift */; };
+		9B95469928BD154A0076C798 /* purchaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469828BD154A0076C798 /* purchaseAPI.swift */; };
+		9B95469F28BD17760076C798 /* BuyCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469D28BD17760076C798 /* BuyCells.swift */; };
+		9B9546A028BD17760076C798 /* BuyCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B95469E28BD17760076C798 /* BuyCells.xib */; };
 		9B9C521528B21E7300570BB1 /* WholeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */; };
 		9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521628B23F0000570BB1 /* Register.storyboard */; };
 		9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521828B23F1000570BB1 /* Talk.storyboard */; };
@@ -190,6 +194,10 @@
 		9B95468F28BD142C0076C798 /* BuyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVC.swift; sourceTree = "<group>"; };
 		9B95469128BD14430076C798 /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
 		9B95469328BD14500076C798 /* MoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyVC.swift; sourceTree = "<group>"; };
+		9B95469628BD15390076C798 /* ST_Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_Purchase.swift; sourceTree = "<group>"; };
+		9B95469828BD154A0076C798 /* purchaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchaseAPI.swift; sourceTree = "<group>"; };
+		9B95469D28BD17760076C798 /* BuyCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCells.swift; sourceTree = "<group>"; };
+		9B95469E28BD17760076C798 /* BuyCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyCells.xib; sourceTree = "<group>"; };
 		9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WholeMenu.storyboard; sourceTree = "<group>"; };
 		9B9C521628B23F0000570BB1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		9B9C521828B23F1000570BB1 /* Talk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Talk.storyboard; sourceTree = "<group>"; };
@@ -358,6 +366,7 @@
 		9B27799928B8CC9D0025B744 /* 12. Orders */ = {
 			isa = PBXGroup;
 			children = (
+				9B95469528BD15200076C798 /* 12.4_order_purchase */,
 				9B27799C28B8CD1F0025B744 /* 12.1_orders_indirect */,
 				9B32B9E228BAF0B700FB7651 /* 12.3_orders */,
 			);
@@ -733,6 +742,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		9B95469528BD15200076C798 /* 12.4_order_purchase */ = {
+			isa = PBXGroup;
+			children = (
+				9B95469628BD15390076C798 /* ST_Purchase.swift */,
+				9B95469828BD154A0076C798 /* purchaseAPI.swift */,
+			);
+			path = 12.4_order_purchase;
+			sourceTree = "<group>";
+		};
+		9B95469A28BD17320076C798 /* BuyCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B95469D28BD17760076C798 /* BuyCells.swift */,
+				9B95469E28BD17760076C798 /* BuyCells.xib */,
+			);
+			path = BuyCell;
+			sourceTree = "<group>";
+		};
 		9B9C521C28B23F7F00570BB1 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +784,7 @@
 		9B9C521E28B23F8D00570BB1 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				9B95469A28BD17320076C798 /* BuyCell */,
 				9B8E696228BB3106007BFC6D /* SellReserve */,
 				9B95468A28BD13770076C798 /* RecordsTabman.swift */,
 				9B9C521A28B23F1D00570BB1 /* My.storyboard */,
@@ -838,6 +866,7 @@
 				9B5E23A428B398DB00432616 /* TalkCell.xib in Resources */,
 				9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */,
 				9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */,
+				9B9546A028BD17760076C798 /* BuyCells.xib in Resources */,
 				9B08CF9D28B0BE16006782C4 /* Search.storyboard in Resources */,
 				9B9366D528B379400029149B /* Rg_Cell.xib in Resources */,
 				9B27799428B8CB450025B744 /* DealPage.storyboard in Resources */,
@@ -929,6 +958,7 @@
 				9B45339D28B21854003163FE /* TBCategoryVC.swift in Sources */,
 				9B45338728B213DC003163FE /* MainCategoryVC.swift in Sources */,
 				9B4C030628B097830070C89E /* ViewController.swift in Sources */,
+				9B95469728BD15390076C798 /* ST_Purchase.swift in Sources */,
 				9B45337E28B20BFC003163FE /* RecommandBrand.swift in Sources */,
 				9B5E23B528B4C3A300432616 /* sign-upAPI.swift in Sources */,
 				9BF1E72928B0D20A000E3186 /* pageControl.swift in Sources */,
@@ -945,11 +975,13 @@
 				9B45338028B20C6D003163FE /* RecommandVC.swift in Sources */,
 				9B5E23A328B398DB00432616 /* TalkCell.swift in Sources */,
 				9B45339528B21695003163FE /* Category_service.swift in Sources */,
+				9B95469928BD154A0076C798 /* purchaseAPI.swift in Sources */,
 				9B32B9E428BAF0CA00FB7651 /* ST_orders.swift in Sources */,
 				9BB3225728BCF5C400E60C01 /* OrderType.swift in Sources */,
 				9B4C030228B097830070C89E /* AppDelegate.swift in Sources */,
 				9B65EED128B9EB8000A548E0 /* ST_payment_userId(POST).swift in Sources */,
 				9B9366CC28B374520029149B /* Rg_Category.swift in Sources */,
+				9B95469F28BD17760076C798 /* BuyCells.swift in Sources */,
 				9B95469428BD14500076C798 /* MoneyVC.swift in Sources */,
 				9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */,
 				9B65EEBF28B9C96300A548E0 /* SelectCard.swift in Sources */,
