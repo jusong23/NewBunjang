@@ -187,5 +187,5 @@ extension OrderVC: SendCardName_Delegate {
         print("orderRequest는 :\(self.orderMemo.text)")
         print("paymentIdx는 :\(Payment.Idx)")
 
-    }
+    } 
 }
