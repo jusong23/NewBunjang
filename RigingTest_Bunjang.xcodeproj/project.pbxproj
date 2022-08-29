@@ -95,6 +95,8 @@
 		9B9546A028BD17760076C798 /* BuyCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B95469E28BD17760076C798 /* BuyCells.xib */; };
 		9B9546A428BD1AC70076C798 /* PurchaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546A328BD1AC70076C798 /* PurchaseList.swift */; };
 		9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546A528BD1AD90076C798 /* PurchaseListModel.swift */; };
+		9B9546A928BD1E340076C798 /* ST_UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546A828BD1E340076C798 /* ST_UserInfo.swift */; };
+		9B9546AB28BD1FAA0076C798 /* UserInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546AA28BD1FAA0076C798 /* UserInfoAPI.swift */; };
 		9B9C521528B21E7300570BB1 /* WholeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */; };
 		9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521628B23F0000570BB1 /* Register.storyboard */; };
 		9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521828B23F1000570BB1 /* Talk.storyboard */; };
@@ -202,6 +204,8 @@
 		9B95469E28BD17760076C798 /* BuyCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyCells.xib; sourceTree = "<group>"; };
 		9B9546A328BD1AC70076C798 /* PurchaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseList.swift; sourceTree = "<group>"; };
 		9B9546A528BD1AD90076C798 /* PurchaseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseListModel.swift; sourceTree = "<group>"; };
+		9B9546A828BD1E340076C798 /* ST_UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_UserInfo.swift; sourceTree = "<group>"; };
+		9B9546AA28BD1FAA0076C798 /* UserInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoAPI.swift; sourceTree = "<group>"; };
 		9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WholeMenu.storyboard; sourceTree = "<group>"; };
 		9B9C521628B23F0000570BB1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		9B9C521828B23F1000570BB1 /* Talk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Talk.storyboard; sourceTree = "<group>"; };
@@ -636,6 +640,7 @@
 		9B5E23B228B4C37600432616 /* 1. Users */ = {
 			isa = PBXGroup;
 			children = (
+				9B9546A728BD1E1B0076C798 /* 1.5_UserInfo */,
 				9B04173B28B626CF0029A45C /* 1.1_sign-up */,
 			);
 			path = "1. Users";
@@ -740,6 +745,15 @@
 				9B9546A528BD1AD90076C798 /* PurchaseListModel.swift */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		9B9546A728BD1E1B0076C798 /* 1.5_UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9B9546A828BD1E340076C798 /* ST_UserInfo.swift */,
+				9B9546AA28BD1FAA0076C798 /* UserInfoAPI.swift */,
+			);
+			path = 1.5_UserInfo;
 			sourceTree = "<group>";
 		};
 		9B9C521C28B23F7F00570BB1 /* Register */ = {
@@ -951,6 +965,7 @@
 				9B9C522028B2424100570BB1 /* SearchVC.swift in Sources */,
 				9B048FEF28B10EBF009DC9B2 /* bannerImage.swift in Sources */,
 				9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */,
+				9B9546A928BD1E340076C798 /* ST_UserInfo.swift in Sources */,
 				9B3E6A1B28BB13FB003B06CC /* CompleteSelling.swift in Sources */,
 				9B04173E28B6274E0029A45C /* itemsAPI.swift in Sources */,
 				9B70F9B128B88F37006BE642 /* OrderVC.swift in Sources */,
@@ -973,6 +988,7 @@
 				9B04173828B623B20029A45C /* UIColor.swift in Sources */,
 				9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */,
 				9B2779A028B8CD750025B744 /* ST_orderIndirect.swift in Sources */,
+				9B9546AB28BD1FAA0076C798 /* UserInfoAPI.swift in Sources */,
 				9B3D97E928B60968006B4D32 /* ItemLists.swift in Sources */,
 				9B5E23AE28B4B87D00432616 /* OtherLoginVC.swift in Sources */,
 				9B08CF9F28B0C4E7006782C4 /* LoginVC.swift in Sources */,
