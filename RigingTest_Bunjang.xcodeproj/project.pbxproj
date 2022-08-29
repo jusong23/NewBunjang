@@ -93,6 +93,8 @@
 		9B95469928BD154A0076C798 /* purchaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469828BD154A0076C798 /* purchaseAPI.swift */; };
 		9B95469F28BD17760076C798 /* BuyCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469D28BD17760076C798 /* BuyCells.swift */; };
 		9B9546A028BD17760076C798 /* BuyCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B95469E28BD17760076C798 /* BuyCells.xib */; };
+		9B9546A428BD1AC70076C798 /* PurchaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546A328BD1AC70076C798 /* PurchaseList.swift */; };
+		9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546A528BD1AD90076C798 /* PurchaseListModel.swift */; };
 		9B9C521528B21E7300570BB1 /* WholeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */; };
 		9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521628B23F0000570BB1 /* Register.storyboard */; };
 		9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521828B23F1000570BB1 /* Talk.storyboard */; };
@@ -198,6 +200,8 @@
 		9B95469828BD154A0076C798 /* purchaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchaseAPI.swift; sourceTree = "<group>"; };
 		9B95469D28BD17760076C798 /* BuyCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCells.swift; sourceTree = "<group>"; };
 		9B95469E28BD17760076C798 /* BuyCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyCells.xib; sourceTree = "<group>"; };
+		9B9546A328BD1AC70076C798 /* PurchaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseList.swift; sourceTree = "<group>"; };
+		9B9546A528BD1AD90076C798 /* PurchaseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseListModel.swift; sourceTree = "<group>"; };
 		9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WholeMenu.storyboard; sourceTree = "<group>"; };
 		9B9C521628B23F0000570BB1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		9B9C521828B23F1000570BB1 /* Talk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Talk.storyboard; sourceTree = "<group>"; };
@@ -395,10 +399,6 @@
 			isa = PBXGroup;
 			children = (
 				9B3D97E028B608F0006B4D32 /* Home */,
-				9B3D97E128B608F6006B4D32 /* Search */,
-				9B3D97E228B608FB006B4D32 /* Register */,
-				9B3D97E328B60902006B4D32 /* Talk */,
-				9B3D97E428B60908006B4D32 /* My */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,34 +409,6 @@
 				9B3D97E528B60923006B4D32 /* Recommand */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		9B3D97E128B608F6006B4D32 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		9B3D97E228B608FB006B4D32 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		9B3D97E328B60902006B4D32 /* Talk */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Talk;
-			sourceTree = "<group>";
-		};
-		9B3D97E428B60908006B4D32 /* My */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = My;
 			sourceTree = "<group>";
 		};
 		9B3D97E528B60923006B4D32 /* Recommand */ = {
@@ -526,6 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				9B3D97DD28B608B8006B4D32 /* Model */,
+				9B9546A228BD1AA70076C798 /* My */,
 				9B4C031528B097950070C89E /* Configuration */,
 				9B4C031728B097B50070C89E /* Network */,
 				9B4C031628B097A10070C89E /* Action */,
@@ -760,6 +733,15 @@
 			path = BuyCell;
 			sourceTree = "<group>";
 		};
+		9B9546A228BD1AA70076C798 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				9B9546A328BD1AC70076C798 /* PurchaseList.swift */,
+				9B9546A528BD1AD90076C798 /* PurchaseListModel.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
 		9B9C521C28B23F7F00570BB1 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -932,6 +914,7 @@
 			files = (
 				9B3E6A1928BB13D6003B06CC /* NowReserving.swift in Sources */,
 				9B65EED628B9F13800A548E0 /* ST_patments_userId(GET).swift in Sources */,
+				9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */,
 				9B04174328B628530029A45C /* JWT.swift in Sources */,
 				9B32B9E628BAF0DB00FB7651 /* orderAPI.swift in Sources */,
 				9B9366D428B379400029149B /* Rg_Cell.swift in Sources */,
@@ -1002,6 +985,7 @@
 				9B65EEC728B9E62200A548E0 /* Dr_SelecteCard.swift in Sources */,
 				9B4C030428B097830070C89E /* SceneDelegate.swift in Sources */,
 				9B04174528B63FA40029A45C /* ItemDetails.swift in Sources */,
+				9B9546A428BD1AC70076C798 /* PurchaseList.swift in Sources */,
 				9B95469228BD14430076C798 /* SellVC.swift in Sources */,
 				9B45337828B1F0B7003163FE /* LastSeenVC.swift in Sources */,
 				9BB8919228B35C8C00CC08D8 /* RegisterVC.swift in Sources */,
