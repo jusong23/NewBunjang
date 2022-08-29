@@ -1,0 +1,6 @@
+framework module Pods_RigingTest_Bunjang {
+  umbrella header "Pods-RigingTest_Bunjang-umbrella.h"
+
+  export *
+  module * { export * }
+}

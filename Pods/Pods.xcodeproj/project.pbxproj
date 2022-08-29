@@ -1,0 +1,2109 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE34859D4763100E42B25E62364DEE2 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007925CB7B373CEF2457BA29EB21F36C /* MaterialElevation.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3E44A0AE1934D37639F4362FC1F7E0 /* MaterialElevation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03817B1767ED1DC48A558CA4C254410B /* TMLineBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82B1F59DE9581FB627B947415F03CC /* TMLineBarIndicator.swift */; };
+		043F53EACE987E58A6732217CB8C863D /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E26280F2DBF744BEB0F637132D183 /* PageboyViewController.swift */; };
+		045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8272D2594DD5FB8744F0D01CAA68DFA /* RedirectHandler.swift */; };
+		04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6793C9442800A486A6B0A6B3C0D93EC /* Result+Alamofire.swift */; };
+		07951EFE16A7D338F37AD4F558E70DA7 /* UIViewController+MaterialBottomSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C3402ADE648B0BD36D4A083B44B742E5 /* UIViewController+MaterialBottomSheet.m */; };
+		0857F4A0A5170223519A541324D501D1 /* UIViewController+MaterialBottomSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = C25460FA4DA0C587BF957F94DD81AA55 /* UIViewController+MaterialBottomSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08784BF9A2CD964B6C9CD6576E15828E /* MaterialShadowElevationsDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63A6056D14DA4AF489F78EC49583AF /* MaterialShadowElevationsDummy.m */; };
+		0A4E8662941AEB6D26C19AFEBC8BB768 /* MDCShapeMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7B2C8F86FF7DE4A98B93ED77296A0 /* MDCShapeMediator.m */; };
+		0C4ABCE42F38BCE9FC2348FE9B60EF20 /* TMBlockBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80104C30463E356C42B5548F170D8D05 /* TMBlockBarIndicator.swift */; };
+		0C76EEF9FC8B4C12C73B071124D2443F /* MDCEdgeTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = CE63F243A27275837D76A52E5CA2FDD4 /* MDCEdgeTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CD989749B8AF0B73EFA97F4EFDB08D0 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B545CFC3A02FB6FB1BA5B9855A16C5 /* UIView+Localization.swift */; };
+		0D145CE72D22A2858B118FA0381ACF11 /* AnimateableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70146229477482B2D0AA66B3C0C18A7 /* AnimateableLabel.swift */; };
+		0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */; };
+		0F4F68AC62C4AE694B7F76043F0AAF92 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ABE08B6BC1E1C9D080CA71B30A3C21 /* TransitionOperation.swift */; };
+		10B800F3E36C80713AB589FA1CF47441 /* UIColor+MaterialBlending.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A59D5FCE677A73CCA3A1E07F794662 /* UIColor+MaterialBlending.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E0F8B5E2D4ABF76318A5DA04D260A0 /* MDCDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9C3A8ECF071A8D351B2A97E56B059 /* MDCDraggableView.m */; };
+		13BD4640B078DAC0433C8BF8ABBDBA3A /* TabmanViewController+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E99ADF1F75FD8D43A9A6129995DD4 /* TabmanViewController+Insets.swift */; };
+		13EC9DFD508F96165FB1E6B5D1E91A94 /* TMTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036EBF22D2B56D8EE84E96067885CABE /* TMTransition.swift */; };
+		14F01E27FF454C842E99B7720BB0496C /* UIColor+Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28CED7ED2ACA3FB4DBF8472703C8A43 /* UIColor+Interpolation.swift */; };
+		15E051DCCC2C74E18877560A6DD2F895 /* TMBarButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F0BCEE995C931D0DA097C755C6FA8C /* TMBarButtonController.swift */; };
+		166896F7614D238E033F84793B537BC7 /* MDCSheetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE698A82C86ED5DD762BED08CCDE141 /* MDCSheetBehavior.m */; };
+		18B4F45884A1AE821C55D92A82BA16EC /* MaterialBottomSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1F8BF9F4D956F1823B9688333AFB70 /* MaterialBottomSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18F9C48B43DB0B16D3424333B6F88A4A /* MDCPathGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A8B487036E5CF4FE0D582AF720729D /* MDCPathGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1952888EBF36D0B0051BE57511B0FAE5 /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9F9958BBB798B0A48321EDAE9E101 /* NavigationDirection.swift */; };
+		1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74AAC09A2958F77CAAA4C8370A0F3B0 /* SessionDelegate.swift */; };
+		1B252C7F6BDB70B58DC02B3AAF8F0D9A /* TMBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFFB6CA9B5F15D4E3BD16DF87EDFEF /* TMBar.swift */; };
+		1C8AC01CE4293F7F07392E3CAAF2434B /* TMBarButton+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56162169D20B72029857863163B8EE /* TMBarButton+None.swift */; };
+		1E180393049B4C65755BDB3B3DE02EF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */; };
+		1E324ECCB96F9FD656C9C37AC22A9594 /* MDCBottomSheetControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2493052BF7E57870217E0F53055F6577 /* MDCBottomSheetControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77662DF249A35B2D8E54ADF4885BD48D /* AlamofireExtended.swift */; };
+		1F36D0C890E2A668177CBD17D1E30BC2 /* MDCCurvedCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 9148B73D1E9639361F65E228806727DE /* MDCCurvedCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2077B0D839DB673DFC4929A50A93264F /* MaterialShadowLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A5BF4BCCA50B10FE4BE475A9C750B0 /* MaterialShadowLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2195644D46BC85253DEAFF21A7FF3550 /* PatchedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F6A5CE96A38E5E6B18885C38A2EE8 /* PatchedPageViewController.swift */; };
+		21C2DF0761AA28A45A9F6C8DAC8BB95F /* MaterialComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63A8B70D37A15A35167C044FDB74EB /* MaterialComponents-dummy.m */; };
+		23480436FE20EA0D43B753E874EAE238 /* MDCCurvedRectShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F790D8677E0AAEB81B7118045CBAA7E /* MDCCurvedRectShapeGenerator.m */; };
+		24821079A44FD46C2124EAFD25B333C7 /* TMBarButtonStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558304978B7329F53144FB687B8472EE /* TMBarButtonStateController.swift */; };
+		257B6D2B9D7E20BA5E3176202175C30D /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12D1C2ED45137FAFC26E6FC6AD4625 /* UIViewController+Pageboy.swift */; };
+		25EC4B42DE5DC1FCFDD4D13DEA007F2B /* IndexedObjectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CCDFB664E7C4B80A49D0A11598EB5F /* IndexedObjectMap.swift */; };
+		261648A9B124173EFEC5CA0C92411768 /* TMBarLayoutInsetGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399FE757D94FC3FC4D9BAD08F37DAB9 /* TMBarLayoutInsetGuides.swift */; };
+		27E454E5203F8CC37F6E43B6FC72CAAF /* MaterialApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 453DCB19AE1EBF32638DDA0CBCFE3B0F /* MaterialApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		289D19349D88EA9B871847024AC51FED /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40957E6362D2AC8095C283CEDBC5415 /* UIPageViewController+ScrollView.swift */; };
+		2978BDEB75111B6862F6E25D808524A6 /* InsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073322AC4F354771E18E4BBB5271355E /* InsetCalculator.swift */; };
+		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F96BE9A7E0E13AFFA2739620B275C63 /* CachedResponseHandler.swift */; };
+		2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891C2BD84CDB41227464EFF5357961A3 /* Notifications.swift */; };
+		2DDE2F4F9FACFE0A2C3A4B2187EA6842 /* InsetExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84C9F563AF1513A606E1C73744F7D9 /* InsetExecutor.swift */; };
+		2E623866A2E10A536A1C5A81A1484BEB /* MaterialShapeLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 08779D1E3DA2F75482F53F0BE98B946E /* MaterialShapeLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A7D0F2D03004CE256A75E03DF33C70 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C007A37F1C24792923837013845F25 /* RetryPolicy.swift */; };
+		39C5445892CB72E2BB1FB1BA1F38CF30 /* MDCShadowLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B64C514BA45A68FD0A0C4D5D96FC68 /* MDCShadowLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39E1A2AAF6E5F85397E5CF8EB85EE03D /* DefaultInsetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D3C8D4FE3E69CA5105379B08B35E19 /* DefaultInsetStore.swift */; };
+		3C4059621E23842C19D4EB5D35B41989 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4F01E81E7850865F4DFB0A6D06C96 /* Validation.swift */; };
+		3D1F5CF84D1D9A5411C289107D5E46C4 /* MDCCurvedCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB56BE672FD2F0648ECC1360D9FA782 /* MDCCurvedCornerTreatment.m */; };
+		4168DDEDC0ABE4FF5BC9A2E0F7735654 /* MDCCornerTreatment+CornerTypeInitalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE9130AAFF04730ED3002292764E00 /* MDCCornerTreatment+CornerTypeInitalizer.m */; };
+		43006ED7C7394CBC703AA58549754752 /* UIColor+MaterialDynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = C3CF61A3BBB31AAA83F0E09B0E5CD34B /* UIColor+MaterialDynamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449A0FBF6C0DB4BE5E8FC99D35C88E61 /* Pods-RigingTest_Bunjang-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3F106458C8ECA7A32A92094B5C3668 /* Pods-RigingTest_Bunjang-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45ABBFAC9A930689423156E665F3B42C /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B119D0079038A5132D3C37DDA78DE /* Pageboy-dummy.m */; };
+		468B041038BC47A9BA136A40C20C6C9E /* TMBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63441D584AAB2D176BE2FF80A6EE0633 /* TMBarIndicator.swift */; };
+		46A64A43AFA057B6B63C8F0C12F509B4 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E69E8AAC7EB93F46EC40FF1BBCB649 /* Combine.swift */; };
+		46DF9D26FEDC6FCC241660B6DC750920 /* TMBarViewContentInsetGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC71D4162085E6A3439AE4FF25359D /* TMBarViewContentInsetGuides.swift */; };
+		46E1076E96801A16A3925B53D74BF896 /* TMBar+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81D3121347DD9A1ADC4BD69F60A9E5 /* TMBar+Templates.swift */; };
+		46F750A94940C329E40EEA07AB873DD5 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2C20F0271549338565421629B9778 /* Page.swift */; };
+		4893BBF093F4F86CB3DE86CE7804B490 /* MDCRectangleShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = D77D8339DC3A1C1F812E4B0E016BDCFF /* MDCRectangleShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A929112636F1B03B707BCCDFAFA9DF1 /* UIColor+MaterialElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = 611C52E2AC7B9BC22505D54E948E3425 /* UIColor+MaterialElevation.m */; };
+		4CC566ECE05D4C6389ADA085AE960827 /* MDCKeyboardWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3816999DF9B06A6D60C220F98732F /* MDCKeyboardWatcher.m */; };
+		4D5AE81555AFAE21B1CCEA1188E92E57 /* TMHidingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1F070F944CCE41A5963A44FD21DD12 /* TMHidingBar.swift */; };
+		4DB230A41D506E524C263DFBC736115D /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447A1512DD91BBC3E3B23180B3CEBBE /* WeakContainer.swift */; };
+		4DB67139A0F0C15A62EB446FA54A0443 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9FB443D94222D8D2C9D1526029FB28 /* PageboyViewController+Management.swift */; };
+		4DBFE5EE09B12554C4D605AE2A7F030F /* MDCBottomSheetTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FAAFB29467C6D986308284981D98D9 /* MDCBottomSheetTransitionController.m */; };
+		556FE452E5E60A7FEA0A78EDCF8E97F6 /* MDCRoundedCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 26A1ACFF0395629B9752AF60C170015B /* MDCRoundedCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55AABB1FB38F61A3369ACC555FF3046D /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4DDB447368FD1E9E9806996B9FB88E /* Alamofire-dummy.m */; };
+		55F1D2607A532B555F1B182EE095A044 /* MDCBottomSheetTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 608393E9A893CC8706A2A6A3D1BBFA51 /* MDCBottomSheetTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		595D3A56309AEA817F55172459ED16CE /* MaterialMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 878B17EF5CC1D7ABD654D9581B41F3B3 /* MaterialMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59FD7DC38FBCC9C83454E82DAD24CAFC /* MDCShadowLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 477FF6A6C6E5A2831FF8243C0E4F1A1D /* MDCShadowLayer.m */; };
+		5B961FEE8A3053C14D9B744103F535A9 /* EdgeFadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6103DD895EEF04768D42751E34EA2784 /* EdgeFadedView.swift */; };
+		5C620577848BDFE5534C453A6E2F1D30 /* MDCCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F684B7DC562DF0E7E8D20CB00D5314A /* MDCCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EDD936E994705CFF1381A7695F76204 /* MaterialKeyboardWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B50B057014E55D2AECB159DCCA24D4B /* MaterialKeyboardWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F9F3A5F2887FFF46A0702548D18E111 /* MDCSlantedRectShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2288F35468F8D9BEEE6E0C3A2031D8 /* MDCSlantedRectShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6152798C1B26D94BC915C7FC204D9F82 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E5D3291A652A97CC5E20375F49AD68 /* WebKit.framework */; };
+		624F2D8F266C6E843A03B2BE2FCF42E4 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECF68BF06BA1E1CED70D1C28812002 /* PageboyAutoScroller.swift */; };
+		62D2C55C5E6053CDBFD4F7357147B223 /* MaterialComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A74FF8FCF991A39838C18BFBE9AA9AE /* MaterialComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		672AF1103586C3F243F9836A6A246110 /* PageboyNavigationDirection+Tabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF397FAA14339A4FE95D7FEEFEF36 /* PageboyNavigationDirection+Tabman.swift */; };
+		6737BE364F697A759E5ABEFAB30FD04D /* TableViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501CAF710E5104949EBC5843F92C3A3 /* TableViewInsetCalculator.swift */; };
+		68FB2DCB4C77DBCAF9A6037E470F2BDE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACFC177AE763BA4A1E26CA91EA80C0 /* ParameterEncoding.swift */; };
+		69D61566CEC2C01D069BE1912F9C2257 /* MDCCutCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5560016E03D83C3599E81BA35638781A /* MDCCutCornerTreatment.m */; };
+		6BEA016BDC68F0E57CDF6FE36D00D570 /* MDCSheetContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834FD5FF58E3EC60CB55F9EA3B9B82CB /* MDCSheetContainerView.m */; };
+		6BFE63E6233C05986B2BE0F767E1FB6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */; };
+		6C9354B3FAFB49EEAE5CCEB8CFE268B9 /* TMBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAFF9B5196AD00DCE55E993957D1F9D /* TMBadgeView.swift */; };
+		6DB668B16099DE909DF843825E87668D /* PageboyViewController+Updating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED24FEDF2AB1FD87CF9E21BC9AEFAF /* PageboyViewController+Updating.swift */; };
+		6E13CA5C96B2E64B00CBA98D38D58C46 /* UIViewController+Tabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AE046ED15A063897DD89271AC3B19 /* UIViewController+Tabman.swift */; };
+		6E1E4845A75EDA65B9681A2CEA91F597 /* TMBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBC4E44F95F3BD034A9C9024F2DBD5B /* TMBarLayout.swift */; };
+		6EC423F124FD39F9EA25E907E780C221 /* TMBarViewFocusRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE13D6DFBCB211B16A45C3074654C2 /* TMBarViewFocusRect.swift */; };
+		6FF208791556BA76D4439F3C12173069 /* TMBarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17795A689429DDCE785F3B32A495B821 /* TMBarBackgroundView.swift */; };
+		712DBF01BCAA2AC72253CE0BF4CD4F9B /* CollectionViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9472F2FB16D51A49E6AE260BEE9D5D /* CollectionViewInsetCalculator.swift */; };
+		714FC92F814E85A5B5405501E0FF1BF4 /* UIApplication+MDCAppExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E56F1BCECBD88F9E42BE528DF24F65 /* UIApplication+MDCAppExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73072DE782AA0A5FA4533D4073422AC4 /* MDCKeyboardWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A873904FD5D889DDD8BD77F8AEA0DCE6 /* MDCKeyboardWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7483E5327027263F7E4B94A2997191C4 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E419B70EE93CA52C5E5277D5B5B2D5 /* AuthenticationInterceptor.swift */; };
+		75966A9262648D4647D764E3E76BC6AC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948612485ECB215662C00890B214ADCE /* Response.swift */; };
+		761892E755FFE92DE2D0C39CF7ADE6A1 /* TMBarIndicatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98AF43069C842ADC7A65DB2C77DFC49 /* TMBarIndicatorContainer.swift */; };
+		762A7E12A62B627FBF831677CBCE3308 /* TMBarLayoutParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0D92D294D8A4BC8B45B3A215BE535 /* TMBarLayoutParent.swift */; };
+		777A401FD1F923650E3DAF2ADB643073 /* TMBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522A6E6FA0A51BB0F4C717C3793EEA1 /* TMBarButton.swift */; };
+		77DCE2EEB10AF4A0C22A604066A18233 /* UIApplication+MDCAppExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16163E97F2D3EA7C36D456440E8F1246 /* UIApplication+MDCAppExtensions.m */; };
+		784EF103DF5242878DA6E24B41E35982 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CD55301DEB82E688F93258B1CFC91 /* UIView+Animation.swift */; };
+		787EAA9A8DC2F09D51D359554BE06216 /* MDCSlantedRectShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE9C40DF4713287A4790A650E48A9A6 /* MDCSlantedRectShapeGenerator.m */; };
+		7930C94414B4C661867AC4FBE82E996C /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74D06D5DF850507257EC11E9A9E6FE7 /* URLEncodedFormEncoder.swift */; };
+		7B068137A8925891446203B5D3D6A4ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1000D1584895F6AC1A49368BFD581A65 /* CFNetwork.framework */; };
+		7D08E2B0B8E94A993E655362D6EEA1F9 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A44B4B1E574CC78180B9AD82AC990B /* PageboyViewController+Transitioning.swift */; };
+		7DC6C2758FD55275A20A72E22663CE99 /* Tabman.h in Headers */ = {isa = PBXBuildFile; fileRef = E752CE40BE95F3AACE69596F45787E53 /* Tabman.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E02F5B62BE00E97847DF549FFED2490 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F6B0A08C3BA08D85A272917255410 /* HTTPHeaders.swift */; };
+		7EA82098F2E430A2BD05AEE52B6DF4F7 /* TMBarIndicator+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEA082984A73E1740AEA77D4765A2E /* TMBarIndicator+None.swift */; };
+		7F1BB526AAE3ECDCE90127D9D0E10261 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B20E1D8B091D65D4826D4ADDD81077 /* StringEncoding+Alamofire.swift */; };
+		7FE695DA8EE7FF1286556E06B692009B /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF6C00D7C8DA8C019895D4D79BCE0 /* MultipartFormData.swift */; };
+		808C960C82D708FC1A42C581D6CB4940 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F851A33EC8FF2F04920294BF14DED380 /* URLSessionConfiguration+Alamofire.swift */; };
+		81B8D2B7CEB25C2448B0BC9B33591A65 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F6353325ED99685A16DA88AE6873F /* Session.swift */; };
+		824D816B1EE404F2DD400EE678695CBE /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE2478B131D9A9E6167250F349420A /* ResponseSerialization.swift */; };
+		850B4EB456AE4BBF4E0723D9530B0970 /* TMHorizontalBarLayout+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB872772554911887AF74A201EFF4B6 /* TMHorizontalBarLayout+Separator.swift */; };
+		89DDBB6704667C5C270E39C108EF4327 /* UIScrollView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83F9B836A3031F6A755EF4A81C36E34 /* UIScrollView+Interaction.swift */; };
+		8A72888924AEBB46318C07E7BD6DEE10 /* MDCBottomSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EAB69A78C5CD79A8576C87855A8105 /* MDCBottomSheetController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B1E1B931AC24B39D8E15F4FF9CB461E /* Pods-RigingTest_Bunjang-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BAE08DFBD56003AA2836F05E16FB2 /* Pods-RigingTest_Bunjang-dummy.m */; };
+		8B589FED932AF281DDAA0BCB1320DCDE /* TMSystemBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA9ECA9BFA48742CBF06C585BE9E8A /* TMSystemBar.swift */; };
+		8D75FC8D7476C9674234F39F1A820D8C /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6F536E4028A5E5451C40036B07DF70 /* URLConvertible+URLRequestConvertible.swift */; };
+		8E31A438E4E14FDAB9D24E9629E87890 /* CGRect+Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE15BE68CE7EFC37A067D243170430 /* CGRect+Interpolation.swift */; };
+		93D82E2FA5AA7944649C58B8A5DB4F6E /* MDCSheetBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C55A70C594A872FD5662472D9521365 /* MDCSheetBehavior.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99D058E53EFEE3AC4857CDE3DBA5C004 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3146631B63CCFC03069C456B7F1CE96 /* ParameterEncoder.swift */; };
+		9BD38841044F7774900340044713FF62 /* GestureScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D07DD2600CE57A5F814893E1EA5B16 /* GestureScrollView.swift */; };
+		9C9030DEDB0DF955B16FE08C50892D57 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4941F868FD70C08C5A50EE0B61F538 /* Concurrency.swift */; };
+		9F80D19FEC3FDBA2EC0BDFE424C14FBB /* UIColor+MaterialBlending.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD73353E16F3EA9A7F5F0D984D9A25 /* UIColor+MaterialBlending.m */; };
+		A003960743CDDEA027F6585C6E66D1AA /* MDCPillShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2644AAB42C28BCDBB5EB3A79238038 /* MDCPillShapeGenerator.m */; };
+		A17B1E5CB0D295F3A4C99DB6A61BCF78 /* MDCShapeMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A65FEBF7CBCD773290727E920F2F9E /* MDCShapeMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A24B021BE5D40DCCCD0102E31E468D77 /* MaterialAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 217FD379F262BE3E77277E59257740F5 /* MaterialAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25BE1CE5E3EB7E7857BBAD0944841AE /* MDCElevationOverriding.h in Headers */ = {isa = PBXBuildFile; fileRef = 422D73B21DD81ACEADE930B1A67ACA29 /* MDCElevationOverriding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A29100AA1876DDEFF6F54694A51FDB0E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FDB0A0F1DAA4837F6026000D63BD0 /* NetworkReachabilityManager.swift */; };
+		A3CEDE0F99A78C621B2FC23750FCA271 /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA86DAF2CB875CCAAD39A208FA36B0 /* PageboyViewController+ScrollDetection.swift */; };
+		A46A2C1156C2EE6C28099360F7266381 /* MDCShadowElevations.h in Headers */ = {isa = PBXBuildFile; fileRef = 716A74C1B9C140374D0A48FBA096CBE6 /* MDCShadowElevations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4BF0ADA40FB2363E3F4EDF5DB0DD667 /* TMTabItemBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973F1C7899250ABC50C5164CE797BD2A /* TMTabItemBarButton.swift */; };
+		A5178ED16462078EEFE039750F3FD979 /* MDCCornerTreatment+CornerTypeInitalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC96E0E2046F5A982F2BD59625240E2 /* MDCCornerTreatment+CornerTypeInitalizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A53BDE589BDD6483F3EEDCE5EA1DCCD3 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F279A41206D0F4A2296CF04EC664E /* Protected.swift */; };
+		A5A7EBEB8B1B0FB4F6EA1EDE6D21E9F8 /* TMBarViewLayoutGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5627C983EBB21262539D7783ACC512 /* TMBarViewLayoutGrid.swift */; };
+		A60161C5BADF9BB8676622C8D417F49C /* UIColor+MaterialDynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDEC205FBD231C12B8A7FB56858FF24 /* UIColor+MaterialDynamic.m */; };
+		A77B1A343EE5332DB5E7EB934EA3791A /* TMBarIndicatorLayoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656D92450E37FB58A69339586D533DF2 /* TMBarIndicatorLayoutHandler.swift */; };
+		A9E9B18960DF0410D942BFFD4AE5B0E3 /* TMBarViewUpdateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683A3CF9486E16068B70E0572862B91 /* TMBarViewUpdateHandler.swift */; };
+		AAC97DF8936D6329568DB243D04281B1 /* MaterialShadowElevations.h in Headers */ = {isa = PBXBuildFile; fileRef = AE08413D1ECC74D43D054045309903C5 /* MaterialShadowElevations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABCC7546335479207D85A1B684DBAD0F /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120FEB3327C4D7C101D075C26A2513F8 /* UIView+LayoutGuide.swift */; };
+		AC21AEC54003057F322B352C400BCE1A /* MDCShapedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BA3ED9BE779D6E01FDD49E1526E061 /* MDCShapedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACA03AC6678121C34C9751694E174DEC /* MDCBottomSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B3EB740CC535B51003A90494F714DF7 /* MDCBottomSheetPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACD9CB3B8EAFAF0D4175760EBC90DF09 /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA3B7A125C04878A555C921F734F6DE /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACFBD1F0A71C0D427FB9477F2FE112CD /* InsetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE66F92362E2C73EA5BA5201451AE8 /* InsetStore.swift */; };
+		ADE4E10D27F9E4F049835B6BC60C9524 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D3FC981AB6024123D564DABCD1D5A /* TransitionOperation+Action.swift */; };
+		AE8D2575C88B84E95A32A3B40A395F32 /* TMBarButtonCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A74D45EDEE67C075DD1FDF56483F4 /* TMBarButtonCollection.swift */; };
+		AF4ECCB86D4332D2F1E72C008192D761 /* TabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364373806D05288935F4FA48DDBE0A4 /* TabmanViewController.swift */; };
+		B349DFD123428C60FB84208D7495124F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */; };
+		B3658C29BBDE1033F6269A92E612CB30 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F36B1585D4FE9D0F86575B7073501 /* Request.swift */; };
+		B3E739FE8EF44A1597212ECEC9D32FE8 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 37787F632326A364EC30CA46CA672B62 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B437A66210366371A1F6DBE60E588007 /* ScrollViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62620A772F5284FC9DA85C9C42DFB568 /* ScrollViewInsetCalculator.swift */; };
+		B4435DE1ED36E68560B60B018529A265 /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BB6FD800BA75C67F3E14DB69C2504 /* WeakContainer.swift */; };
+		B46758C812C6906AD0270ED781633E6F /* MaterialShapes.h in Headers */ = {isa = PBXBuildFile; fileRef = 49451E3982D1FA79ED49701B5B75997F /* MaterialShapes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4889B8C013EC29C883C1F1B7CE9598F /* MDCShapedShadowLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B08101206843041E202B70C42298015 /* MDCShapedShadowLayer.m */; };
+		B49B066C956E9BAFDA4C671BC47929F8 /* Tabman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C672150EE9C42E750941EC9DC68F1924 /* Tabman-dummy.m */; };
+		B584746C59CE44E5CDF9A5C865E14AB8 /* MDCPillShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = DE4B066EAFF7424EB40FC565814EBC53 /* MDCPillShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEE8A823AD64F5DD86CF40259C64F0 /* ServerTrustEvaluation.swift */; };
+		B7CC774FEF04EC4A5A47F24FD0D68AD3 /* MDCDraggableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2606B767D250B1EB9A30B748AB0D6732 /* MDCDraggableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC0ECA8F22DEDE8886E189CD0EAA1197 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F6C16437C8060D1B1824723311253 /* URLRequest+Alamofire.swift */; };
+		BE55C082EC58C1E0D77D119C3D52D13B /* MDCBottomSheetPresentationControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B60F10C49163010AEF228327B35486 /* MDCBottomSheetPresentationControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0E89FD0F9BE1B6CE2430977D3DAD2B3 /* AutoInsetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED470FDCF49E530CE3AE93976246328A /* AutoInsetter.swift */; };
+		C14DEA45483C8F5C1B6739CAC43C02F8 /* MDCCurvedRectShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = A7558C0D6E14FCB03F383F550716E170 /* MDCCurvedRectShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1F089DA25E38A92807D5A23CDA23A83 /* MDCPathGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1F0F5174695DBCD36E79129A93EC12 /* MDCPathGenerator.m */; };
+		C35E010C63E824F3D00B67D4C5E0159E /* MDCDraggableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CD1A5E7F849D6B40956F3D02151213 /* MDCDraggableViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C45FA039C0EA19762B0FC4963582F5F6 /* MDCShapedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CA421D4D750A0E4569DF101B421762 /* MDCShapedView.m */; };
+		C4839299FFC04CC32EE57EE475609956 /* MDCMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5EC33BE4F9CAF10E892ADF4F0B3A6D /* MDCMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C736D640763E1E8D1DEE2E2876354E08 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267C58513AC68FCB1B3A955C57D5470 /* PageboyViewControllerDataSource.swift */; };
+		C7459A453B5A596D1F88B4ECA19A266C /* MDCBottomSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF26F8BF59FE5D92ABC4BEADCBD9F11 /* MDCBottomSheetController.m */; };
+		C8EDA4A1835702F415A7E5720D2FE239 /* TMBarViewScrollHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EC3B5040906B9992F435D3B0F3F51 /* TMBarViewScrollHandler.swift */; };
+		C8F0F085A4D93EFA7D77D622698C0951 /* MDCElevatable.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF7C3B3D57C7B6F2B41A2760422C676 /* MDCElevatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F2BB22D16C950ADC99196A9A0875A3 /* BarMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42A86541FA0BA1EF72AAA780151FA7 /* BarMath.swift */; };
+		C9527FB007A1D657FEB3C754BCF5DE9B /* UIKit+TMBarItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5BA690A74B868D30D9BABE8569A23 /* UIKit+TMBarItemable.swift */; };
+		CA783762E9CE22EC71B1EC5FE8BC34D2 /* MDCCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FC183D562355AEFC6D2DE7CA37FEC /* MDCCornerTreatment.m */; };
+		CAC33CCE1FEFD437D50AE236282065DD /* MaterialColor.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC1E227FEEB48A98450CCF0D570A254 /* MaterialColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB7EB04C8D6BA30592A698AE95E30BFB /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF922E92F65EF632C340CEEA70996D3 /* PageboyViewController+AutoScrolling.swift */; };
+		CC0B8017B16379551057939674389941 /* UIView+DefaultTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620FC1BC58271DC967698FDD3587633 /* UIView+DefaultTintColor.swift */; };
+		CC406D2565C27C5549761BB1F06B0BDA /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA279288746C3C87B1C1AEC7015B29 /* UIView+AutoLayout.swift */; };
+		CD136E74E4DABD689B8CF1D6115F9830 /* MDCSheetState.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F73876E2735FB74EA6711BFA360360 /* MDCSheetState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE7F3874F5E191A93827397D3C7E79AB /* MDCEdgeTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 70359D9C00DDDC5B5E6E6E18A954C7EF /* MDCEdgeTreatment.m */; };
+		CEBFFEED65D877702B2F36102528CF6D /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8CDCBBD6596CA2DBBC40B2F557646F /* EventMonitor.swift */; };
+		CEDB185054AE3867D0A9846D8F7063AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */; };
+		D05C125D70669BA314333B920B3E6384 /* PageboyViewController+ScrollCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C31C04AF69974637DB422B726D1BC6 /* PageboyViewController+ScrollCalculations.swift */; };
+		D0EA90FBF83350C49E6EF6C8A98D6F00 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02283BB0BBD85CA073E52925CAFC5FF3 /* AFError.swift */; };
+		D1703BED647A3E4280F987F8B29B7E17 /* MDCBottomSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F45FAE53D25C532ED02F7A57DBD8F /* MDCBottomSheetPresentationController.m */; };
+		D17C18DE533BBFB3A4F5BCCCFBF1BC76 /* TMBarViewFocusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37216F88BEFDE36778F79B928441629F /* TMBarViewFocusProvider.swift */; };
+		D27AA32D14580AC0753DCF15CB0BAD0B /* UIColor+MaterialElevation.h in Headers */ = {isa = PBXBuildFile; fileRef = 608E880E0451AC736A3CF89639472780 /* UIColor+MaterialElevation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4B11A798394766360ED7FBC3108E1BC /* TMConstrainedHorizontalBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2B8BA32E3F5865C061D513CF968E2 /* TMConstrainedHorizontalBarLayout.swift */; };
+		D4EB9484C1E6F8B076FB379E9A47C191 /* MDCShapedShadowLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3E3DEB01A7DA5ED86E82BF2D19842C /* MDCShapedShadowLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4FB61A1028C0DB237F361088D2EA3C2 /* MDCTriangleEdgeTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8EE9C3650E3DB3E7320F4E519E8AC4 /* MDCTriangleEdgeTreatment.m */; };
+		D5F176895ACE0E36002E762A311F2D23 /* MDCSheetContainerViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABB8F2E8DB761C3787A826E6875DC55 /* MDCSheetContainerViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6A652EE8D78D63B4EC2A08FC944BB47 /* UIViewController+ScrollViewDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B53E0FC8A72F3FB72FB1FA997960BA3 /* UIViewController+ScrollViewDetection.swift */; };
+		D6B0BABC6426F1C5E0A630943FAD203B /* TMHorizontalBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1A272713AFBB2B4044A9C061DCEEA /* TMHorizontalBarLayout.swift */; };
+		D6B4751CED01D53E4A1B6A571AAA2F83 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CCA4317121196C08D9F80EBC28AC /* HTTPMethod.swift */; };
+		D8030EC717AFD50138FA1A12BDA85A7A /* MDCCutCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA6CC4A547D326E1BC61398A75CF820 /* MDCCutCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8307936B6BFF04491444763FB22B70E /* TMBarButtonInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013114A31EAB341D2504740398796918 /* TMBarButtonInteractionController.swift */; };
+		D9688EBE9A81157A255B7C373BC4B45F /* TMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A0D47AC1A4EEA0F0A78B2D9D3E0F4 /* TMBarView.swift */; };
+		DA12283CA4873463ED2EF22DC6636F4F /* UIView+MaterialElevationResponding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D3254170974907993ABF421F15654B0 /* UIView+MaterialElevationResponding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520820D6B8A75141CFC0866AE39CF1F0 /* RequestTaskMap.swift */; };
+		DB328782629B6B26E16D96883846D477 /* TMAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE70082DAAA68B35CD87DAC6AD995B8 /* TMAnimation.swift */; };
+		DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871A69FE244E2E85BF75DC587CFB77D /* RequestInterceptor.swift */; };
+		DDCAC7A4E5AFD4F121BCD0145AD8E72C /* TMChevronBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB97A6FE32F61E14163C169F240B5B7 /* TMChevronBarIndicator.swift */; };
+		DDFC384A55935DE639D90A6176A51687 /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034C253F2E52DE8B58D769AD006435D /* PageboyViewControllerDelegate.swift */; };
+		DF7199E13E568C31A04B15F65D4A395C /* TMLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21299EE17E86DCCD06EB4F063A302AB /* TMLabelBarButton.swift */; };
+		E389152267106399ABF5CCA9B159232D /* PageboyViewController+RelativeCurrentPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65037EA058347D0D8AE62EF9B19654CB /* PageboyViewController+RelativeCurrentPosition.swift */; };
+		E4CB3D731330D33F7F2A87BDF02E1A44 /* MDCRoundedCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F5F163973E4B5A4F9F4DD1E68AD28 /* MDCRoundedCornerTreatment.m */; };
+		E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124487B762B037F6D46228F3EEBAEF8E /* OperationQueue+Alamofire.swift */; };
+		E78AAB1EDC765339242F9C5F53EEE76C /* MDCSheetContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 152AAFF6AD5D748FB726786550BD7F5C /* MDCSheetContainerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E79131FF7E60950C31430BD4D9BB7520 /* MDCRectangleShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A69CD2A16EBC18C6219AF2CF7779CB /* MDCRectangleShapeGenerator.m */; };
+		E9B4C89E7EB3B27D46AFCA452C3D426F /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F61C02D9A8822DCD8BF8DE7225334 /* MultipartUpload.swift */; };
+		EBC2E9D61363A5A8823387F32016EDE6 /* AutoInsetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED80B8FEA4D2EB176901A47FC92074 /* AutoInsetSpec.swift */; };
+		ED2CDFAC7C9C9E3FDB95A031B8380E25 /* UIView+MaterialElevationResponding.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77B4839E541FDC450BEE671066239 /* UIView+MaterialElevationResponding.m */; };
+		EEC150B66BCCD6C80FDA7E4D1975166B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51F9B0FBD9E6FBB4E7E9DED51057AD /* DispatchQueue+Alamofire.swift */; };
+		F075E0626B9906C0B26DAFB35893F031 /* MDCShapeGenerating.h in Headers */ = {isa = PBXBuildFile; fileRef = 276D273078617863637CEADB2E763981 /* MDCShapeGenerating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F17A4CA4664CABB331D39FE902E06843 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0676EB1B82F5769B0125278449803 /* Alamofire.swift */; };
+		F217178BB8A178545B2E8F5A5236AFDD /* DispatchQueue+main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4625F3FA9CFF4DD5AD46026D010C8AC0 /* DispatchQueue+main.swift */; };
+		F2AD6D5C6135220481FB2A1A1EE80577 /* TMHidingBar+Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E156579F11DA3297482AE4DB93BBD1C /* TMHidingBar+Triggers.swift */; };
+		F2FE4A4E1DD540639671D2173428B082 /* TMBarLayout+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A087329CCFAC1BD1E6A635BD83E24B /* TMBarLayout+None.swift */; };
+		F405D02F5D0CAC7B45605E8DAA390011 /* MDCAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EA601388BFB849F8ED5BC619DBDC6E5 /* MDCAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F444451F53822AB084A450C5E7C382D0 /* TMDotBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B4DAACF63EC712EC7F2EC5EF39D9F /* TMDotBarIndicator.swift */; };
+		F53B850B48DBA7DB3A798CE305786020 /* TMBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5CE559BD6DA86266467B613DB6649 /* TMBarItem.swift */; };
+		F68093DB103F95209DE487501DB4D8E7 /* MDCTriangleEdgeTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = F50D7838894CD996D8FAAD96BF7BF357 /* MDCTriangleEdgeTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F78740F4D9C34B0687E64CD9FC769973 /* Tabman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1097D6D9355B31E7D0325C9BC76E828E /* Tabman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA6B5E534EB9DE712E9EE16F564F9939 /* ViewTitleViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6B8C7D9AEC68ACB3372AB89CE727B /* ViewTitleViewContainer.swift */; };
+		FBC9948E28523D40349053038524CE98 /* MaterialMathDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEDBD4BD77EDB7FD2EC28F52145756A /* MaterialMathDummy.m */; };
+		FC6BE60C54A58DF9C97637443CA5769A /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4EC5CE48899CF831539089C72D1C4 /* UIApplication+SafeShared.swift */; };
+		FFA643FF093027014A1AC13DEEFC76F1 /* InsetCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B0D5C2E890FFB5EF803BC62546862 /* InsetCalculations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		586F915EC903888AF008BC9BE782C411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06201A837B408E21A6F416D49AF9A573;
+			remoteInfo = Pageboy;
+		};
+		86513D9C8B4A7C777F337E01BEF603A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06201A837B408E21A6F416D49AF9A573;
+			remoteInfo = Pageboy;
+		};
+		A5317285CC4A9E4C2E0D1457B0EF028D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EF26018CD886BA3143044A409D6D0B9;
+			remoteInfo = Tabman;
+		};
+		B3359E812A4C3C7B7A7CDCDE5603F666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
+			remoteInfo = MaterialComponents;
+		};
+		F98BEE6ADC155ED935E547CD34A1C18B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A65FEBF7CBCD773290727E920F2F9E /* MDCShapeMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapeMediator.h; path = components/Shapes/src/MDCShapeMediator.h; sourceTree = "<group>"; };
+		00ED24FEDF2AB1FD87CF9E21BC9AEFAF /* PageboyViewController+Updating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Updating.swift"; path = "Sources/Pageboy/PageboyViewController+Updating.swift"; sourceTree = "<group>"; };
+		013114A31EAB341D2504740398796918 /* TMBarButtonInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonInteractionController.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonInteractionController.swift; sourceTree = "<group>"; };
+		02283BB0BBD85CA073E52925CAFC5FF3 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		0267C58513AC68FCB1B3A955C57D5470 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
+		036EBF22D2B56D8EE84E96067885CABE /* TMTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMTransition.swift; path = Sources/Tabman/Bar/TMTransition.swift; sourceTree = "<group>"; };
+		0399FE757D94FC3FC4D9BAD08F37DAB9 /* TMBarLayoutInsetGuides.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarLayoutInsetGuides.swift; path = Sources/Tabman/Bar/BarLayout/TMBarLayoutInsetGuides.swift; sourceTree = "<group>"; };
+		040F6C16437C8060D1B1824723311253 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		055F36B1585D4FE9D0F86575B7073501 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		05EFFB6CA9B5F15D4E3BD16DF87EDFEF /* TMBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBar.swift; path = Sources/Tabman/Bar/TMBar.swift; sourceTree = "<group>"; };
+		06C31C04AF69974637DB422B726D1BC6 /* PageboyViewController+ScrollCalculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollCalculations.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollCalculations.swift"; sourceTree = "<group>"; };
+		073322AC4F354771E18E4BBB5271355E /* InsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/InsetCalculator.swift; sourceTree = "<group>"; };
+		0735933D3A4F389E284BCD07BCE98767 /* MaterialComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MaterialComponents-Info.plist"; sourceTree = "<group>"; };
+		07CD1A5E7F849D6B40956F3D02151213 /* MDCDraggableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCDraggableViewDelegate.h; path = components/BottomSheet/src/private/MDCDraggableViewDelegate.h; sourceTree = "<group>"; };
+		08779D1E3DA2F75482F53F0BE98B946E /* MaterialShapeLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShapeLibrary.h; path = components/ShapeLibrary/src/MaterialShapeLibrary.h; sourceTree = "<group>"; };
+		09EE2478B131D9A9E6167250F349420A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		0A63A6056D14DA4AF489F78EC49583AF /* MaterialShadowElevationsDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialShadowElevationsDummy.m; path = components/ShadowElevations/src/MaterialShadowElevationsDummy.m; sourceTree = "<group>"; };
+		0A8CDCBBD6596CA2DBBC40B2F557646F /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		0BE34859D4763100E42B25E62364DEE2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0CBFF6C00D7C8DA8C019895D4D79BCE0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		0EA601388BFB849F8ED5BC619DBDC6E5 /* MDCAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAvailability.h; path = components/Availability/src/MDCAvailability.h; sourceTree = "<group>"; };
+		1000D1584895F6AC1A49368BFD581A65 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		1097D6D9355B31E7D0325C9BC76E828E /* Tabman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabman-umbrella.h"; sourceTree = "<group>"; };
+		11F4F01E81E7850865F4DFB0A6D06C96 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		120FEB3327C4D7C101D075C26A2513F8 /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LayoutGuide.swift"; path = "Sources/Tabman/Extensions/UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
+		123EC3B5040906B9992F435D3B0F3F51 /* TMBarViewScrollHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewScrollHandler.swift; path = Sources/Tabman/Bar/BarView/TMBarViewScrollHandler.swift; sourceTree = "<group>"; };
+		124487B762B037F6D46228F3EEBAEF8E /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		1325FC4EB3096AB46D9C9F290EC800AB /* Pods-RigingTest_Bunjang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RigingTest_Bunjang.release.xcconfig"; sourceTree = "<group>"; };
+		136DD7512C4D4AB6C872B424314F1A9A /* Tabman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tabman.release.xcconfig; sourceTree = "<group>"; };
+		137F6353325ED99685A16DA88AE6873F /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		15293C51338A32DF17003E707F6A8809 /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
+		152AAFF6AD5D748FB726786550BD7F5C /* MDCSheetContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetContainerView.h; path = components/BottomSheet/src/private/MDCSheetContainerView.h; sourceTree = "<group>"; };
+		16163E97F2D3EA7C36D456440E8F1246 /* UIApplication+MDCAppExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+MDCAppExtensions.m"; path = "components/private/Application/src/UIApplication+MDCAppExtensions.m"; sourceTree = "<group>"; };
+		17795A689429DDCE785F3B32A495B821 /* TMBarBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarBackgroundView.swift; path = Sources/Tabman/Bar/BarBackgroundView/TMBarBackgroundView.swift; sourceTree = "<group>"; };
+		18B64C514BA45A68FD0A0C4D5D96FC68 /* MDCShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShadowLayer.h; path = components/ShadowLayer/src/MDCShadowLayer.h; sourceTree = "<group>"; };
+		19B60F10C49163010AEF228327B35486 /* MDCBottomSheetPresentationControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetPresentationControllerDelegate.h; path = components/BottomSheet/src/MDCBottomSheetPresentationControllerDelegate.h; sourceTree = "<group>"; };
+		1B08101206843041E202B70C42298015 /* MDCShapedShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapedShadowLayer.m; path = components/Shapes/src/MDCShapedShadowLayer.m; sourceTree = "<group>"; };
+		1CE7B2C8F86FF7DE4A98B93ED77296A0 /* MDCShapeMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapeMediator.m; path = components/Shapes/src/MDCShapeMediator.m; sourceTree = "<group>"; };
+		1D3254170974907993ABF421F15654B0 /* UIView+MaterialElevationResponding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MaterialElevationResponding.h"; path = "components/Elevation/src/UIView+MaterialElevationResponding.h"; sourceTree = "<group>"; };
+		1D84C9F563AF1513A606E1C73744F7D9 /* InsetExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetExecutor.swift; path = Sources/Tabman/AutoInsetter/InsetExecutor/InsetExecutor.swift; sourceTree = "<group>"; };
+		1E156579F11DA3297482AE4DB93BBD1C /* TMHidingBar+Triggers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMHidingBar+Triggers.swift"; path = "Sources/Tabman/Bar/BarExtensions/AutoHidingBar/TMHidingBar+Triggers.swift"; sourceTree = "<group>"; };
+		217FD379F262BE3E77277E59257740F5 /* MaterialAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAvailability.h; path = components/Availability/src/MaterialAvailability.h; sourceTree = "<group>"; };
+		23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2493052BF7E57870217E0F53055F6577 /* MDCBottomSheetControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetControllerDelegate.h; path = components/BottomSheet/src/MDCBottomSheetControllerDelegate.h; sourceTree = "<group>"; };
+		25ABE08B6BC1E1C9D080CA71B30A3C21 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
+		2606B767D250B1EB9A30B748AB0D6732 /* MDCDraggableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCDraggableView.h; path = components/BottomSheet/src/private/MDCDraggableView.h; sourceTree = "<group>"; };
+		2620FC1BC58271DC967698FDD3587633 /* UIView+DefaultTintColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+DefaultTintColor.swift"; path = "Sources/Tabman/Bar/Extensions/UIView+DefaultTintColor.swift"; sourceTree = "<group>"; };
+		26A1ACFF0395629B9752AF60C170015B /* MDCRoundedCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRoundedCornerTreatment.h; path = components/ShapeLibrary/src/MDCRoundedCornerTreatment.h; sourceTree = "<group>"; };
+		276D273078617863637CEADB2E763981 /* MDCShapeGenerating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapeGenerating.h; path = components/Shapes/src/MDCShapeGenerating.h; sourceTree = "<group>"; };
+		28E419B70EE93CA52C5E5277D5B5B2D5 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		2B0A0D47AC1A4EEA0F0A78B2D9D3E0F4 /* TMBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarView.swift; path = Sources/Tabman/Bar/BarView/TMBarView.swift; sourceTree = "<group>"; };
+		2B3EB740CC535B51003A90494F714DF7 /* MDCBottomSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetPresentationController.h; path = components/BottomSheet/src/MDCBottomSheetPresentationController.h; sourceTree = "<group>"; };
+		2B51F9B0FBD9E6FBB4E7E9DED51057AD /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		2CFD73353E16F3EA9A7F5F0D984D9A25 /* UIColor+MaterialBlending.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialBlending.m"; path = "components/private/Color/src/UIColor+MaterialBlending.m"; sourceTree = "<group>"; };
+		2F56162169D20B72029857863163B8EE /* TMBarButton+None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBarButton+None.swift"; path = "Sources/Tabman/Bar/BarButton/Types/TMBarButton+None.swift"; sourceTree = "<group>"; };
+		2FF26F8BF59FE5D92ABC4BEADCBD9F11 /* MDCBottomSheetController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBottomSheetController.m; path = components/BottomSheet/src/MDCBottomSheetController.m; sourceTree = "<group>"; };
+		2FFE66F92362E2C73EA5BA5201451AE8 /* InsetStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetStore.swift; path = Sources/Tabman/AutoInsetter/InsetStore/InsetStore.swift; sourceTree = "<group>"; };
+		303EEDAE172FD440FAD3BBED430820B8 /* Pods-RigingTest_Bunjang-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RigingTest_Bunjang-frameworks.sh"; sourceTree = "<group>"; };
+		30BEE8A823AD64F5DD86CF40259C64F0 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		30CE13D6DFBCB211B16A45C3074654C2 /* TMBarViewFocusRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewFocusRect.swift; path = Sources/Tabman/Bar/BarView/TMBarViewFocusRect.swift; sourceTree = "<group>"; };
+		32FEA082984A73E1740AEA77D4765A2E /* TMBarIndicator+None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBarIndicator+None.swift"; path = "Sources/Tabman/Bar/BarIndicator/Types/TMBarIndicator+None.swift"; sourceTree = "<group>"; };
+		3537C81DDE76737169E0F9765F68847A /* Tabman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tabman.debug.xcconfig; sourceTree = "<group>"; };
+		37216F88BEFDE36778F79B928441629F /* TMBarViewFocusProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewFocusProvider.swift; path = Sources/Tabman/Bar/BarView/TMBarViewFocusProvider.swift; sourceTree = "<group>"; };
+		37787F632326A364EC30CA46CA672B62 /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
+		39F0BCEE995C931D0DA097C755C6FA8C /* TMBarButtonController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonController.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonController.swift; sourceTree = "<group>"; };
+		3C12D1C2ED45137FAFC26E6FC6AD4625 /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
+		3CB56BE672FD2F0648ECC1360D9FA782 /* MDCCurvedCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCurvedCornerTreatment.m; path = components/ShapeLibrary/src/MDCCurvedCornerTreatment.m; sourceTree = "<group>"; };
+		3CED80B8FEA4D2EB176901A47FC92074 /* AutoInsetSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoInsetSpec.swift; path = Sources/Tabman/AutoInsetter/AutoInsetSpec.swift; sourceTree = "<group>"; };
+		3D5EC33BE4F9CAF10E892ADF4F0B3A6D /* MDCMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCMath.h; path = components/private/Math/src/MDCMath.h; sourceTree = "<group>"; };
+		3E6AEFB904E594A311DBA3424F07399A /* MaterialComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MaterialComponents.modulemap; sourceTree = "<group>"; };
+		3F9DA38205B68966850BBF1185F84400 /* MaterialComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.debug.xcconfig; sourceTree = "<group>"; };
+		422D73B21DD81ACEADE930B1A67ACA29 /* MDCElevationOverriding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCElevationOverriding.h; path = components/Elevation/src/MDCElevationOverriding.h; sourceTree = "<group>"; };
+		453DCB19AE1EBF32638DDA0CBCFE3B0F /* MaterialApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialApplication.h; path = components/private/Application/src/MaterialApplication.h; sourceTree = "<group>"; };
+		458570D49DB845FB47AC935A56BFE97E /* MaterialComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.release.xcconfig; sourceTree = "<group>"; };
+		4625F3FA9CFF4DD5AD46026D010C8AC0 /* DispatchQueue+main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+main.swift"; path = "Sources/Pageboy/Utilities/Extensions/DispatchQueue+main.swift"; sourceTree = "<group>"; };
+		477FF6A6C6E5A2831FF8243C0E4F1A1D /* MDCShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShadowLayer.m; path = components/ShadowLayer/src/MDCShadowLayer.m; sourceTree = "<group>"; };
+		49451E3982D1FA79ED49701B5B75997F /* MaterialShapes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShapes.h; path = components/Shapes/src/MaterialShapes.h; sourceTree = "<group>"; };
+		49A1A272713AFBB2B4044A9C061DCEEA /* TMHorizontalBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMHorizontalBarLayout.swift; path = Sources/Tabman/Bar/BarLayout/Types/TMHorizontalBarLayout.swift; sourceTree = "<group>"; };
+		4AC96E0E2046F5A982F2BD59625240E2 /* MDCCornerTreatment+CornerTypeInitalizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDCCornerTreatment+CornerTypeInitalizer.h"; path = "components/ShapeLibrary/src/MDCCornerTreatment+CornerTypeInitalizer.h"; sourceTree = "<group>"; };
+		4B1F8BF9F4D956F1823B9688333AFB70 /* MaterialBottomSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialBottomSheet.h; path = components/BottomSheet/src/MaterialBottomSheet.h; sourceTree = "<group>"; };
+		4C55A70C594A872FD5662472D9521365 /* MDCSheetBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetBehavior.h; path = components/BottomSheet/src/private/MDCSheetBehavior.h; sourceTree = "<group>"; };
+		4D4799138F8AC5FFF2497DCB60AF4CBB /* Tabman */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tabman; path = Tabman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51EE9130AAFF04730ED3002292764E00 /* MDCCornerTreatment+CornerTypeInitalizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MDCCornerTreatment+CornerTypeInitalizer.m"; path = "components/ShapeLibrary/src/MDCCornerTreatment+CornerTypeInitalizer.m"; sourceTree = "<group>"; };
+		520820D6B8A75141CFC0866AE39CF1F0 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		5560016E03D83C3599E81BA35638781A /* MDCCutCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCutCornerTreatment.m; path = components/ShapeLibrary/src/MDCCutCornerTreatment.m; sourceTree = "<group>"; };
+		558304978B7329F53144FB687B8472EE /* TMBarButtonStateController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonStateController.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonStateController.swift; sourceTree = "<group>"; };
+		55A6B8C7D9AEC68ACB3372AB89CE727B /* ViewTitleViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewTitleViewContainer.swift; path = Sources/Tabman/Bar/Generic/ViewTitleViewContainer.swift; sourceTree = "<group>"; };
+		56A5BF4BCCA50B10FE4BE475A9C750B0 /* MaterialShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowLayer.h; path = components/ShadowLayer/src/MaterialShadowLayer.h; sourceTree = "<group>"; };
+		56C007A37F1C24792923837013845F25 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		598B4DAACF63EC712EC7F2EC5EF39D9F /* TMDotBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMDotBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMDotBarIndicator.swift; sourceTree = "<group>"; };
+		59EC71D4162085E6A3439AE4FF25359D /* TMBarViewContentInsetGuides.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewContentInsetGuides.swift; path = Sources/Tabman/Bar/BarView/TMBarViewContentInsetGuides.swift; sourceTree = "<group>"; };
+		5AB97A6FE32F61E14163C169F240B5B7 /* TMChevronBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMChevronBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMChevronBarIndicator.swift; sourceTree = "<group>"; };
+		5ABB8F2E8DB761C3787A826E6875DC55 /* MDCSheetContainerViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetContainerViewDelegate.h; path = components/BottomSheet/src/private/MDCSheetContainerViewDelegate.h; sourceTree = "<group>"; };
+		5B42A86541FA0BA1EF72AAA780151FA7 /* BarMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarMath.swift; path = Sources/Tabman/Bar/Utility/BarMath.swift; sourceTree = "<group>"; };
+		5B8FDB0A0F1DAA4837F6026000D63BD0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F684B7DC562DF0E7E8D20CB00D5314A /* MDCCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCornerTreatment.h; path = components/Shapes/src/MDCCornerTreatment.h; sourceTree = "<group>"; };
+		5F790D8677E0AAEB81B7118045CBAA7E /* MDCCurvedRectShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCurvedRectShapeGenerator.m; path = components/ShapeLibrary/src/MDCCurvedRectShapeGenerator.m; sourceTree = "<group>"; };
+		5FB2B8BA32E3F5865C061D513CF968E2 /* TMConstrainedHorizontalBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMConstrainedHorizontalBarLayout.swift; path = Sources/Tabman/Bar/BarLayout/Types/TMConstrainedHorizontalBarLayout.swift; sourceTree = "<group>"; };
+		608393E9A893CC8706A2A6A3D1BBFA51 /* MDCBottomSheetTransitionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetTransitionController.h; path = components/BottomSheet/src/MDCBottomSheetTransitionController.h; sourceTree = "<group>"; };
+		608E880E0451AC736A3CF89639472780 /* UIColor+MaterialElevation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialElevation.h"; path = "components/Elevation/src/UIColor+MaterialElevation.h"; sourceTree = "<group>"; };
+		6103DD895EEF04768D42751E34EA2784 /* EdgeFadedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeFadedView.swift; path = Sources/Tabman/Bar/Generic/EdgeFadedView.swift; sourceTree = "<group>"; };
+		611C52E2AC7B9BC22505D54E948E3425 /* UIColor+MaterialElevation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialElevation.m"; path = "components/Elevation/src/UIColor+MaterialElevation.m"; sourceTree = "<group>"; };
+		62620A772F5284FC9DA85C9C42DFB568 /* ScrollViewInsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollViewInsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/ScrollViewInsetCalculator.swift; sourceTree = "<group>"; };
+		6276446DC80FB695231F197C6DA2E625 /* Pageboy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pageboy-Info.plist"; sourceTree = "<group>"; };
+		629BC9A74F1FD42405C7322CCC64A3B1 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		62AA86DAF2CB875CCAAD39A208FA36B0 /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
+		63441D584AAB2D176BE2FF80A6EE0633 /* TMBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/TMBarIndicator.swift; sourceTree = "<group>"; };
+		65037EA058347D0D8AE62EF9B19654CB /* PageboyViewController+RelativeCurrentPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+RelativeCurrentPosition.swift"; path = "Sources/Tabman/Extensions/PageboyViewController+RelativeCurrentPosition.swift"; sourceTree = "<group>"; };
+		656D92450E37FB58A69339586D533DF2 /* TMBarIndicatorLayoutHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarIndicatorLayoutHandler.swift; path = Sources/Tabman/Bar/BarIndicator/TMBarIndicatorLayoutHandler.swift; sourceTree = "<group>"; };
+		65FEF397FAA14339A4FE95D7FEEFEF36 /* PageboyNavigationDirection+Tabman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyNavigationDirection+Tabman.swift"; path = "Sources/Tabman/Extensions/PageboyNavigationDirection+Tabman.swift"; sourceTree = "<group>"; };
+		66A69CD2A16EBC18C6219AF2CF7779CB /* MDCRectangleShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRectangleShapeGenerator.m; path = components/Shapes/src/MDCRectangleShapeGenerator.m; sourceTree = "<group>"; };
+		67C3816999DF9B06A6D60C220F98732F /* MDCKeyboardWatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCKeyboardWatcher.m; path = components/private/KeyboardWatcher/src/MDCKeyboardWatcher.m; sourceTree = "<group>"; };
+		68A44B4B1E574CC78180B9AD82AC990B /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Transitioning/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
+		698FC183D562355AEFC6D2DE7CA37FEC /* MDCCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCornerTreatment.m; path = components/Shapes/src/MDCCornerTreatment.m; sourceTree = "<group>"; };
+		6A2288F35468F8D9BEEE6E0C3A2031D8 /* MDCSlantedRectShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSlantedRectShapeGenerator.h; path = components/ShapeLibrary/src/MDCSlantedRectShapeGenerator.h; sourceTree = "<group>"; };
+		6AC9A6629AEF07C809847F8C10D381A7 /* Pods-RigingTest_Bunjang-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RigingTest_Bunjang-Info.plist"; sourceTree = "<group>"; };
+		6AE70082DAAA68B35CD87DAC6AD995B8 /* TMAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMAnimation.swift; path = Sources/Tabman/Bar/TMAnimation.swift; sourceTree = "<group>"; };
+		6C4DDB447368FD1E9E9806996B9FB88E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		6FA7BB6E6CC30C8A0A7F1C6710532DF6 /* Pageboy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.debug.xcconfig; sourceTree = "<group>"; };
+		70359D9C00DDDC5B5E6E6E18A954C7EF /* MDCEdgeTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCEdgeTreatment.m; path = components/Shapes/src/MDCEdgeTreatment.m; sourceTree = "<group>"; };
+		70D07DD2600CE57A5F814893E1EA5B16 /* GestureScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureScrollView.swift; path = Sources/Tabman/Bar/Generic/GestureScrollView.swift; sourceTree = "<group>"; };
+		716A74C1B9C140374D0A48FBA096CBE6 /* MDCShadowElevations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShadowElevations.h; path = components/ShadowElevations/src/MDCShadowElevations.h; sourceTree = "<group>"; };
+		72E69E8AAC7EB93F46EC40FF1BBCB649 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		74CE15BE68CE7EFC37A067D243170430 /* CGRect+Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Interpolation.swift"; path = "Sources/Tabman/Bar/Extensions/CGRect+Interpolation.swift"; sourceTree = "<group>"; };
+		7522A6E6FA0A51BB0F4C717C3793EEA1 /* TMBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButton.swift; path = Sources/Tabman/Bar/BarButton/TMBarButton.swift; sourceTree = "<group>"; };
+		7546E8EA99B1C4D7594A8B8836A67FCB /* Tabman-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Tabman-Info.plist"; sourceTree = "<group>"; };
+		77662DF249A35B2D8E54ADF4885BD48D /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		7A2644AAB42C28BCDBB5EB3A79238038 /* MDCPillShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPillShapeGenerator.m; path = components/ShapeLibrary/src/MDCPillShapeGenerator.m; sourceTree = "<group>"; };
+		7A74FF8FCF991A39838C18BFBE9AA9AE /* MaterialComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-umbrella.h"; sourceTree = "<group>"; };
+		7C3F106458C8ECA7A32A92094B5C3668 /* Pods-RigingTest_Bunjang-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RigingTest_Bunjang-umbrella.h"; sourceTree = "<group>"; };
+		7C82B1F59DE9581FB627B947415F03CC /* TMLineBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMLineBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMLineBarIndicator.swift; sourceTree = "<group>"; };
+		7F96BE9A7E0E13AFFA2739620B275C63 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		7FF922E92F65EF632C340CEEA70996D3 /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/AutoScrolling/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		80104C30463E356C42B5548F170D8D05 /* TMBlockBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBlockBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMBlockBarIndicator.swift; sourceTree = "<group>"; };
+		822C0C604A235A17E5A77941BEE5854F /* Tabman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Tabman.modulemap; sourceTree = "<group>"; };
+		830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		834FD5FF58E3EC60CB55F9EA3B9B82CB /* MDCSheetContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSheetContainerView.m; path = components/BottomSheet/src/private/MDCSheetContainerView.m; sourceTree = "<group>"; };
+		878B17EF5CC1D7ABD654D9581B41F3B3 /* MaterialMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialMath.h; path = components/private/Math/src/MaterialMath.h; sourceTree = "<group>"; };
+		8871A69FE244E2E85BF75DC587CFB77D /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		88A027C6FF9FB9F65B99A1387B4F0AC2 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		891C2BD84CDB41227464EFF5357961A3 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		8AB872772554911887AF74A201EFF4B6 /* TMHorizontalBarLayout+Separator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMHorizontalBarLayout+Separator.swift"; path = "Sources/Tabman/Bar/BarLayout/Types/TMHorizontalBarLayout+Separator.swift"; sourceTree = "<group>"; };
+		8BC5BA690A74B868D30D9BABE8569A23 /* UIKit+TMBarItemable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+TMBarItemable.swift"; path = "Sources/Tabman/Bar/BarItem/UIKit+TMBarItemable.swift"; sourceTree = "<group>"; };
+		8EACFC177AE763BA4A1E26CA91EA80C0 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		8EE9C40DF4713287A4790A650E48A9A6 /* MDCSlantedRectShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSlantedRectShapeGenerator.m; path = components/ShapeLibrary/src/MDCSlantedRectShapeGenerator.m; sourceTree = "<group>"; };
+		9148B73D1E9639361F65E228806727DE /* MDCCurvedCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCurvedCornerTreatment.h; path = components/ShapeLibrary/src/MDCCurvedCornerTreatment.h; sourceTree = "<group>"; };
+		948612485ECB215662C00890B214ADCE /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		948E2371608B26C0DF66FF84E86B33D2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		94CCDFB664E7C4B80A49D0A11598EB5F /* IndexedObjectMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedObjectMap.swift; path = Sources/Pageboy/Utilities/IndexedObjectMap.swift; sourceTree = "<group>"; };
+		94E56F1BCECBD88F9E42BE528DF24F65 /* UIApplication+MDCAppExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+MDCAppExtensions.h"; path = "components/private/Application/src/UIApplication+MDCAppExtensions.h"; sourceTree = "<group>"; };
+		967F6A5CE96A38E5E6B18885C38A2EE8 /* PatchedPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatchedPageViewController.swift; path = Sources/Pageboy/Utilities/PatchedPageViewController.swift; sourceTree = "<group>"; };
+		973F1C7899250ABC50C5164CE797BD2A /* TMTabItemBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMTabItemBarButton.swift; path = Sources/Tabman/Bar/BarButton/Types/TMTabItemBarButton.swift; sourceTree = "<group>"; };
+		97B20E1D8B091D65D4826D4ADDD81077 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		980BAE08DFBD56003AA2836F05E16FB2 /* Pods-RigingTest_Bunjang-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RigingTest_Bunjang-dummy.m"; sourceTree = "<group>"; };
+		9A3E26280F2DBF744BEB0F637132D183 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
+		9B040E907E1132E3153613F49087E91D /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		9B50B057014E55D2AECB159DCCA24D4B /* MaterialKeyboardWatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialKeyboardWatcher.h; path = components/private/KeyboardWatcher/src/MaterialKeyboardWatcher.h; sourceTree = "<group>"; };
+		9B53E0FC8A72F3FB72FB1FA997960BA3 /* UIViewController+ScrollViewDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ScrollViewDetection.swift"; path = "Sources/Tabman/AutoInsetter/Utilities/UIViewController+ScrollViewDetection.swift"; sourceTree = "<group>"; };
+		9C3E3DEB01A7DA5ED86E82BF2D19842C /* MDCShapedShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapedShadowLayer.h; path = components/Shapes/src/MDCShapedShadowLayer.h; sourceTree = "<group>"; };
+		9CE698A82C86ED5DD762BED08CCDE141 /* MDCSheetBehavior.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSheetBehavior.m; path = components/BottomSheet/src/private/MDCSheetBehavior.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA6CC4A547D326E1BC61398A75CF820 /* MDCCutCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCutCornerTreatment.h; path = components/ShapeLibrary/src/MDCCutCornerTreatment.h; sourceTree = "<group>"; };
+		9E6F536E4028A5E5451C40036B07DF70 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		9FBC4E44F95F3BD034A9C9024F2DBD5B /* TMBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarLayout.swift; path = Sources/Tabman/Bar/BarLayout/TMBarLayout.swift; sourceTree = "<group>"; };
+		9FE9C3A8ECF071A8D351B2A97E56B059 /* MDCDraggableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCDraggableView.m; path = components/BottomSheet/src/private/MDCDraggableView.m; sourceTree = "<group>"; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FAAFB29467C6D986308284981D98D9 /* MDCBottomSheetTransitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBottomSheetTransitionController.m; path = components/BottomSheet/src/MDCBottomSheetTransitionController.m; sourceTree = "<group>"; };
+		A59F5F163973E4B5A4F9F4DD1E68AD28 /* MDCRoundedCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRoundedCornerTreatment.m; path = components/ShapeLibrary/src/MDCRoundedCornerTreatment.m; sourceTree = "<group>"; };
+		A6A77B4839E541FDC450BEE671066239 /* UIView+MaterialElevationResponding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MaterialElevationResponding.m"; path = "components/Elevation/src/UIView+MaterialElevationResponding.m"; sourceTree = "<group>"; };
+		A6E5D3291A652A97CC5E20375F49AD68 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		A6EAB69A78C5CD79A8576C87855A8105 /* MDCBottomSheetController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetController.h; path = components/BottomSheet/src/MDCBottomSheetController.h; sourceTree = "<group>"; };
+		A70146229477482B2D0AA66B3C0C18A7 /* AnimateableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimateableLabel.swift; path = Sources/Tabman/Bar/Generic/AnimateableLabel.swift; sourceTree = "<group>"; };
+		A7558C0D6E14FCB03F383F550716E170 /* MDCCurvedRectShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCurvedRectShapeGenerator.h; path = components/ShapeLibrary/src/MDCCurvedRectShapeGenerator.h; sourceTree = "<group>"; };
+		A8272D2594DD5FB8744F0D01CAA68DFA /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		A873904FD5D889DDD8BD77F8AEA0DCE6 /* MDCKeyboardWatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCKeyboardWatcher.h; path = components/private/KeyboardWatcher/src/MDCKeyboardWatcher.h; sourceTree = "<group>"; };
+		AA63A8B70D37A15A35167C044FDB74EB /* MaterialComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialComponents-dummy.m"; sourceTree = "<group>"; };
+		AAB707F4FE3A79CB00BF8D57039D409F /* Pods-RigingTest_Bunjang */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RigingTest_Bunjang"; path = Pods_RigingTest_Bunjang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8EE9C3650E3DB3E7320F4E519E8AC4 /* MDCTriangleEdgeTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTriangleEdgeTreatment.m; path = components/ShapeLibrary/src/MDCTriangleEdgeTreatment.m; sourceTree = "<group>"; };
+		AC9472F2FB16D51A49E6AE260BEE9D5D /* CollectionViewInsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewInsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/CollectionViewInsetCalculator.swift; sourceTree = "<group>"; };
+		ADF7C3B3D57C7B6F2B41A2760422C676 /* MDCElevatable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCElevatable.h; path = components/Elevation/src/MDCElevatable.h; sourceTree = "<group>"; };
+		AE08413D1ECC74D43D054045309903C5 /* MaterialShadowElevations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowElevations.h; path = components/ShadowElevations/src/MaterialShadowElevations.h; sourceTree = "<group>"; };
+		B00D3FC981AB6024123D564DABCD1D5A /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
+		B034C253F2E52DE8B58D769AD006435D /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
+		B21B87148B8793DAE46CEFEDE91F9C49 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
+		B28CED7ED2ACA3FB4DBF8472703C8A43 /* UIColor+Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Interpolation.swift"; path = "Sources/Tabman/Bar/Extensions/UIColor+Interpolation.swift"; sourceTree = "<group>"; };
+		B28F61C02D9A8822DCD8BF8DE7225334 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		B3CA421D4D750A0E4569DF101B421762 /* MDCShapedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapedView.m; path = components/Shapes/src/MDCShapedView.m; sourceTree = "<group>"; };
+		B4A59D5FCE677A73CCA3A1E07F794662 /* UIColor+MaterialBlending.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialBlending.h"; path = "components/private/Color/src/UIColor+MaterialBlending.h"; sourceTree = "<group>"; };
+		B56B0D5C2E890FFB5EF803BC62546862 /* InsetCalculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetCalculations.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/InsetCalculations.swift; sourceTree = "<group>"; };
+		B74AAC09A2958F77CAAA4C8370A0F3B0 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		B8D3C8D4FE3E69CA5105379B08B35E19 /* DefaultInsetStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultInsetStore.swift; path = Sources/Tabman/AutoInsetter/InsetStore/DefaultInsetStore.swift; sourceTree = "<group>"; };
+		B9A087329CCFAC1BD1E6A635BD83E24B /* TMBarLayout+None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBarLayout+None.swift"; path = "Sources/Tabman/Bar/BarLayout/Types/TMBarLayout+None.swift"; sourceTree = "<group>"; };
+		BBEA9ECA9BFA48742CBF06C585BE9E8A /* TMSystemBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMSystemBar.swift; path = Sources/Tabman/Bar/BarExtensions/SystemBar/TMSystemBar.swift; sourceTree = "<group>"; };
+		BCDEC205FBD231C12B8A7FB56858FF24 /* UIColor+MaterialDynamic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialDynamic.m"; path = "components/private/Color/src/UIColor+MaterialDynamic.m"; sourceTree = "<group>"; };
+		BED9F9958BBB798B0A48321EDAE9E101 /* NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDirection.swift; path = Sources/Pageboy/Model/NavigationDirection.swift; sourceTree = "<group>"; };
+		C03F6B0A08C3BA08D85A272917255410 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		C1B0676EB1B82F5769B0125278449803 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		C25460FA4DA0C587BF957F94DD81AA55 /* UIViewController+MaterialBottomSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MaterialBottomSheet.h"; path = "components/BottomSheet/src/UIViewController+MaterialBottomSheet.h"; sourceTree = "<group>"; };
+		C3402ADE648B0BD36D4A083B44B742E5 /* UIViewController+MaterialBottomSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MaterialBottomSheet.m"; path = "components/BottomSheet/src/UIViewController+MaterialBottomSheet.m"; sourceTree = "<group>"; };
+		C364373806D05288935F4FA48DDBE0A4 /* TabmanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanViewController.swift; path = Sources/Tabman/TabmanViewController.swift; sourceTree = "<group>"; };
+		C3CF61A3BBB31AAA83F0E09B0E5CD34B /* UIColor+MaterialDynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialDynamic.h"; path = "components/private/Color/src/UIColor+MaterialDynamic.h"; sourceTree = "<group>"; };
+		C501CAF710E5104949EBC5843F92C3A3 /* TableViewInsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewInsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/TableViewInsetCalculator.swift; sourceTree = "<group>"; };
+		C672150EE9C42E750941EC9DC68F1924 /* Tabman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tabman-dummy.m"; sourceTree = "<group>"; };
+		C7BA279288746C3C87B1C1AEC7015B29 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		C83F9B836A3031F6A755EF4A81C36E34 /* UIScrollView+Interaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Interaction.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+Interaction.swift"; sourceTree = "<group>"; };
+		C8E667D68FB40A087D5420D9E07D3C7D /* Pods-RigingTest_Bunjang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RigingTest_Bunjang.debug.xcconfig"; sourceTree = "<group>"; };
+		C91CD55301DEB82E688F93258B1CFC91 /* UIView+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animation.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Animation.swift"; sourceTree = "<group>"; };
+		CA1F070F944CCE41A5963A44FD21DD12 /* TMHidingBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMHidingBar.swift; path = Sources/Tabman/Bar/BarExtensions/AutoHidingBar/TMHidingBar.swift; sourceTree = "<group>"; };
+		CAECF68BF06BA1E1CED70D1C28812002 /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/AutoScrolling/PageboyAutoScroller.swift; sourceTree = "<group>"; };
+		CBEAC2247122B21AACD9149BE0150902 /* Pods-RigingTest_Bunjang-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RigingTest_Bunjang-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCC1E227FEEB48A98450CCF0D570A254 /* MaterialColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialColor.h; path = components/private/Color/src/MaterialColor.h; sourceTree = "<group>"; };
+		CE63F243A27275837D76A52E5CA2FDD4 /* MDCEdgeTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCEdgeTreatment.h; path = components/Shapes/src/MDCEdgeTreatment.h; sourceTree = "<group>"; };
+		D0E5CE559BD6DA86266467B613DB6649 /* TMBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarItem.swift; path = Sources/Tabman/Bar/BarItem/TMBarItem.swift; sourceTree = "<group>"; };
+		D21299EE17E86DCCD06EB4F063A302AB /* TMLabelBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMLabelBarButton.swift; path = Sources/Tabman/Bar/BarButton/Types/TMLabelBarButton.swift; sourceTree = "<group>"; };
+		D2C0D92D294D8A4BC8B45B3A215BE535 /* TMBarLayoutParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarLayoutParent.swift; path = Sources/Tabman/Bar/BarLayout/TMBarLayoutParent.swift; sourceTree = "<group>"; };
+		D447A1512DD91BBC3E3B23180B3CEBBE /* WeakContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakContainer.swift; path = Sources/Tabman/Bar/Utility/WeakContainer.swift; sourceTree = "<group>"; };
+		D4BA3ED9BE779D6E01FDD49E1526E061 /* MDCShapedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapedView.h; path = components/Shapes/src/MDCShapedView.h; sourceTree = "<group>"; };
+		D4D2C20F0271549338565421629B9778 /* Page.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Sources/Pageboy/Model/Page.swift; sourceTree = "<group>"; };
+		D66F279A41206D0F4A2296CF04EC664E /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		D77D8339DC3A1C1F812E4B0E016BDCFF /* MDCRectangleShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRectangleShapeGenerator.h; path = components/Shapes/src/MDCRectangleShapeGenerator.h; sourceTree = "<group>"; };
+		D98AF43069C842ADC7A65DB2C77DFC49 /* TMBarIndicatorContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarIndicatorContainer.swift; path = Sources/Tabman/Bar/BarIndicator/TMBarIndicatorContainer.swift; sourceTree = "<group>"; };
+		DC0E0C452D2D6C93E760ACBB3D14BE63 /* Pods-RigingTest_Bunjang.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RigingTest_Bunjang.modulemap"; sourceTree = "<group>"; };
+		DDEDBD4BD77EDB7FD2EC28F52145756A /* MaterialMathDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialMathDummy.m; path = components/private/Math/src/MaterialMathDummy.m; sourceTree = "<group>"; };
+		DDF4EC5CE48899CF831539089C72D1C4 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
+		DE4B066EAFF7424EB40FC565814EBC53 /* MDCPillShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPillShapeGenerator.h; path = components/ShapeLibrary/src/MDCPillShapeGenerator.h; sourceTree = "<group>"; };
+		DE6BB6FD800BA75C67F3E14DB69C2504 /* WeakContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakContainer.swift; path = Sources/Pageboy/Utilities/WeakContainer.swift; sourceTree = "<group>"; };
+		DEA3B7A125C04878A555C921F734F6DE /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
+		DF25AF6CE7710F457467EB3932C3ED6D /* Pods-RigingTest_Bunjang-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RigingTest_Bunjang-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0F73876E2735FB74EA6711BFA360360 /* MDCSheetState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetState.h; path = components/BottomSheet/src/MDCSheetState.h; sourceTree = "<group>"; };
+		E3146631B63CCFC03069C456B7F1CE96 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		E40957E6362D2AC8095C283CEDBC5415 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
+		E4A57FC59E3FD5D53711B088DA5DEAB9 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		E66B119D0079038A5132D3C37DDA78DE /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		E752CE40BE95F3AACE69596F45787E53 /* Tabman.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tabman.h; path = Sources/Tabman/Tabman.h; sourceTree = "<group>"; };
+		E92FB1E47AF6D64461329FA7C644D394 /* Pageboy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.release.xcconfig; sourceTree = "<group>"; };
+		EB1F45FAE53D25C532ED02F7A57DBD8F /* MDCBottomSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBottomSheetPresentationController.m; path = components/BottomSheet/src/MDCBottomSheetPresentationController.m; sourceTree = "<group>"; };
+		ED3E44A0AE1934D37639F4362FC1F7E0 /* MaterialElevation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialElevation.h; path = components/Elevation/src/MaterialElevation.h; sourceTree = "<group>"; };
+		ED470FDCF49E530CE3AE93976246328A /* AutoInsetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoInsetter.swift; path = Sources/Tabman/AutoInsetter/AutoInsetter.swift; sourceTree = "<group>"; };
+		EE9FB443D94222D8D2C9D1526029FB28 /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
+		EF39F470467361F5FD014A050F182122 /* MaterialComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-prefix.pch"; sourceTree = "<group>"; };
+		EF4941F868FD70C08C5A50EE0B61F538 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
+		EF5627C983EBB21262539D7783ACC512 /* TMBarViewLayoutGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewLayoutGrid.swift; path = Sources/Tabman/Bar/BarView/TMBarViewLayoutGrid.swift; sourceTree = "<group>"; };
+		EFAFF9B5196AD00DCE55E993957D1F9D /* TMBadgeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBadgeView.swift; path = Sources/Tabman/Bar/BarButton/Badge/TMBadgeView.swift; sourceTree = "<group>"; };
+		F2B545CFC3A02FB6FB1BA5B9855A16C5 /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
+		F34AE046ED15A063897DD89271AC3B19 /* UIViewController+Tabman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Tabman.swift"; path = "Sources/Tabman/Extensions/UIViewController+Tabman.swift"; sourceTree = "<group>"; };
+		F3A8B487036E5CF4FE0D582AF720729D /* MDCPathGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPathGenerator.h; path = components/Shapes/src/MDCPathGenerator.h; sourceTree = "<group>"; };
+		F482081F8544FBD09705C4FDB736D82F /* Tabman-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabman-prefix.pch"; sourceTree = "<group>"; };
+		F50D7838894CD996D8FAAD96BF7BF357 /* MDCTriangleEdgeTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTriangleEdgeTreatment.h; path = components/ShapeLibrary/src/MDCTriangleEdgeTreatment.h; sourceTree = "<group>"; };
+		F6793C9442800A486A6B0A6B3C0D93EC /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		F683A3CF9486E16068B70E0572862B91 /* TMBarViewUpdateHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewUpdateHandler.swift; path = Sources/Tabman/Bar/BarView/TMBarViewUpdateHandler.swift; sourceTree = "<group>"; };
+		F74D06D5DF850507257EC11E9A9E6FE7 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		F851A33EC8FF2F04920294BF14DED380 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		FA81D3121347DD9A1ADC4BD69F60A9E5 /* TMBar+Templates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBar+Templates.swift"; path = "Sources/Tabman/Bar/TMBar+Templates.swift"; sourceTree = "<group>"; };
+		FC0E99ADF1F75FD8D43A9A6129995DD4 /* TabmanViewController+Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanViewController+Insets.swift"; path = "Sources/Tabman/TabmanViewController+Insets.swift"; sourceTree = "<group>"; };
+		FC31CCA4317121196C08D9F80EBC28AC /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		FD4A74D45EDEE67C075DD1FDF56483F4 /* TMBarButtonCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonCollection.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonCollection.swift; sourceTree = "<group>"; };
+		FE1F0F5174695DBCD36E79129A93EC12 /* MDCPathGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPathGenerator.m; path = components/Shapes/src/MDCPathGenerator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15DC142A7EE833251AA37FC8E2B8E01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B068137A8925891446203B5D3D6A4ED /* CFNetwork.framework in Frameworks */,
+				0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C2AAF0DAACA813EB07CF60108DB0B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFE63E6233C05986B2BE0F767E1FB6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8029CE33B31FCABBE933889C15AEFF47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDB185054AE3867D0A9846D8F7063AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806EAF997244349F9700E5E8B7E5CC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B349DFD123428C60FB84208D7495124F /* Foundation.framework in Frameworks */,
+				6152798C1B26D94BC915C7FC204D9F82 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B67FA784E73AC258C825EFB8360AB0BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E180393049B4C65755BDB3B3DE02EF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B72DF86CBCAA11DF99499AEDA8E1CDBA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04DE99A14C9F1A26E17F8C8163AEB464 /* Tabman */ = {
+			isa = PBXGroup;
+			children = (
+				A70146229477482B2D0AA66B3C0C18A7 /* AnimateableLabel.swift */,
+				3CED80B8FEA4D2EB176901A47FC92074 /* AutoInsetSpec.swift */,
+				ED470FDCF49E530CE3AE93976246328A /* AutoInsetter.swift */,
+				5B42A86541FA0BA1EF72AAA780151FA7 /* BarMath.swift */,
+				74CE15BE68CE7EFC37A067D243170430 /* CGRect+Interpolation.swift */,
+				AC9472F2FB16D51A49E6AE260BEE9D5D /* CollectionViewInsetCalculator.swift */,
+				B8D3C8D4FE3E69CA5105379B08B35E19 /* DefaultInsetStore.swift */,
+				6103DD895EEF04768D42751E34EA2784 /* EdgeFadedView.swift */,
+				70D07DD2600CE57A5F814893E1EA5B16 /* GestureScrollView.swift */,
+				B56B0D5C2E890FFB5EF803BC62546862 /* InsetCalculations.swift */,
+				073322AC4F354771E18E4BBB5271355E /* InsetCalculator.swift */,
+				1D84C9F563AF1513A606E1C73744F7D9 /* InsetExecutor.swift */,
+				2FFE66F92362E2C73EA5BA5201451AE8 /* InsetStore.swift */,
+				65FEF397FAA14339A4FE95D7FEEFEF36 /* PageboyNavigationDirection+Tabman.swift */,
+				65037EA058347D0D8AE62EF9B19654CB /* PageboyViewController+RelativeCurrentPosition.swift */,
+				62620A772F5284FC9DA85C9C42DFB568 /* ScrollViewInsetCalculator.swift */,
+				C501CAF710E5104949EBC5843F92C3A3 /* TableViewInsetCalculator.swift */,
+				E752CE40BE95F3AACE69596F45787E53 /* Tabman.h */,
+				C364373806D05288935F4FA48DDBE0A4 /* TabmanViewController.swift */,
+				FC0E99ADF1F75FD8D43A9A6129995DD4 /* TabmanViewController+Insets.swift */,
+				6AE70082DAAA68B35CD87DAC6AD995B8 /* TMAnimation.swift */,
+				EFAFF9B5196AD00DCE55E993957D1F9D /* TMBadgeView.swift */,
+				05EFFB6CA9B5F15D4E3BD16DF87EDFEF /* TMBar.swift */,
+				FA81D3121347DD9A1ADC4BD69F60A9E5 /* TMBar+Templates.swift */,
+				17795A689429DDCE785F3B32A495B821 /* TMBarBackgroundView.swift */,
+				7522A6E6FA0A51BB0F4C717C3793EEA1 /* TMBarButton.swift */,
+				2F56162169D20B72029857863163B8EE /* TMBarButton+None.swift */,
+				FD4A74D45EDEE67C075DD1FDF56483F4 /* TMBarButtonCollection.swift */,
+				39F0BCEE995C931D0DA097C755C6FA8C /* TMBarButtonController.swift */,
+				013114A31EAB341D2504740398796918 /* TMBarButtonInteractionController.swift */,
+				558304978B7329F53144FB687B8472EE /* TMBarButtonStateController.swift */,
+				63441D584AAB2D176BE2FF80A6EE0633 /* TMBarIndicator.swift */,
+				32FEA082984A73E1740AEA77D4765A2E /* TMBarIndicator+None.swift */,
+				D98AF43069C842ADC7A65DB2C77DFC49 /* TMBarIndicatorContainer.swift */,
+				656D92450E37FB58A69339586D533DF2 /* TMBarIndicatorLayoutHandler.swift */,
+				D0E5CE559BD6DA86266467B613DB6649 /* TMBarItem.swift */,
+				9FBC4E44F95F3BD034A9C9024F2DBD5B /* TMBarLayout.swift */,
+				B9A087329CCFAC1BD1E6A635BD83E24B /* TMBarLayout+None.swift */,
+				0399FE757D94FC3FC4D9BAD08F37DAB9 /* TMBarLayoutInsetGuides.swift */,
+				D2C0D92D294D8A4BC8B45B3A215BE535 /* TMBarLayoutParent.swift */,
+				2B0A0D47AC1A4EEA0F0A78B2D9D3E0F4 /* TMBarView.swift */,
+				59EC71D4162085E6A3439AE4FF25359D /* TMBarViewContentInsetGuides.swift */,
+				37216F88BEFDE36778F79B928441629F /* TMBarViewFocusProvider.swift */,
+				30CE13D6DFBCB211B16A45C3074654C2 /* TMBarViewFocusRect.swift */,
+				EF5627C983EBB21262539D7783ACC512 /* TMBarViewLayoutGrid.swift */,
+				123EC3B5040906B9992F435D3B0F3F51 /* TMBarViewScrollHandler.swift */,
+				F683A3CF9486E16068B70E0572862B91 /* TMBarViewUpdateHandler.swift */,
+				80104C30463E356C42B5548F170D8D05 /* TMBlockBarIndicator.swift */,
+				5AB97A6FE32F61E14163C169F240B5B7 /* TMChevronBarIndicator.swift */,
+				5FB2B8BA32E3F5865C061D513CF968E2 /* TMConstrainedHorizontalBarLayout.swift */,
+				598B4DAACF63EC712EC7F2EC5EF39D9F /* TMDotBarIndicator.swift */,
+				CA1F070F944CCE41A5963A44FD21DD12 /* TMHidingBar.swift */,
+				1E156579F11DA3297482AE4DB93BBD1C /* TMHidingBar+Triggers.swift */,
+				49A1A272713AFBB2B4044A9C061DCEEA /* TMHorizontalBarLayout.swift */,
+				8AB872772554911887AF74A201EFF4B6 /* TMHorizontalBarLayout+Separator.swift */,
+				D21299EE17E86DCCD06EB4F063A302AB /* TMLabelBarButton.swift */,
+				7C82B1F59DE9581FB627B947415F03CC /* TMLineBarIndicator.swift */,
+				BBEA9ECA9BFA48742CBF06C585BE9E8A /* TMSystemBar.swift */,
+				973F1C7899250ABC50C5164CE797BD2A /* TMTabItemBarButton.swift */,
+				036EBF22D2B56D8EE84E96067885CABE /* TMTransition.swift */,
+				B28CED7ED2ACA3FB4DBF8472703C8A43 /* UIColor+Interpolation.swift */,
+				8BC5BA690A74B868D30D9BABE8569A23 /* UIKit+TMBarItemable.swift */,
+				2620FC1BC58271DC967698FDD3587633 /* UIView+DefaultTintColor.swift */,
+				120FEB3327C4D7C101D075C26A2513F8 /* UIView+LayoutGuide.swift */,
+				9B53E0FC8A72F3FB72FB1FA997960BA3 /* UIViewController+ScrollViewDetection.swift */,
+				F34AE046ED15A063897DD89271AC3B19 /* UIViewController+Tabman.swift */,
+				55A6B8C7D9AEC68ACB3372AB89CE727B /* ViewTitleViewContainer.swift */,
+				D447A1512DD91BBC3E3B23180B3CEBBE /* WeakContainer.swift */,
+				0D084B839324C610345F254521755B3E /* Support Files */,
+			);
+			name = Tabman;
+			path = Tabman;
+			sourceTree = "<group>";
+		};
+		0D084B839324C610345F254521755B3E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				822C0C604A235A17E5A77941BEE5854F /* Tabman.modulemap */,
+				C672150EE9C42E750941EC9DC68F1924 /* Tabman-dummy.m */,
+				7546E8EA99B1C4D7594A8B8836A67FCB /* Tabman-Info.plist */,
+				F482081F8544FBD09705C4FDB736D82F /* Tabman-prefix.pch */,
+				1097D6D9355B31E7D0325C9BC76E828E /* Tabman-umbrella.h */,
+				3537C81DDE76737169E0F9765F68847A /* Tabman.debug.xcconfig */,
+				136DD7512C4D4AB6C872B424314F1A9A /* Tabman.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Tabman";
+			sourceTree = "<group>";
+		};
+		22C576B45F5987023FD939C00605AC91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */,
+				23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy */,
+				AAB707F4FE3A79CB00BF8D57039D409F /* Pods-RigingTest_Bunjang */,
+				4D4799138F8AC5FFF2497DCB60AF4CBB /* Tabman */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		280EC3DF577E7558AEE3451A04D7DBFD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				453DCB19AE1EBF32638DDA0CBCFE3B0F /* MaterialApplication.h */,
+				94E56F1BCECBD88F9E42BE528DF24F65 /* UIApplication+MDCAppExtensions.h */,
+				16163E97F2D3EA7C36D456440E8F1246 /* UIApplication+MDCAppExtensions.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		33DA9E0804CAA21A6FF1F66B2D14781A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E6AEFB904E594A311DBA3424F07399A /* MaterialComponents.modulemap */,
+				AA63A8B70D37A15A35167C044FDB74EB /* MaterialComponents-dummy.m */,
+				0735933D3A4F389E284BCD07BCE98767 /* MaterialComponents-Info.plist */,
+				EF39F470467361F5FD014A050F182122 /* MaterialComponents-prefix.pch */,
+				7A74FF8FCF991A39838C18BFBE9AA9AE /* MaterialComponents-umbrella.h */,
+				3F9DA38205B68966850BBF1185F84400 /* MaterialComponents.debug.xcconfig */,
+				458570D49DB845FB47AC935A56BFE97E /* MaterialComponents.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialComponents";
+			sourceTree = "<group>";
+		};
+		3B567502DF9BF7409BA60BBA32FEF8BD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88A027C6FF9FB9F65B99A1387B4F0AC2 /* Alamofire.modulemap */,
+				6C4DDB447368FD1E9E9806996B9FB88E /* Alamofire-dummy.m */,
+				629BC9A74F1FD42405C7322CCC64A3B1 /* Alamofire-Info.plist */,
+				948E2371608B26C0DF66FF84E86B33D2 /* Alamofire-prefix.pch */,
+				0BE34859D4763100E42B25E62364DEE2 /* Alamofire-umbrella.h */,
+				9B040E907E1132E3153613F49087E91D /* Alamofire.debug.xcconfig */,
+				E4A57FC59E3FD5D53711B088DA5DEAB9 /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		417493CFEEDE462B7EB85FA79F2E6892 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				49451E3982D1FA79ED49701B5B75997F /* MaterialShapes.h */,
+				5F684B7DC562DF0E7E8D20CB00D5314A /* MDCCornerTreatment.h */,
+				698FC183D562355AEFC6D2DE7CA37FEC /* MDCCornerTreatment.m */,
+				CE63F243A27275837D76A52E5CA2FDD4 /* MDCEdgeTreatment.h */,
+				70359D9C00DDDC5B5E6E6E18A954C7EF /* MDCEdgeTreatment.m */,
+				F3A8B487036E5CF4FE0D582AF720729D /* MDCPathGenerator.h */,
+				FE1F0F5174695DBCD36E79129A93EC12 /* MDCPathGenerator.m */,
+				D77D8339DC3A1C1F812E4B0E016BDCFF /* MDCRectangleShapeGenerator.h */,
+				66A69CD2A16EBC18C6219AF2CF7779CB /* MDCRectangleShapeGenerator.m */,
+				9C3E3DEB01A7DA5ED86E82BF2D19842C /* MDCShapedShadowLayer.h */,
+				1B08101206843041E202B70C42298015 /* MDCShapedShadowLayer.m */,
+				D4BA3ED9BE779D6E01FDD49E1526E061 /* MDCShapedView.h */,
+				B3CA421D4D750A0E4569DF101B421762 /* MDCShapedView.m */,
+				276D273078617863637CEADB2E763981 /* MDCShapeGenerating.h */,
+				00A65FEBF7CBCD773290727E920F2F9E /* MDCShapeMediator.h */,
+				1CE7B2C8F86FF7DE4A98B93ED77296A0 /* MDCShapeMediator.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		44D1BD581993DAB811CBCDA5B4CFA9AB /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				02283BB0BBD85CA073E52925CAFC5FF3 /* AFError.swift */,
+				C1B0676EB1B82F5769B0125278449803 /* Alamofire.swift */,
+				77662DF249A35B2D8E54ADF4885BD48D /* AlamofireExtended.swift */,
+				28E419B70EE93CA52C5E5277D5B5B2D5 /* AuthenticationInterceptor.swift */,
+				7F96BE9A7E0E13AFFA2739620B275C63 /* CachedResponseHandler.swift */,
+				72E69E8AAC7EB93F46EC40FF1BBCB649 /* Combine.swift */,
+				EF4941F868FD70C08C5A50EE0B61F538 /* Concurrency.swift */,
+				2B51F9B0FBD9E6FBB4E7E9DED51057AD /* DispatchQueue+Alamofire.swift */,
+				0A8CDCBBD6596CA2DBBC40B2F557646F /* EventMonitor.swift */,
+				C03F6B0A08C3BA08D85A272917255410 /* HTTPHeaders.swift */,
+				FC31CCA4317121196C08D9F80EBC28AC /* HTTPMethod.swift */,
+				0CBFF6C00D7C8DA8C019895D4D79BCE0 /* MultipartFormData.swift */,
+				B28F61C02D9A8822DCD8BF8DE7225334 /* MultipartUpload.swift */,
+				5B8FDB0A0F1DAA4837F6026000D63BD0 /* NetworkReachabilityManager.swift */,
+				891C2BD84CDB41227464EFF5357961A3 /* Notifications.swift */,
+				124487B762B037F6D46228F3EEBAEF8E /* OperationQueue+Alamofire.swift */,
+				E3146631B63CCFC03069C456B7F1CE96 /* ParameterEncoder.swift */,
+				8EACFC177AE763BA4A1E26CA91EA80C0 /* ParameterEncoding.swift */,
+				D66F279A41206D0F4A2296CF04EC664E /* Protected.swift */,
+				A8272D2594DD5FB8744F0D01CAA68DFA /* RedirectHandler.swift */,
+				055F36B1585D4FE9D0F86575B7073501 /* Request.swift */,
+				8871A69FE244E2E85BF75DC587CFB77D /* RequestInterceptor.swift */,
+				520820D6B8A75141CFC0866AE39CF1F0 /* RequestTaskMap.swift */,
+				948612485ECB215662C00890B214ADCE /* Response.swift */,
+				09EE2478B131D9A9E6167250F349420A /* ResponseSerialization.swift */,
+				F6793C9442800A486A6B0A6B3C0D93EC /* Result+Alamofire.swift */,
+				56C007A37F1C24792923837013845F25 /* RetryPolicy.swift */,
+				30BEE8A823AD64F5DD86CF40259C64F0 /* ServerTrustEvaluation.swift */,
+				137F6353325ED99685A16DA88AE6873F /* Session.swift */,
+				B74AAC09A2958F77CAAA4C8370A0F3B0 /* SessionDelegate.swift */,
+				97B20E1D8B091D65D4826D4ADDD81077 /* StringEncoding+Alamofire.swift */,
+				9E6F536E4028A5E5451C40036B07DF70 /* URLConvertible+URLRequestConvertible.swift */,
+				F74D06D5DF850507257EC11E9A9E6FE7 /* URLEncodedFormEncoder.swift */,
+				040F6C16437C8060D1B1824723311253 /* URLRequest+Alamofire.swift */,
+				F851A33EC8FF2F04920294BF14DED380 /* URLSessionConfiguration+Alamofire.swift */,
+				11F4F01E81E7850865F4DFB0A6D06C96 /* Validation.swift */,
+				3B567502DF9BF7409BA60BBA32FEF8BD /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		4DB1CA134E88265DBC2E33E76C41373A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44D1BD581993DAB811CBCDA5B4CFA9AB /* Alamofire */,
+				F088EFD1D9AB297931C91738C1B211E5 /* MaterialComponents */,
+				D07C56F89272546AD0FBAA37A7E3F39F /* Pageboy */,
+				04DE99A14C9F1A26E17F8C8163AEB464 /* Tabman */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7CE50A3A2B36C91380604BBEFFE56B66 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CE51F3C1FAEE6C6FEB52BA9010F0E7 /* Pods-RigingTest_Bunjang */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		84CE51F3C1FAEE6C6FEB52BA9010F0E7 /* Pods-RigingTest_Bunjang */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E0C452D2D6C93E760ACBB3D14BE63 /* Pods-RigingTest_Bunjang.modulemap */,
+				DF25AF6CE7710F457467EB3932C3ED6D /* Pods-RigingTest_Bunjang-acknowledgements.markdown */,
+				CBEAC2247122B21AACD9149BE0150902 /* Pods-RigingTest_Bunjang-acknowledgements.plist */,
+				980BAE08DFBD56003AA2836F05E16FB2 /* Pods-RigingTest_Bunjang-dummy.m */,
+				303EEDAE172FD440FAD3BBED430820B8 /* Pods-RigingTest_Bunjang-frameworks.sh */,
+				6AC9A6629AEF07C809847F8C10D381A7 /* Pods-RigingTest_Bunjang-Info.plist */,
+				7C3F106458C8ECA7A32A92094B5C3668 /* Pods-RigingTest_Bunjang-umbrella.h */,
+				C8E667D68FB40A087D5420D9E07D3C7D /* Pods-RigingTest_Bunjang.debug.xcconfig */,
+				1325FC4EB3096AB46D9C9F290EC800AB /* Pods-RigingTest_Bunjang.release.xcconfig */,
+			);
+			name = "Pods-RigingTest_Bunjang";
+			path = "Target Support Files/Pods-RigingTest_Bunjang";
+			sourceTree = "<group>";
+		};
+		8E22EC9C0C1E7004747FD3CDCAB8C065 /* Elevation */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E44A0AE1934D37639F4362FC1F7E0 /* MaterialElevation.h */,
+				ADF7C3B3D57C7B6F2B41A2760422C676 /* MDCElevatable.h */,
+				422D73B21DD81ACEADE930B1A67ACA29 /* MDCElevationOverriding.h */,
+				608E880E0451AC736A3CF89639472780 /* UIColor+MaterialElevation.h */,
+				611C52E2AC7B9BC22505D54E948E3425 /* UIColor+MaterialElevation.m */,
+				1D3254170974907993ABF421F15654B0 /* UIView+MaterialElevationResponding.h */,
+				A6A77B4839E541FDC450BEE671066239 /* UIView+MaterialElevationResponding.m */,
+			);
+			name = Elevation;
+			sourceTree = "<group>";
+		};
+		B72DF86CBCAA11DF99499AEDA8E1CDBA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1000D1584895F6AC1A49368BFD581A65 /* CFNetwork.framework */,
+				830897A9DA6AA66779DF8CE5942D1C85 /* Foundation.framework */,
+				A6E5D3291A652A97CC5E20375F49AD68 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C118F67309733614FD5F9935F899F0BD /* KeyboardWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				9B50B057014E55D2AECB159DCCA24D4B /* MaterialKeyboardWatcher.h */,
+				A873904FD5D889DDD8BD77F8AEA0DCE6 /* MDCKeyboardWatcher.h */,
+				67C3816999DF9B06A6D60C220F98732F /* MDCKeyboardWatcher.m */,
+			);
+			name = KeyboardWatcher;
+			sourceTree = "<group>";
+		};
+		C3BAE381A339688554D292ACEBF73E7D /* Availability */ = {
+			isa = PBXGroup;
+			children = (
+				217FD379F262BE3E77277E59257740F5 /* MaterialAvailability.h */,
+				0EA601388BFB849F8ED5BC619DBDC6E5 /* MDCAvailability.h */,
+			);
+			name = Availability;
+			sourceTree = "<group>";
+		};
+		C6E9A934331A5B2FA88638740CA88A11 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1E227FEEB48A98450CCF0D570A254 /* MaterialColor.h */,
+				B4A59D5FCE677A73CCA3A1E07F794662 /* UIColor+MaterialBlending.h */,
+				2CFD73353E16F3EA9A7F5F0D984D9A25 /* UIColor+MaterialBlending.m */,
+				C3CF61A3BBB31AAA83F0E09B0E5CD34B /* UIColor+MaterialDynamic.h */,
+				BCDEC205FBD231C12B8A7FB56858FF24 /* UIColor+MaterialDynamic.m */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				4DB1CA134E88265DBC2E33E76C41373A /* Pods */,
+				22C576B45F5987023FD939C00605AC91 /* Products */,
+				7CE50A3A2B36C91380604BBEFFE56B66 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D019EB8F8331FCF4F51F86CE32964A22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15293C51338A32DF17003E707F6A8809 /* Pageboy.modulemap */,
+				E66B119D0079038A5132D3C37DDA78DE /* Pageboy-dummy.m */,
+				6276446DC80FB695231F197C6DA2E625 /* Pageboy-Info.plist */,
+				B21B87148B8793DAE46CEFEDE91F9C49 /* Pageboy-prefix.pch */,
+				DEA3B7A125C04878A555C921F734F6DE /* Pageboy-umbrella.h */,
+				6FA7BB6E6CC30C8A0A7F1C6710532DF6 /* Pageboy.debug.xcconfig */,
+				E92FB1E47AF6D64461329FA7C644D394 /* Pageboy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pageboy";
+			sourceTree = "<group>";
+		};
+		D07C56F89272546AD0FBAA37A7E3F39F /* Pageboy */ = {
+			isa = PBXGroup;
+			children = (
+				4625F3FA9CFF4DD5AD46026D010C8AC0 /* DispatchQueue+main.swift */,
+				94CCDFB664E7C4B80A49D0A11598EB5F /* IndexedObjectMap.swift */,
+				BED9F9958BBB798B0A48321EDAE9E101 /* NavigationDirection.swift */,
+				D4D2C20F0271549338565421629B9778 /* Page.swift */,
+				37787F632326A364EC30CA46CA672B62 /* Pageboy.h */,
+				CAECF68BF06BA1E1CED70D1C28812002 /* PageboyAutoScroller.swift */,
+				9A3E26280F2DBF744BEB0F637132D183 /* PageboyViewController.swift */,
+				7FF922E92F65EF632C340CEEA70996D3 /* PageboyViewController+AutoScrolling.swift */,
+				EE9FB443D94222D8D2C9D1526029FB28 /* PageboyViewController+Management.swift */,
+				06C31C04AF69974637DB422B726D1BC6 /* PageboyViewController+ScrollCalculations.swift */,
+				62AA86DAF2CB875CCAAD39A208FA36B0 /* PageboyViewController+ScrollDetection.swift */,
+				68A44B4B1E574CC78180B9AD82AC990B /* PageboyViewController+Transitioning.swift */,
+				00ED24FEDF2AB1FD87CF9E21BC9AEFAF /* PageboyViewController+Updating.swift */,
+				0267C58513AC68FCB1B3A955C57D5470 /* PageboyViewControllerDataSource.swift */,
+				B034C253F2E52DE8B58D769AD006435D /* PageboyViewControllerDelegate.swift */,
+				967F6A5CE96A38E5E6B18885C38A2EE8 /* PatchedPageViewController.swift */,
+				25ABE08B6BC1E1C9D080CA71B30A3C21 /* TransitionOperation.swift */,
+				B00D3FC981AB6024123D564DABCD1D5A /* TransitionOperation+Action.swift */,
+				DDF4EC5CE48899CF831539089C72D1C4 /* UIApplication+SafeShared.swift */,
+				E40957E6362D2AC8095C283CEDBC5415 /* UIPageViewController+ScrollView.swift */,
+				C83F9B836A3031F6A755EF4A81C36E34 /* UIScrollView+Interaction.swift */,
+				C91CD55301DEB82E688F93258B1CFC91 /* UIView+Animation.swift */,
+				C7BA279288746C3C87B1C1AEC7015B29 /* UIView+AutoLayout.swift */,
+				F2B545CFC3A02FB6FB1BA5B9855A16C5 /* UIView+Localization.swift */,
+				3C12D1C2ED45137FAFC26E6FC6AD4625 /* UIViewController+Pageboy.swift */,
+				DE6BB6FD800BA75C67F3E14DB69C2504 /* WeakContainer.swift */,
+				D019EB8F8331FCF4F51F86CE32964A22 /* Support Files */,
+			);
+			name = Pageboy;
+			path = Pageboy;
+			sourceTree = "<group>";
+		};
+		D7F0FB3FFE9DEBA154D24DBF925A04C4 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				280EC3DF577E7558AEE3451A04D7DBFD /* Application */,
+				C6E9A934331A5B2FA88638740CA88A11 /* Color */,
+				C118F67309733614FD5F9935F899F0BD /* KeyboardWatcher */,
+				DE0AC545941340D7B59951A504F6DE32 /* Math */,
+			);
+			name = private;
+			sourceTree = "<group>";
+		};
+		DCEB4C48A46A24D1EA4766104EBEF1CF /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F8BF9F4D956F1823B9688333AFB70 /* MaterialBottomSheet.h */,
+				A6EAB69A78C5CD79A8576C87855A8105 /* MDCBottomSheetController.h */,
+				2FF26F8BF59FE5D92ABC4BEADCBD9F11 /* MDCBottomSheetController.m */,
+				2493052BF7E57870217E0F53055F6577 /* MDCBottomSheetControllerDelegate.h */,
+				2B3EB740CC535B51003A90494F714DF7 /* MDCBottomSheetPresentationController.h */,
+				EB1F45FAE53D25C532ED02F7A57DBD8F /* MDCBottomSheetPresentationController.m */,
+				19B60F10C49163010AEF228327B35486 /* MDCBottomSheetPresentationControllerDelegate.h */,
+				608393E9A893CC8706A2A6A3D1BBFA51 /* MDCBottomSheetTransitionController.h */,
+				A4FAAFB29467C6D986308284981D98D9 /* MDCBottomSheetTransitionController.m */,
+				2606B767D250B1EB9A30B748AB0D6732 /* MDCDraggableView.h */,
+				9FE9C3A8ECF071A8D351B2A97E56B059 /* MDCDraggableView.m */,
+				07CD1A5E7F849D6B40956F3D02151213 /* MDCDraggableViewDelegate.h */,
+				4C55A70C594A872FD5662472D9521365 /* MDCSheetBehavior.h */,
+				9CE698A82C86ED5DD762BED08CCDE141 /* MDCSheetBehavior.m */,
+				152AAFF6AD5D748FB726786550BD7F5C /* MDCSheetContainerView.h */,
+				834FD5FF58E3EC60CB55F9EA3B9B82CB /* MDCSheetContainerView.m */,
+				5ABB8F2E8DB761C3787A826E6875DC55 /* MDCSheetContainerViewDelegate.h */,
+				E0F73876E2735FB74EA6711BFA360360 /* MDCSheetState.h */,
+				C25460FA4DA0C587BF957F94DD81AA55 /* UIViewController+MaterialBottomSheet.h */,
+				C3402ADE648B0BD36D4A083B44B742E5 /* UIViewController+MaterialBottomSheet.m */,
+			);
+			name = BottomSheet;
+			sourceTree = "<group>";
+		};
+		DE0AC545941340D7B59951A504F6DE32 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				878B17EF5CC1D7ABD654D9581B41F3B3 /* MaterialMath.h */,
+				DDEDBD4BD77EDB7FD2EC28F52145756A /* MaterialMathDummy.m */,
+				3D5EC33BE4F9CAF10E892ADF4F0B3A6D /* MDCMath.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		DF67CB6391321C03D2F459514DE347EA /* ShadowElevations */ = {
+			isa = PBXGroup;
+			children = (
+				AE08413D1ECC74D43D054045309903C5 /* MaterialShadowElevations.h */,
+				0A63A6056D14DA4AF489F78EC49583AF /* MaterialShadowElevationsDummy.m */,
+				716A74C1B9C140374D0A48FBA096CBE6 /* MDCShadowElevations.h */,
+			);
+			name = ShadowElevations;
+			sourceTree = "<group>";
+		};
+		EA0A293DB4A2F3D729D4D3878481A9D6 /* ShadowLayer */ = {
+			isa = PBXGroup;
+			children = (
+				56A5BF4BCCA50B10FE4BE475A9C750B0 /* MaterialShadowLayer.h */,
+				18B64C514BA45A68FD0A0C4D5D96FC68 /* MDCShadowLayer.h */,
+				477FF6A6C6E5A2831FF8243C0E4F1A1D /* MDCShadowLayer.m */,
+			);
+			name = ShadowLayer;
+			sourceTree = "<group>";
+		};
+		EE3BC23A8F0F9C8DF0CA38C125C0CAE1 /* ShapeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				08779D1E3DA2F75482F53F0BE98B946E /* MaterialShapeLibrary.h */,
+				4AC96E0E2046F5A982F2BD59625240E2 /* MDCCornerTreatment+CornerTypeInitalizer.h */,
+				51EE9130AAFF04730ED3002292764E00 /* MDCCornerTreatment+CornerTypeInitalizer.m */,
+				9148B73D1E9639361F65E228806727DE /* MDCCurvedCornerTreatment.h */,
+				3CB56BE672FD2F0648ECC1360D9FA782 /* MDCCurvedCornerTreatment.m */,
+				A7558C0D6E14FCB03F383F550716E170 /* MDCCurvedRectShapeGenerator.h */,
+				5F790D8677E0AAEB81B7118045CBAA7E /* MDCCurvedRectShapeGenerator.m */,
+				9DA6CC4A547D326E1BC61398A75CF820 /* MDCCutCornerTreatment.h */,
+				5560016E03D83C3599E81BA35638781A /* MDCCutCornerTreatment.m */,
+				DE4B066EAFF7424EB40FC565814EBC53 /* MDCPillShapeGenerator.h */,
+				7A2644AAB42C28BCDBB5EB3A79238038 /* MDCPillShapeGenerator.m */,
+				26A1ACFF0395629B9752AF60C170015B /* MDCRoundedCornerTreatment.h */,
+				A59F5F163973E4B5A4F9F4DD1E68AD28 /* MDCRoundedCornerTreatment.m */,
+				6A2288F35468F8D9BEEE6E0C3A2031D8 /* MDCSlantedRectShapeGenerator.h */,
+				8EE9C40DF4713287A4790A650E48A9A6 /* MDCSlantedRectShapeGenerator.m */,
+				F50D7838894CD996D8FAAD96BF7BF357 /* MDCTriangleEdgeTreatment.h */,
+				AB8EE9C3650E3DB3E7320F4E519E8AC4 /* MDCTriangleEdgeTreatment.m */,
+			);
+			name = ShapeLibrary;
+			sourceTree = "<group>";
+		};
+		F088EFD1D9AB297931C91738C1B211E5 /* MaterialComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C3BAE381A339688554D292ACEBF73E7D /* Availability */,
+				DCEB4C48A46A24D1EA4766104EBEF1CF /* BottomSheet */,
+				8E22EC9C0C1E7004747FD3CDCAB8C065 /* Elevation */,
+				D7F0FB3FFE9DEBA154D24DBF925A04C4 /* private */,
+				DF67CB6391321C03D2F459514DE347EA /* ShadowElevations */,
+				EA0A293DB4A2F3D729D4D3878481A9D6 /* ShadowLayer */,
+				EE3BC23A8F0F9C8DF0CA38C125C0CAE1 /* ShapeLibrary */,
+				417493CFEEDE462B7EB85FA79F2E6892 /* Shapes */,
+				33DA9E0804CAA21A6FF1F66B2D14781A /* Support Files */,
+			);
+			name = MaterialComponents;
+			path = MaterialComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52E6F7B26483BE3BC9393C6C05D32424 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D2E429D2F18E183625C7C7852DAEFC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC6C2758FD55275A20A72E22663CE99 /* Tabman.h in Headers */,
+				F78740F4D9C34B0687E64CD9FC769973 /* Tabman-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEA3612F1A5276C990A900CAA8255BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449A0FBF6C0DB4BE5E8FC99D35C88E61 /* Pods-RigingTest_Bunjang-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CDDC65E7CD101F46D811CF6488BDA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E454E5203F8CC37F6E43B6FC72CAAF /* MaterialApplication.h in Headers */,
+				A24B021BE5D40DCCCD0102E31E468D77 /* MaterialAvailability.h in Headers */,
+				18B4F45884A1AE821C55D92A82BA16EC /* MaterialBottomSheet.h in Headers */,
+				CAC33CCE1FEFD437D50AE236282065DD /* MaterialColor.h in Headers */,
+				62D2C55C5E6053CDBFD4F7357147B223 /* MaterialComponents-umbrella.h in Headers */,
+				007925CB7B373CEF2457BA29EB21F36C /* MaterialElevation.h in Headers */,
+				5EDD936E994705CFF1381A7695F76204 /* MaterialKeyboardWatcher.h in Headers */,
+				595D3A56309AEA817F55172459ED16CE /* MaterialMath.h in Headers */,
+				AAC97DF8936D6329568DB243D04281B1 /* MaterialShadowElevations.h in Headers */,
+				2077B0D839DB673DFC4929A50A93264F /* MaterialShadowLayer.h in Headers */,
+				2E623866A2E10A536A1C5A81A1484BEB /* MaterialShapeLibrary.h in Headers */,
+				B46758C812C6906AD0270ED781633E6F /* MaterialShapes.h in Headers */,
+				F405D02F5D0CAC7B45605E8DAA390011 /* MDCAvailability.h in Headers */,
+				8A72888924AEBB46318C07E7BD6DEE10 /* MDCBottomSheetController.h in Headers */,
+				1E324ECCB96F9FD656C9C37AC22A9594 /* MDCBottomSheetControllerDelegate.h in Headers */,
+				ACA03AC6678121C34C9751694E174DEC /* MDCBottomSheetPresentationController.h in Headers */,
+				BE55C082EC58C1E0D77D119C3D52D13B /* MDCBottomSheetPresentationControllerDelegate.h in Headers */,
+				55F1D2607A532B555F1B182EE095A044 /* MDCBottomSheetTransitionController.h in Headers */,
+				5C620577848BDFE5534C453A6E2F1D30 /* MDCCornerTreatment.h in Headers */,
+				A5178ED16462078EEFE039750F3FD979 /* MDCCornerTreatment+CornerTypeInitalizer.h in Headers */,
+				1F36D0C890E2A668177CBD17D1E30BC2 /* MDCCurvedCornerTreatment.h in Headers */,
+				C14DEA45483C8F5C1B6739CAC43C02F8 /* MDCCurvedRectShapeGenerator.h in Headers */,
+				D8030EC717AFD50138FA1A12BDA85A7A /* MDCCutCornerTreatment.h in Headers */,
+				B7CC774FEF04EC4A5A47F24FD0D68AD3 /* MDCDraggableView.h in Headers */,
+				C35E010C63E824F3D00B67D4C5E0159E /* MDCDraggableViewDelegate.h in Headers */,
+				0C76EEF9FC8B4C12C73B071124D2443F /* MDCEdgeTreatment.h in Headers */,
+				C8F0F085A4D93EFA7D77D622698C0951 /* MDCElevatable.h in Headers */,
+				A25BE1CE5E3EB7E7857BBAD0944841AE /* MDCElevationOverriding.h in Headers */,
+				73072DE782AA0A5FA4533D4073422AC4 /* MDCKeyboardWatcher.h in Headers */,
+				C4839299FFC04CC32EE57EE475609956 /* MDCMath.h in Headers */,
+				18F9C48B43DB0B16D3424333B6F88A4A /* MDCPathGenerator.h in Headers */,
+				B584746C59CE44E5CDF9A5C865E14AB8 /* MDCPillShapeGenerator.h in Headers */,
+				4893BBF093F4F86CB3DE86CE7804B490 /* MDCRectangleShapeGenerator.h in Headers */,
+				556FE452E5E60A7FEA0A78EDCF8E97F6 /* MDCRoundedCornerTreatment.h in Headers */,
+				A46A2C1156C2EE6C28099360F7266381 /* MDCShadowElevations.h in Headers */,
+				39C5445892CB72E2BB1FB1BA1F38CF30 /* MDCShadowLayer.h in Headers */,
+				D4EB9484C1E6F8B076FB379E9A47C191 /* MDCShapedShadowLayer.h in Headers */,
+				AC21AEC54003057F322B352C400BCE1A /* MDCShapedView.h in Headers */,
+				F075E0626B9906C0B26DAFB35893F031 /* MDCShapeGenerating.h in Headers */,
+				A17B1E5CB0D295F3A4C99DB6A61BCF78 /* MDCShapeMediator.h in Headers */,
+				93D82E2FA5AA7944649C58B8A5DB4F6E /* MDCSheetBehavior.h in Headers */,
+				E78AAB1EDC765339242F9C5F53EEE76C /* MDCSheetContainerView.h in Headers */,
+				D5F176895ACE0E36002E762A311F2D23 /* MDCSheetContainerViewDelegate.h in Headers */,
+				CD136E74E4DABD689B8CF1D6115F9830 /* MDCSheetState.h in Headers */,
+				5F9F3A5F2887FFF46A0702548D18E111 /* MDCSlantedRectShapeGenerator.h in Headers */,
+				F68093DB103F95209DE487501DB4D8E7 /* MDCTriangleEdgeTreatment.h in Headers */,
+				714FC92F814E85A5B5405501E0FF1BF4 /* UIApplication+MDCAppExtensions.h in Headers */,
+				10B800F3E36C80713AB589FA1CF47441 /* UIColor+MaterialBlending.h in Headers */,
+				43006ED7C7394CBC703AA58549754752 /* UIColor+MaterialDynamic.h in Headers */,
+				D27AA32D14580AC0753DCF15CB0BAD0B /* UIColor+MaterialElevation.h in Headers */,
+				DA12283CA4873463ED2EF22DC6636F4F /* UIView+MaterialElevationResponding.h in Headers */,
+				0857F4A0A5170223519A541324D501D1 /* UIViewController+MaterialBottomSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE8F3B2D5569891431C1CFB3F0985D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E739FE8EF44A1597212ECEC9D32FE8 /* Pageboy.h in Headers */,
+				ACD9CB3B8EAFAF0D4175760EBC90DF09 /* Pageboy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06201A837B408E21A6F416D49AF9A573 /* Pageboy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DF764F0950E16B43901FA216DA8130 /* Build configuration list for PBXNativeTarget "Pageboy" */;
+			buildPhases = (
+				FEE8F3B2D5569891431C1CFB3F0985D6 /* Headers */,
+				ED17470A549BC2E2C01E2B9034AF406C /* Sources */,
+				78C2AAF0DAACA813EB07CF60108DB0B5 /* Frameworks */,
+				16A85B16C65940E22F40684F22D969BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pageboy;
+			productName = Pageboy;
+			productReference = 23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy */;
+			productType = "com.apple.product-type.framework";
+		};
+		3EF26018CD886BA3143044A409D6D0B9 /* Tabman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F8D3D717D067538CAED42908D3CACF /* Build configuration list for PBXNativeTarget "Tabman" */;
+			buildPhases = (
+				8D2E429D2F18E183625C7C7852DAEFC9 /* Headers */,
+				415A607C721C19708E93829854D99875 /* Sources */,
+				8029CE33B31FCABBE933889C15AEFF47 /* Frameworks */,
+				A1C6296A197BEE4D56E389AC4E35168D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DE849289148FA2775CC8F0C66C1210 /* PBXTargetDependency */,
+			);
+			name = Tabman;
+			productName = Tabman;
+			productReference = 4D4799138F8AC5FFF2497DCB60AF4CBB /* Tabman */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3430A461777558B27370E1B4231C5B1E /* Build configuration list for PBXNativeTarget "MaterialComponents" */;
+			buildPhases = (
+				F3CDDC65E7CD101F46D811CF6488BDA6 /* Headers */,
+				0E70C541B1BA5DCB244FDBB0909C272D /* Sources */,
+				806EAF997244349F9700E5E8B7E5CC0D /* Frameworks */,
+				E47546D5007EB72514DFA3633A6A4A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaterialComponents;
+			productName = MaterialComponents;
+			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */;
+			productType = "com.apple.product-type.framework";
+		};
+		D00D64EBD5E5C7E544FDDEAAB10869C1 /* Pods-RigingTest_Bunjang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A69E5DA04362E88320AEDCAC792E43 /* Build configuration list for PBXNativeTarget "Pods-RigingTest_Bunjang" */;
+			buildPhases = (
+				DCEA3612F1A5276C990A900CAA8255BC /* Headers */,
+				E07C2C9E236BAD070C434D4355EC55FF /* Sources */,
+				B67FA784E73AC258C825EFB8360AB0BA /* Frameworks */,
+				EBF91D980BEAF86F6FF75E26A294DAB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C4E3627F119F1A10130291383B7490 /* PBXTargetDependency */,
+				F7E2D3FD1C8FD5BDA0A0710D06F1127A /* PBXTargetDependency */,
+				52BE38D00CF6329F37C6423FD830AB73 /* PBXTargetDependency */,
+				4F311F0BF9C250E945FB6C7EA60FA87C /* PBXTargetDependency */,
+			);
+			name = "Pods-RigingTest_Bunjang";
+			productName = Pods_RigingTest_Bunjang;
+			productReference = AAB707F4FE3A79CB00BF8D57039D409F /* Pods-RigingTest_Bunjang */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A212264186B8822192F9C369D7DE4BB /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				52E6F7B26483BE3BC9393C6C05D32424 /* Headers */,
+				F5D2A45FBA06D86A537CB441D5BF4FF4 /* Sources */,
+				15DC142A7EE833251AA37FC8E2B8E01F /* Frameworks */,
+				E9D4145FA41F60FFAB33A07796D9ED97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 22C576B45F5987023FD939C00605AC91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */,
+				06201A837B408E21A6F416D49AF9A573 /* Pageboy */,
+				D00D64EBD5E5C7E544FDDEAAB10869C1 /* Pods-RigingTest_Bunjang */,
+				3EF26018CD886BA3143044A409D6D0B9 /* Tabman */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16A85B16C65940E22F40684F22D969BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C6296A197BEE4D56E389AC4E35168D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47546D5007EB72514DFA3633A6A4A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D4145FA41F60FFAB33A07796D9ED97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF91D980BEAF86F6FF75E26A294DAB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E70C541B1BA5DCB244FDBB0909C272D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C2DF0761AA28A45A9F6C8DAC8BB95F /* MaterialComponents-dummy.m in Sources */,
+				FBC9948E28523D40349053038524CE98 /* MaterialMathDummy.m in Sources */,
+				08784BF9A2CD964B6C9CD6576E15828E /* MaterialShadowElevationsDummy.m in Sources */,
+				C7459A453B5A596D1F88B4ECA19A266C /* MDCBottomSheetController.m in Sources */,
+				D1703BED647A3E4280F987F8B29B7E17 /* MDCBottomSheetPresentationController.m in Sources */,
+				4DBFE5EE09B12554C4D605AE2A7F030F /* MDCBottomSheetTransitionController.m in Sources */,
+				CA783762E9CE22EC71B1EC5FE8BC34D2 /* MDCCornerTreatment.m in Sources */,
+				4168DDEDC0ABE4FF5BC9A2E0F7735654 /* MDCCornerTreatment+CornerTypeInitalizer.m in Sources */,
+				3D1F5CF84D1D9A5411C289107D5E46C4 /* MDCCurvedCornerTreatment.m in Sources */,
+				23480436FE20EA0D43B753E874EAE238 /* MDCCurvedRectShapeGenerator.m in Sources */,
+				69D61566CEC2C01D069BE1912F9C2257 /* MDCCutCornerTreatment.m in Sources */,
+				11E0F8B5E2D4ABF76318A5DA04D260A0 /* MDCDraggableView.m in Sources */,
+				CE7F3874F5E191A93827397D3C7E79AB /* MDCEdgeTreatment.m in Sources */,
+				4CC566ECE05D4C6389ADA085AE960827 /* MDCKeyboardWatcher.m in Sources */,
+				C1F089DA25E38A92807D5A23CDA23A83 /* MDCPathGenerator.m in Sources */,
+				A003960743CDDEA027F6585C6E66D1AA /* MDCPillShapeGenerator.m in Sources */,
+				E79131FF7E60950C31430BD4D9BB7520 /* MDCRectangleShapeGenerator.m in Sources */,
+				E4CB3D731330D33F7F2A87BDF02E1A44 /* MDCRoundedCornerTreatment.m in Sources */,
+				59FD7DC38FBCC9C83454E82DAD24CAFC /* MDCShadowLayer.m in Sources */,
+				B4889B8C013EC29C883C1F1B7CE9598F /* MDCShapedShadowLayer.m in Sources */,
+				C45FA039C0EA19762B0FC4963582F5F6 /* MDCShapedView.m in Sources */,
+				0A4E8662941AEB6D26C19AFEBC8BB768 /* MDCShapeMediator.m in Sources */,
+				166896F7614D238E033F84793B537BC7 /* MDCSheetBehavior.m in Sources */,
+				6BEA016BDC68F0E57CDF6FE36D00D570 /* MDCSheetContainerView.m in Sources */,
+				787EAA9A8DC2F09D51D359554BE06216 /* MDCSlantedRectShapeGenerator.m in Sources */,
+				D4FB61A1028C0DB237F361088D2EA3C2 /* MDCTriangleEdgeTreatment.m in Sources */,
+				77DCE2EEB10AF4A0C22A604066A18233 /* UIApplication+MDCAppExtensions.m in Sources */,
+				9F80D19FEC3FDBA2EC0BDFE424C14FBB /* UIColor+MaterialBlending.m in Sources */,
+				A60161C5BADF9BB8676622C8D417F49C /* UIColor+MaterialDynamic.m in Sources */,
+				4A929112636F1B03B707BCCDFAFA9DF1 /* UIColor+MaterialElevation.m in Sources */,
+				ED2CDFAC7C9C9E3FDB95A031B8380E25 /* UIView+MaterialElevationResponding.m in Sources */,
+				07951EFE16A7D338F37AD4F558E70DA7 /* UIViewController+MaterialBottomSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415A607C721C19708E93829854D99875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D145CE72D22A2858B118FA0381ACF11 /* AnimateableLabel.swift in Sources */,
+				EBC2E9D61363A5A8823387F32016EDE6 /* AutoInsetSpec.swift in Sources */,
+				C0E89FD0F9BE1B6CE2430977D3DAD2B3 /* AutoInsetter.swift in Sources */,
+				C8F2BB22D16C950ADC99196A9A0875A3 /* BarMath.swift in Sources */,
+				8E31A438E4E14FDAB9D24E9629E87890 /* CGRect+Interpolation.swift in Sources */,
+				712DBF01BCAA2AC72253CE0BF4CD4F9B /* CollectionViewInsetCalculator.swift in Sources */,
+				39E1A2AAF6E5F85397E5CF8EB85EE03D /* DefaultInsetStore.swift in Sources */,
+				5B961FEE8A3053C14D9B744103F535A9 /* EdgeFadedView.swift in Sources */,
+				9BD38841044F7774900340044713FF62 /* GestureScrollView.swift in Sources */,
+				FFA643FF093027014A1AC13DEEFC76F1 /* InsetCalculations.swift in Sources */,
+				2978BDEB75111B6862F6E25D808524A6 /* InsetCalculator.swift in Sources */,
+				2DDE2F4F9FACFE0A2C3A4B2187EA6842 /* InsetExecutor.swift in Sources */,
+				ACFBD1F0A71C0D427FB9477F2FE112CD /* InsetStore.swift in Sources */,
+				672AF1103586C3F243F9836A6A246110 /* PageboyNavigationDirection+Tabman.swift in Sources */,
+				E389152267106399ABF5CCA9B159232D /* PageboyViewController+RelativeCurrentPosition.swift in Sources */,
+				B437A66210366371A1F6DBE60E588007 /* ScrollViewInsetCalculator.swift in Sources */,
+				6737BE364F697A759E5ABEFAB30FD04D /* TableViewInsetCalculator.swift in Sources */,
+				B49B066C956E9BAFDA4C671BC47929F8 /* Tabman-dummy.m in Sources */,
+				AF4ECCB86D4332D2F1E72C008192D761 /* TabmanViewController.swift in Sources */,
+				13BD4640B078DAC0433C8BF8ABBDBA3A /* TabmanViewController+Insets.swift in Sources */,
+				DB328782629B6B26E16D96883846D477 /* TMAnimation.swift in Sources */,
+				6C9354B3FAFB49EEAE5CCEB8CFE268B9 /* TMBadgeView.swift in Sources */,
+				1B252C7F6BDB70B58DC02B3AAF8F0D9A /* TMBar.swift in Sources */,
+				46E1076E96801A16A3925B53D74BF896 /* TMBar+Templates.swift in Sources */,
+				6FF208791556BA76D4439F3C12173069 /* TMBarBackgroundView.swift in Sources */,
+				777A401FD1F923650E3DAF2ADB643073 /* TMBarButton.swift in Sources */,
+				1C8AC01CE4293F7F07392E3CAAF2434B /* TMBarButton+None.swift in Sources */,
+				AE8D2575C88B84E95A32A3B40A395F32 /* TMBarButtonCollection.swift in Sources */,
+				15E051DCCC2C74E18877560A6DD2F895 /* TMBarButtonController.swift in Sources */,
+				D8307936B6BFF04491444763FB22B70E /* TMBarButtonInteractionController.swift in Sources */,
+				24821079A44FD46C2124EAFD25B333C7 /* TMBarButtonStateController.swift in Sources */,
+				468B041038BC47A9BA136A40C20C6C9E /* TMBarIndicator.swift in Sources */,
+				7EA82098F2E430A2BD05AEE52B6DF4F7 /* TMBarIndicator+None.swift in Sources */,
+				761892E755FFE92DE2D0C39CF7ADE6A1 /* TMBarIndicatorContainer.swift in Sources */,
+				A77B1A343EE5332DB5E7EB934EA3791A /* TMBarIndicatorLayoutHandler.swift in Sources */,
+				F53B850B48DBA7DB3A798CE305786020 /* TMBarItem.swift in Sources */,
+				6E1E4845A75EDA65B9681A2CEA91F597 /* TMBarLayout.swift in Sources */,
+				F2FE4A4E1DD540639671D2173428B082 /* TMBarLayout+None.swift in Sources */,
+				261648A9B124173EFEC5CA0C92411768 /* TMBarLayoutInsetGuides.swift in Sources */,
+				762A7E12A62B627FBF831677CBCE3308 /* TMBarLayoutParent.swift in Sources */,
+				D9688EBE9A81157A255B7C373BC4B45F /* TMBarView.swift in Sources */,
+				46DF9D26FEDC6FCC241660B6DC750920 /* TMBarViewContentInsetGuides.swift in Sources */,
+				D17C18DE533BBFB3A4F5BCCCFBF1BC76 /* TMBarViewFocusProvider.swift in Sources */,
+				6EC423F124FD39F9EA25E907E780C221 /* TMBarViewFocusRect.swift in Sources */,
+				A5A7EBEB8B1B0FB4F6EA1EDE6D21E9F8 /* TMBarViewLayoutGrid.swift in Sources */,
+				C8EDA4A1835702F415A7E5720D2FE239 /* TMBarViewScrollHandler.swift in Sources */,
+				A9E9B18960DF0410D942BFFD4AE5B0E3 /* TMBarViewUpdateHandler.swift in Sources */,
+				0C4ABCE42F38BCE9FC2348FE9B60EF20 /* TMBlockBarIndicator.swift in Sources */,
+				DDCAC7A4E5AFD4F121BCD0145AD8E72C /* TMChevronBarIndicator.swift in Sources */,
+				D4B11A798394766360ED7FBC3108E1BC /* TMConstrainedHorizontalBarLayout.swift in Sources */,
+				F444451F53822AB084A450C5E7C382D0 /* TMDotBarIndicator.swift in Sources */,
+				4D5AE81555AFAE21B1CCEA1188E92E57 /* TMHidingBar.swift in Sources */,
+				F2AD6D5C6135220481FB2A1A1EE80577 /* TMHidingBar+Triggers.swift in Sources */,
+				D6B0BABC6426F1C5E0A630943FAD203B /* TMHorizontalBarLayout.swift in Sources */,
+				850B4EB456AE4BBF4E0723D9530B0970 /* TMHorizontalBarLayout+Separator.swift in Sources */,
+				DF7199E13E568C31A04B15F65D4A395C /* TMLabelBarButton.swift in Sources */,
+				03817B1767ED1DC48A558CA4C254410B /* TMLineBarIndicator.swift in Sources */,
+				8B589FED932AF281DDAA0BCB1320DCDE /* TMSystemBar.swift in Sources */,
+				A4BF0ADA40FB2363E3F4EDF5DB0DD667 /* TMTabItemBarButton.swift in Sources */,
+				13EC9DFD508F96165FB1E6B5D1E91A94 /* TMTransition.swift in Sources */,
+				14F01E27FF454C842E99B7720BB0496C /* UIColor+Interpolation.swift in Sources */,
+				C9527FB007A1D657FEB3C754BCF5DE9B /* UIKit+TMBarItemable.swift in Sources */,
+				CC0B8017B16379551057939674389941 /* UIView+DefaultTintColor.swift in Sources */,
+				ABCC7546335479207D85A1B684DBAD0F /* UIView+LayoutGuide.swift in Sources */,
+				D6A652EE8D78D63B4EC2A08FC944BB47 /* UIViewController+ScrollViewDetection.swift in Sources */,
+				6E13CA5C96B2E64B00CBA98D38D58C46 /* UIViewController+Tabman.swift in Sources */,
+				FA6B5E534EB9DE712E9EE16F564F9939 /* ViewTitleViewContainer.swift in Sources */,
+				4DB230A41D506E524C263DFBC736115D /* WeakContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07C2C9E236BAD070C434D4355EC55FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1E1B931AC24B39D8E15F4FF9CB461E /* Pods-RigingTest_Bunjang-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED17470A549BC2E2C01E2B9034AF406C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F217178BB8A178545B2E8F5A5236AFDD /* DispatchQueue+main.swift in Sources */,
+				25EC4B42DE5DC1FCFDD4D13DEA007F2B /* IndexedObjectMap.swift in Sources */,
+				1952888EBF36D0B0051BE57511B0FAE5 /* NavigationDirection.swift in Sources */,
+				46F750A94940C329E40EEA07AB873DD5 /* Page.swift in Sources */,
+				45ABBFAC9A930689423156E665F3B42C /* Pageboy-dummy.m in Sources */,
+				624F2D8F266C6E843A03B2BE2FCF42E4 /* PageboyAutoScroller.swift in Sources */,
+				043F53EACE987E58A6732217CB8C863D /* PageboyViewController.swift in Sources */,
+				CB7EB04C8D6BA30592A698AE95E30BFB /* PageboyViewController+AutoScrolling.swift in Sources */,
+				4DB67139A0F0C15A62EB446FA54A0443 /* PageboyViewController+Management.swift in Sources */,
+				D05C125D70669BA314333B920B3E6384 /* PageboyViewController+ScrollCalculations.swift in Sources */,
+				A3CEDE0F99A78C621B2FC23750FCA271 /* PageboyViewController+ScrollDetection.swift in Sources */,
+				7D08E2B0B8E94A993E655362D6EEA1F9 /* PageboyViewController+Transitioning.swift in Sources */,
+				6DB668B16099DE909DF843825E87668D /* PageboyViewController+Updating.swift in Sources */,
+				C736D640763E1E8D1DEE2E2876354E08 /* PageboyViewControllerDataSource.swift in Sources */,
+				DDFC384A55935DE639D90A6176A51687 /* PageboyViewControllerDelegate.swift in Sources */,
+				2195644D46BC85253DEAFF21A7FF3550 /* PatchedPageViewController.swift in Sources */,
+				0F4F68AC62C4AE694B7F76043F0AAF92 /* TransitionOperation.swift in Sources */,
+				ADE4E10D27F9E4F049835B6BC60C9524 /* TransitionOperation+Action.swift in Sources */,
+				FC6BE60C54A58DF9C97637443CA5769A /* UIApplication+SafeShared.swift in Sources */,
+				289D19349D88EA9B871847024AC51FED /* UIPageViewController+ScrollView.swift in Sources */,
+				89DDBB6704667C5C270E39C108EF4327 /* UIScrollView+Interaction.swift in Sources */,
+				784EF103DF5242878DA6E24B41E35982 /* UIView+Animation.swift in Sources */,
+				CC406D2565C27C5549761BB1F06B0BDA /* UIView+AutoLayout.swift in Sources */,
+				0CD989749B8AF0B73EFA97F4EFDB08D0 /* UIView+Localization.swift in Sources */,
+				257B6D2B9D7E20BA5E3176202175C30D /* UIViewController+Pageboy.swift in Sources */,
+				B4435DE1ED36E68560B60B018529A265 /* WeakContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D2A45FBA06D86A537CB441D5BF4FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EA90FBF83350C49E6EF6C8A98D6F00 /* AFError.swift in Sources */,
+				F17A4CA4664CABB331D39FE902E06843 /* Alamofire.swift in Sources */,
+				55AABB1FB38F61A3369ACC555FF3046D /* Alamofire-dummy.m in Sources */,
+				1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */,
+				7483E5327027263F7E4B94A2997191C4 /* AuthenticationInterceptor.swift in Sources */,
+				2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */,
+				46A64A43AFA057B6B63C8F0C12F509B4 /* Combine.swift in Sources */,
+				9C9030DEDB0DF955B16FE08C50892D57 /* Concurrency.swift in Sources */,
+				EEC150B66BCCD6C80FDA7E4D1975166B /* DispatchQueue+Alamofire.swift in Sources */,
+				CEBFFEED65D877702B2F36102528CF6D /* EventMonitor.swift in Sources */,
+				7E02F5B62BE00E97847DF549FFED2490 /* HTTPHeaders.swift in Sources */,
+				D6B4751CED01D53E4A1B6A571AAA2F83 /* HTTPMethod.swift in Sources */,
+				7FE695DA8EE7FF1286556E06B692009B /* MultipartFormData.swift in Sources */,
+				E9B4C89E7EB3B27D46AFCA452C3D426F /* MultipartUpload.swift in Sources */,
+				A29100AA1876DDEFF6F54694A51FDB0E /* NetworkReachabilityManager.swift in Sources */,
+				2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */,
+				E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */,
+				99D058E53EFEE3AC4857CDE3DBA5C004 /* ParameterEncoder.swift in Sources */,
+				68FB2DCB4C77DBCAF9A6037E470F2BDE /* ParameterEncoding.swift in Sources */,
+				A53BDE589BDD6483F3EEDCE5EA1DCCD3 /* Protected.swift in Sources */,
+				045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */,
+				B3658C29BBDE1033F6269A92E612CB30 /* Request.swift in Sources */,
+				DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */,
+				DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */,
+				75966A9262648D4647D764E3E76BC6AC /* Response.swift in Sources */,
+				824D816B1EE404F2DD400EE678695CBE /* ResponseSerialization.swift in Sources */,
+				04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */,
+				33A7D0F2D03004CE256A75E03DF33C70 /* RetryPolicy.swift in Sources */,
+				B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */,
+				81B8D2B7CEB25C2448B0BC9B33591A65 /* Session.swift in Sources */,
+				1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */,
+				7F1BB526AAE3ECDCE90127D9D0E10261 /* StringEncoding+Alamofire.swift in Sources */,
+				8D75FC8D7476C9674234F39F1A820D8C /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				7930C94414B4C661867AC4FBE82E996C /* URLEncodedFormEncoder.swift in Sources */,
+				BC0ECA8F22DEDE8886E189CD0EAA1197 /* URLRequest+Alamofire.swift in Sources */,
+				808C960C82D708FC1A42C581D6CB4940 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				3C4059621E23842C19D4EB5D35B41989 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24C4E3627F119F1A10130291383B7490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = F98BEE6ADC155ED935E547CD34A1C18B /* PBXContainerItemProxy */;
+		};
+		4F311F0BF9C250E945FB6C7EA60FA87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tabman;
+			target = 3EF26018CD886BA3143044A409D6D0B9 /* Tabman */;
+			targetProxy = A5317285CC4A9E4C2E0D1457B0EF028D /* PBXContainerItemProxy */;
+		};
+		52BE38D00CF6329F37C6423FD830AB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pageboy;
+			target = 06201A837B408E21A6F416D49AF9A573 /* Pageboy */;
+			targetProxy = 586F915EC903888AF008BC9BE782C411 /* PBXContainerItemProxy */;
+		};
+		75DE849289148FA2775CC8F0C66C1210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pageboy;
+			target = 06201A837B408E21A6F416D49AF9A573 /* Pageboy */;
+			targetProxy = 86513D9C8B4A7C777F337E01BEF603A3 /* PBXContainerItemProxy */;
+		};
+		F7E2D3FD1C8FD5BDA0A0710D06F1127A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialComponents;
+			target = B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */;
+			targetProxy = B3359E812A4C3C7B7A7CDCDE5603F666 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04A1301F98256950A2B7AD42A0141DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA7BB6E6CC30C8A0A7F1C6710532DF6 /* Pageboy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		45E411DCC2FCFC5CBE5C537A891E59F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E667D68FB40A087D5420D9E07D3C7D /* Pods-RigingTest_Bunjang.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RigingTest_Bunjang/Pods-RigingTest_Bunjang-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RigingTest_Bunjang/Pods-RigingTest_Bunjang.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		880219FBBFBA4B703A46B5F770D59ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B040E907E1132E3153613F49087E91D /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8ACB16A4352C17A16971FCF8E85D8FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458570D49DB845FB47AC935A56BFE97E /* MaterialComponents.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				PRODUCT_MODULE_NAME = MaterialComponents;
+				PRODUCT_NAME = MaterialComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0EEAD0CBE9B33354A637448919B0B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3537C81DDE76737169E0F9765F68847A /* Tabman.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tabman/Tabman-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tabman/Tabman-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tabman/Tabman.modulemap";
+				PRODUCT_MODULE_NAME = Tabman;
+				PRODUCT_NAME = Tabman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6A246835BA4104A9D27BC66CB853F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1325FC4EB3096AB46D9C9F290EC800AB /* Pods-RigingTest_Bunjang.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RigingTest_Bunjang/Pods-RigingTest_Bunjang-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RigingTest_Bunjang/Pods-RigingTest_Bunjang.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B72FB33FD6F6E113C96F39CC53FDD48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9DA38205B68966850BBF1185F84400 /* MaterialComponents.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				PRODUCT_MODULE_NAME = MaterialComponents;
+				PRODUCT_NAME = MaterialComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCACAB020C6AA860774DD0AF55FB98D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92FB1E47AF6D64461329FA7C644D394 /* Pageboy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8B124CC0ABB763034A4079FAF21E0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136DD7512C4D4AB6C872B424314F1A9A /* Tabman.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tabman/Tabman-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tabman/Tabman-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tabman/Tabman.modulemap";
+				PRODUCT_MODULE_NAME = Tabman;
+				PRODUCT_NAME = Tabman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F95E4C330E939A7027D8A4E361545DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A57FC59E3FD5D53711B088DA5DEAB9 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19F8D3D717D067538CAED42908D3CACF /* Build configuration list for PBXNativeTarget "Tabman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0EEAD0CBE9B33354A637448919B0B1B /* Debug */,
+				F8B124CC0ABB763034A4079FAF21E0A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3430A461777558B27370E1B4231C5B1E /* Build configuration list for PBXNativeTarget "MaterialComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B72FB33FD6F6E113C96F39CC53FDD48D /* Debug */,
+				8ACB16A4352C17A16971FCF8E85D8FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A212264186B8822192F9C369D7DE4BB /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880219FBBFBA4B703A46B5F770D59ADF /* Debug */,
+				F95E4C330E939A7027D8A4E361545DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A69E5DA04362E88320AEDCAC792E43 /* Build configuration list for PBXNativeTarget "Pods-RigingTest_Bunjang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E411DCC2FCFC5CBE5C537A891E59F7 /* Debug */,
+				B6A246835BA4104A9D27BC66CB853F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DF764F0950E16B43901FA216DA8130 /* Build configuration list for PBXNativeTarget "Pageboy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1301F98256950A2B7AD42A0141DC7 /* Debug */,
+				DCACAB020C6AA860774DD0AF55FB98D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

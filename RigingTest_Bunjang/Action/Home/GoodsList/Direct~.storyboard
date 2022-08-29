@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recommand Brand-->
+        <scene sceneID="itO-ma-MEa">
+            <objects>
+                <viewController storyboardIdentifier="RecommandBrand" id="Ipy-yJ-02s" customClass="RecommandBrand" customModule="RigingTest_Bunjang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rgf-di-W9U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJd-sJ-MBV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mXb-6g-YXM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WEy-1s-5D1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iJd-sJ-MBV" firstAttribute="top" secondItem="Rgf-di-W9U" secondAttribute="top" id="Sni-Jq-TR3"/>
+                            <constraint firstAttribute="trailing" secondItem="iJd-sJ-MBV" secondAttribute="trailing" id="oqO-KF-Xuk"/>
+                            <constraint firstItem="iJd-sJ-MBV" firstAttribute="leading" secondItem="Rgf-di-W9U" secondAttribute="leading" id="rJz-Q0-kyk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabView" destination="iJd-sJ-MBV" id="Bc9-Yx-5yW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XU-wW-Hwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2433.8461538461538" y="131.51658767772511"/>
+        </scene>
+        <!--RecommandVC-->
+        <scene sceneID="CwD-In-moh">
+            <objects>
+                <viewController storyboardIdentifier="RecommandVC" id="5Us-mA-JHe" customClass="RecommandVC" customModule="RigingTest_Bunjang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HiZ-5f-evW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lCJ-Wg-uVP">
+                                <rect key="frame" x="10" y="94" width="394" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UE8-5C-pYV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aVg-i8-r0N">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nd8-hm-12u">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JnC-3k-bsD"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="lCJ-Wg-uVP" firstAttribute="top" secondItem="JnC-3k-bsD" secondAttribute="top" constant="50" id="M1G-Iy-HH2"/>
+                            <constraint firstAttribute="bottom" secondItem="lCJ-Wg-uVP" secondAttribute="bottom" id="Nf3-Pd-vca"/>
+                            <constraint firstItem="JnC-3k-bsD" firstAttribute="trailing" secondItem="lCJ-Wg-uVP" secondAttribute="trailing" constant="10" id="RVO-Ks-1DA"/>
+                            <constraint firstItem="lCJ-Wg-uVP" firstAttribute="leading" secondItem="JnC-3k-bsD" secondAttribute="leading" constant="10" id="gdz-dX-XLP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="lCJ-Wg-uVP" id="pFz-ov-fHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FN2-j3-BvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192.753623188406" y="-50.223214285714285"/>
+        </scene>
+        <!--DirectVC-->
+        <scene sceneID="zBJ-xs-Y3b">
+            <objects>
+                <viewController restorationIdentifier="DirectVC" storyboardIdentifier="DirectVC" id="0vs-GT-V3s" customClass="DirectVC" customModule="RigingTest_Bunjang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hd5-Yz-esi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUd-oz-Lts">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem id="Zoo-nI-6r0">
+                                        <barButtonItem key="rightBarButtonItem" image="xmark" catalog="system" id="mVk-E7-jQR">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="tapXButton:" destination="0vs-GT-V3s" id="uPa-od-zLo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CG6-pn-1gN"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="MUd-oz-Lts" firstAttribute="top" secondItem="CG6-pn-1gN" secondAttribute="top" id="9MD-Ny-Wzq"/>
+                            <constraint firstItem="MUd-oz-Lts" firstAttribute="leading" secondItem="CG6-pn-1gN" secondAttribute="leading" id="u3q-Qi-jrw"/>
+                            <constraint firstItem="MUd-oz-Lts" firstAttribute="trailing" secondItem="CG6-pn-1gN" secondAttribute="trailing" id="utD-qD-woR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQL-gv-XCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5316" y="716"/>
+        </scene>
+        <!--BrandVC-->
+        <scene sceneID="C1a-2i-1O0">
+            <objects>
+                <viewController storyboardIdentifier="BrandVC" id="PcH-aw-l0n" customClass="BrandVC" customModule="RigingTest_Bunjang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sns-mA-2Lf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Y3A-te-Rst"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1W-G8-Aqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194" y="603"/>
+        </scene>
+        <!--RegisterAddressVC-->
+        <scene sceneID="cX3-zd-GsE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterAddressVC" storyboardName="Fedex" referencedIdentifier="RegisterAddressVC" id="Y1c-V7-fsy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1g-ms-Rsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6108.6956521739139" y="-680.35714285714278"/>
+        </scene>
+        <!--OrderMemoVC-->
+        <scene sceneID="WXE-Fw-gZO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OrderMemoVC" storyboardName="Fedex" referencedIdentifier="OrderMemoVC" id="O0Z-m0-YSd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOY-Qa-VtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6100.0000000000009" y="-20.089285714285712"/>
+        </scene>
+        <!--OrderVC-->
+        <scene sceneID="jHH-5m-KmV">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OrderVC" storyboardName="Fedex" referencedIdentifier="OrderVC" id="7Eh-60-a4N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnJ-Rm-12l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5405.7971014492759" y="-350.22321428571428"/>
+        </scene>
+        <!--DealPage-->
+        <scene sceneID="5eM-ii-mZj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DealPage" storyboardName="OrderType" referencedIdentifier="DealPage" id="mbg-hO-BdU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ed1-18-MLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4705.7971014492759" y="-43.526785714285715"/>
+        </scene>
+        <!--ItemDetails-->
+        <scene sceneID="XWf-tp-p7M">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ItemDetails" storyboardName="Detail" referencedIdentifier="ItemDetails" id="9aO-H2-nUv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xr0-IX-S27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3957.971014492754" y="-50.223214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
