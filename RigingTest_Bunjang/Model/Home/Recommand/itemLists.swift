@@ -14,6 +14,8 @@ struct itemLists {
     var address:String?
     var period: String?
     var imageURL: String?
+    var isSafePayment: Int?
+    var likeCnt: Int?
 }
 
 

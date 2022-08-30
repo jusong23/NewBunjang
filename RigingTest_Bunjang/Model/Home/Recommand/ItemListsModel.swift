@@ -44,6 +44,14 @@ class itemListsDataModel {
         return itemListsStruct[index].imageURL ?? ""
     }
     
-    public func inputData(itemIdx:Int, cost:String, itemName:String, address:String, period:String, imageURL:String ) {
-        self.itemListsStruct.append(itemLists(itemIdx: itemIdx, cost: cost, itemName: itemName, address: address, period: period, imageURL: imageURL))
+    public func getIsSafePayment(index: Int) -> Int {
+        return itemListsStruct[index].isSafePayment ?? 0
+    }
+    
+    public func getLikeCnt(index: Int) -> Int {
+        return itemListsStruct[index].likeCnt ?? 0
+    }
+    
+    public func inputData(itemIdx:Int, cost:String, itemName:String, address:String, period:String, imageURL:String, isSafePayment:Int, likeCnt:Int ) {
+        self.itemListsStruct.append(itemLists(itemIdx: itemIdx, cost: cost, itemName: itemName, address: address, period: period, imageURL: imageURL, isSafePayment: isSafePayment, likeCnt:likeCnt))
     }}

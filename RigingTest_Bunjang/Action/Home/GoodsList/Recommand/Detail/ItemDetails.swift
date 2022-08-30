@@ -19,6 +19,8 @@ class ItemDetails: UIViewController {
     var address: String?
     var period: String?
     var likeCnt: String?
+    var imageUrl: String?
+    
     var selectedKey = UserDefaults.standard.integer(forKey: "SELECTED")
 
     @IBOutlet var RC_cost: UILabel!
@@ -33,6 +35,7 @@ class ItemDetails: UIViewController {
     @IBOutlet var RC_isIncludeOrderTip: UIButton!
     @IBOutlet var RC_isCanExchage: UIButton!
     @IBOutlet var RC_itemContent: UILabel!
+    @IBOutlet weak var RC_image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,14 +114,25 @@ class ItemDetails: UIViewController {
     func bindingData() {
         if let itemindex = itemindex,
             let cost = cost,
-           let itemName = itemName,
-           let address = address,
-            let period = period {
+            let itemName = itemName,
+            let address = address,
+            let period = period,
+            let imageUrl = imageUrl {
             print("idx: \(self.itemindex)")
             self.RC_cost.text = self.cost
             self.RC_itemName.text = self.itemName
             self.RC_address.text = self.address
             self.RC_period.text = self.period
+            
+            var cellImageUrl = imageUrl
+            var url = URL(string: cellImageUrl ?? "")
+            
+            var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+            
+            self.RC_image.load_2_6(url_2_6: (url ?? fakeUrl)!)
+            
+            print(imageUrl)
+            
             UserDefaults.standard.setValue(itemindex, forKey: "RealSelectedKey")
             Item.Idx = itemindex
         }
@@ -135,4 +149,19 @@ extension ItemDetails: returnToHomeDelegate {
         print("it`s working")
     }
 }
+
+extension UIImageView {
+    func load_2_6(url_2_6: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url_2_6) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+}
+
 

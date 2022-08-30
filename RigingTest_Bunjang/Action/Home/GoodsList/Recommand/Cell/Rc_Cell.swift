@@ -17,9 +17,14 @@ class Rc_Cell: UICollectionViewCell {
     @IBOutlet var address: UILabel!
     @IBOutlet var period: UILabel!
     @IBOutlet var heartButton: UIButton!
-
+    @IBOutlet weak var safePayment: UIImageView!
+    @IBOutlet weak var heartImage: UIButton!
+    @IBOutlet weak var likeCount: UILabel!
+    @IBOutlet weak var safePatmentView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.itemName.sizeToFit()
     }
 
     @IBAction func tapZzeamButton(_ sender: Any) {

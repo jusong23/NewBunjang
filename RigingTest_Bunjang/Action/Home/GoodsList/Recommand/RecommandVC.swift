@@ -37,13 +37,15 @@ class RecommandVC: UIViewController {
             case let .success(result):
                 
             for i in 0..<result.baseResult.count {
-                self.ItemListsDataModel.inputData(itemIdx: result.baseResult[i].itemIdx ?? 0,
-                                                  cost: result.baseResult[i].cost ?? "",
-                                                  itemName: result.baseResult[i].itemName ?? "",
-                                                  address: result.baseResult[i].address ?? "",
-                                                  period: result.baseResult[i].period ?? "",
-                                                  imageURL: result.baseResult[i].imageURL ?? "")
-                
+                self.ItemListsDataModel.inputData(
+                      itemIdx: result.baseResult[i].itemIdx ?? 0,
+                      cost: result.baseResult[i].cost ?? "",
+                      itemName: result.baseResult[i].itemName ?? "",
+                      address: result.baseResult[i].address ?? "",
+                      period: result.baseResult[i].period ?? "",
+                      imageURL: result.baseResult[i].imageURL ?? "",
+                      isSafePayment: result.baseResult[i].isSafePayment ?? 0,
+                      likeCnt: result.baseResult[i].likeCnt ?? 0)
             }
             
                 self.collectionView.reloadData()
@@ -67,8 +69,10 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         var cellItemName = self.ItemListsDataModel.getItemName(index: indexPath.row)
         var cellAddress = self.ItemListsDataModel.getAddress(index: indexPath.row)
         var cellPeriod = self.ItemListsDataModel.getPeriod(index: indexPath.row)
-
-    
+        var cellIsSafePayment = self.ItemListsDataModel.getIsSafePayment(index: indexPath.row)
+        var cellLikeCnt = self.ItemListsDataModel.getLikeCnt(index: indexPath.row)
+        var cellImageUrl = self.ItemListsDataModel.getImageURL(index: indexPath.row)
+        
         UserDefaults.standard.setValue(cellItemIdx, forKey: "SELECTED")
         
         guard let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "ItemDetails") as? ItemDetails else {return}
@@ -77,6 +81,7 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         ViewController.itemName = cellItemName
         ViewController.address = cellAddress
         ViewController.period = cellPeriod
+        ViewController.imageUrl = cellImageUrl
         
         self.navigationController?.pushViewController(ViewController, animated: true)
     }
@@ -92,6 +97,8 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         var cellAddress = self.ItemListsDataModel.getAddress(index: indexPath.row)
         var cellPeriod = self.ItemListsDataModel.getPeriod(index: indexPath.row)
         var cellImageUrl = self.ItemListsDataModel.getImageURL(index: indexPath.row)
+        var cellIsSafePayment = self.ItemListsDataModel.getIsSafePayment(index: indexPath.row)
+        var cellLikeCnt = self.ItemListsDataModel.getLikeCnt(index: indexPath.row)
         
         var url = URL(string: cellImageUrl ?? "")
         
@@ -102,6 +109,17 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.itemName.text = String(cellItemName)
         cell.address.text = cellAddress
         cell.period.text = cellPeriod
+        
+        if cellIsSafePayment == 0 {
+            cell.safePatmentView.isHidden = true
+        }
+        
+        if cellLikeCnt == 0 {
+            cell.likeCount.isHidden = true
+            cell.heartImage.isHidden = true
+        } else {
+            cell.likeCount.text = String(cellLikeCnt)
+        }
         
         cell.itemName.sizeToFit()
         
