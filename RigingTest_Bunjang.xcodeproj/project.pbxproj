@@ -779,6 +779,7 @@
 		9B9546B228BDD9EB0076C798 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				9B9546BA28BDEA330076C798 /* Controllers */,
 				9B9546B328BDDA050076C798 /* Cells */,
 			);
 			path = Settings;
@@ -791,6 +792,13 @@
 				9B9546B728BDDC5C0076C798 /* SettingCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		9B9546BA28BDEA330076C798 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9B9C521C28B23F7F00570BB1 /* Register */ = {

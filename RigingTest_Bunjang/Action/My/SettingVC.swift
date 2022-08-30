@@ -35,7 +35,11 @@ class SettingVC: UIViewController {
 
 extension SettingVC: UITableViewDataSource, UITableViewDelegate {
 
-    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        header.textLabel?.textColor = .black
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
@@ -43,7 +47,7 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "사용자 설정"
+            return "사용자 설정        "
         } else if section == 1 {
             return "사용자 정보"
         } else {
@@ -51,9 +55,13 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            print("계정설정 ㄱ ㄱ")
+        } else if indexPath.row == 1 {
+            print("알림설정 ㄱ ㄱ")
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
