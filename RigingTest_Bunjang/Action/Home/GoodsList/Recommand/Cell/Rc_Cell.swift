@@ -21,6 +21,7 @@ class Rc_Cell: UICollectionViewCell {
     @IBOutlet weak var heartImage: UIButton!
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var safePatmentView: UIView!
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()

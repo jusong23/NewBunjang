@@ -168,6 +168,7 @@
                 <outlet property="cost" destination="tpx-Ks-sx8" id="Jlj-a2-0gH"/>
                 <outlet property="heartButton" destination="i1B-E4-Nm7" id="5Gv-OS-zhq"/>
                 <outlet property="heartImage" destination="QSI-mu-UsN" id="Wpx-Ye-6UB"/>
+                <outlet property="imageHeight" destination="lCf-Pr-WUQ" id="xKZ-lR-LIg"/>
                 <outlet property="imageUrl" destination="r15-dx-bHd" id="LHQ-a7-znW"/>
                 <outlet property="itemName" destination="jqp-1k-0EH" id="Vkg-fc-SXn"/>
                 <outlet property="likeCount" destination="Hwl-2O-3t3" id="VyD-8h-P4G"/>

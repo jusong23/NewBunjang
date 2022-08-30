@@ -111,7 +111,8 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.period.text = cellPeriod
         
         if cellIsSafePayment == 0 {
-            cell.safePatmentView.isHidden = true
+//            cell.safePatmentView.isHidden = true
+            cell.imageHeight.constant = 0
         }
         
         if cellLikeCnt == 0 {
