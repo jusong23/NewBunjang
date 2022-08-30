@@ -34,9 +34,15 @@ class MyVC: UIViewController {
         })
     }
     
+    @IBAction func tapSetting(_ sender: Any) {
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "SettingVC") as? SettingVC else { return }
+        viewController.UserName = self.UserName.text
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     @IBAction func tapRegister(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "RecordsTabman") else { return }
-            self.navigationController?.pushViewController(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
