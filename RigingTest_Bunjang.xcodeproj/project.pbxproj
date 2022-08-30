@@ -99,13 +99,16 @@
 		9B9546AB28BD1FAA0076C798 /* UserInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546AA28BD1FAA0076C798 /* UserInfoAPI.swift */; };
 		9B9546AD28BD20EB0076C798 /* RecordSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9546AC28BD20EB0076C798 /* RecordSet.storyboard */; };
 		9B9546B128BDD9630076C798 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546B028BDD9630076C798 /* SettingVC.swift */; };
-		9B9546B828BDDC5C0076C798 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9546B628BDDC5C0076C798 /* SettingCell.swift */; };
-		9B9546B928BDDC5C0076C798 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9546B728BDDC5C0076C798 /* SettingCell.xib */; };
 		9B9C521528B21E7300570BB1 /* WholeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */; };
 		9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521628B23F0000570BB1 /* Register.storyboard */; };
 		9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521828B23F1000570BB1 /* Talk.storyboard */; };
 		9B9C521B28B23F1D00570BB1 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521A28B23F1D00570BB1 /* My.storyboard */; };
 		9B9C522028B2424100570BB1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C521F28B2424100570BB1 /* SearchVC.swift */; };
+		9B9FF2F428BDEDA30037A3DF /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */; };
+		9B9FF2F828BDEEAE0037A3DF /* AccountCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */; };
+		9B9FF2F928BDEEAE0037A3DF /* AccountCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */; };
+		9B9FF2FC28BDF6390037A3DF /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2FA28BDF6390037A3DF /* SettingCell.swift */; };
+		9B9FF2FD28BDF6390037A3DF /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF2FB28BDF6390037A3DF /* SettingCell.xib */; };
 		9BABEE8828B5062A00C6F136 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABEE8728B5062A00C6F136 /* ContentViewController.swift */; };
 		9BB3225728BCF5C400E60C01 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3225628BCF5C400E60C01 /* OrderType.swift */; };
 		9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8918E28B358CA00CC08D8 /* mainTabbarVC.swift */; };
@@ -212,13 +215,16 @@
 		9B9546AA28BD1FAA0076C798 /* UserInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoAPI.swift; sourceTree = "<group>"; };
 		9B9546AC28BD20EB0076C798 /* RecordSet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecordSet.storyboard; sourceTree = "<group>"; };
 		9B9546B028BDD9630076C798 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
-		9B9546B628BDDC5C0076C798 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
-		9B9546B728BDDC5C0076C798 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WholeMenu.storyboard; sourceTree = "<group>"; };
 		9B9C521628B23F0000570BB1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		9B9C521828B23F1000570BB1 /* Talk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Talk.storyboard; sourceTree = "<group>"; };
 		9B9C521A28B23F1D00570BB1 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		9B9C521F28B2424100570BB1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCells.swift; sourceTree = "<group>"; };
+		9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCells.xib; sourceTree = "<group>"; };
+		9B9FF2FA28BDF6390037A3DF /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		9B9FF2FB28BDF6390037A3DF /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		9BABEE8728B5062A00C6F136 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		9BB3225628BCF5C400E60C01 /* OrderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderType.swift; path = ../../../../../Desktop/OrderType.swift; sourceTree = "<group>"; };
 		9BB8918E28B358CA00CC08D8 /* mainTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabbarVC.swift; sourceTree = "<group>"; };
@@ -788,8 +794,8 @@
 		9B9546B328BDDA050076C798 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				9B9546B628BDDC5C0076C798 /* SettingCell.swift */,
-				9B9546B728BDDC5C0076C798 /* SettingCell.xib */,
+				9B9FF2FA28BDF6390037A3DF /* SettingCell.swift */,
+				9B9FF2FB28BDF6390037A3DF /* SettingCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -797,6 +803,7 @@
 		9B9546BA28BDEA330076C798 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B9FF2F228BDED870037A3DF /* Account */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -831,9 +838,27 @@
 				9B8E696228BB3106007BFC6D /* SellReserve */,
 				9B95468A28BD13770076C798 /* RecordsTabman.swift */,
 				9B9C521A28B23F1D00570BB1 /* My.storyboard */,
+				9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */,
 				9B9546B028BDD9630076C798 /* SettingVC.swift */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		9B9FF2F228BDED870037A3DF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9B9FF2F528BDEE8A0037A3DF /* Cells */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9B9FF2F528BDEE8A0037A3DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */,
+				9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -907,9 +932,11 @@
 				9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */,
 				9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */,
 				9B9546A028BD17760076C798 /* BuyCells.xib in Resources */,
+				9B9FF2FD28BDF6390037A3DF /* SettingCell.xib in Resources */,
 				9B08CF9D28B0BE16006782C4 /* Search.storyboard in Resources */,
 				9B9366D528B379400029149B /* Rg_Cell.xib in Resources */,
 				9B27799428B8CB450025B744 /* DealPage.storyboard in Resources */,
+				9B9FF2F928BDEEAE0037A3DF /* AccountCells.xib in Resources */,
 				9B9C521B28B23F1D00570BB1 /* My.storyboard in Resources */,
 				9B49BFD428B254790016449B /* RcmdCell.xib in Resources */,
 				9B5E23AC28B39DAC00432616 /* Rc_Cell.xib in Resources */,
@@ -918,7 +945,6 @@
 				9B27799228B8CB0B0025B744 /* Fedex.storyboard in Resources */,
 				9B9546AD28BD20EB0076C798 /* RecordSet.storyboard in Resources */,
 				9B45338528B20DF2003163FE /* RecommandBrand.storyboard in Resources */,
-				9B9546B928BDDC5C0076C798 /* SettingCell.xib in Resources */,
 				9B4C034F28B0B6260070C89E /* mainTabbar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -988,6 +1014,7 @@
 				9B70F9B528B898A3006BE642 /* RegisterAddressVC.swift in Sources */,
 				9B08CFA528B0C636006782C4 /* componentSetting.swift in Sources */,
 				9B42E59E28B1DB7500737F24 /* HomeCategoryVC.swift in Sources */,
+				9B9FF2F428BDEDA30037A3DF /* AccountVC.swift in Sources */,
 				9B04174B28B64E5E0029A45C /* itemIdxAPI.swift in Sources */,
 				9B9546B128BDD9630076C798 /* SettingVC.swift in Sources */,
 				9B70F9AD28B86D4F006BE642 /* DealPage.swift in Sources */,
@@ -998,7 +1025,6 @@
 				9BF1E72F28B0E113000E3186 /* HomeVC.swift in Sources */,
 				9B3E6A1728BB13B0003B06CC /* NowSelling.swift in Sources */,
 				9B65EEC528B9E58800A548E0 /* Dr_OrderType.swift in Sources */,
-				9B9546B828BDDC5C0076C798 /* SettingCell.swift in Sources */,
 				9B65EED428B9F11600A548E0 /* patmentAPI_GET.swift in Sources */,
 				9B45339D28B21854003163FE /* TBCategoryVC.swift in Sources */,
 				9B45338728B213DC003163FE /* MainCategoryVC.swift in Sources */,
@@ -1015,6 +1041,7 @@
 				9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */,
 				9B9546A928BD1E340076C798 /* ST_UserInfo.swift in Sources */,
 				9B3E6A1B28BB13FB003B06CC /* CompleteSelling.swift in Sources */,
+				9B9FF2F828BDEEAE0037A3DF /* AccountCells.swift in Sources */,
 				9B04173E28B6274E0029A45C /* itemsAPI.swift in Sources */,
 				9B70F9B128B88F37006BE642 /* OrderVC.swift in Sources */,
 				9BABEE8828B5062A00C6F136 /* ContentViewController.swift in Sources */,
@@ -1028,6 +1055,7 @@
 				9B65EED128B9EB8000A548E0 /* ST_payment_userId(POST).swift in Sources */,
 				9B9366CC28B374520029149B /* Rg_Category.swift in Sources */,
 				9B95469F28BD17760076C798 /* BuyCells.swift in Sources */,
+				9B9FF2FC28BDF6390037A3DF /* SettingCell.swift in Sources */,
 				9B95469428BD14500076C798 /* MoneyVC.swift in Sources */,
 				9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */,
 				9B65EEBF28B9C96300A548E0 /* SelectCard.swift in Sources */,

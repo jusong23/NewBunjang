@@ -57,10 +57,10 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            print("계정설정 ㄱ ㄱ")
-        } else if indexPath.row == 1 {
-            print("알림설정 ㄱ ㄱ")
-        }
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountVC") as? AccountVC else { return }
+            viewController.UserName = self.UserName
+            self.navigationController?.pushViewController(viewController, animated: true)        }
+        return
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
