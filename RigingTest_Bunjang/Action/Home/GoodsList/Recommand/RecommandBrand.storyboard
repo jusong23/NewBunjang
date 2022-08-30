@@ -108,7 +108,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="RegisterAddressVC" storyboardName="Fedex" referencedIdentifier="RegisterAddressVC" id="Y1c-V7-fsy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1g-ms-Rsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5043" y="-200"/>
+            <point key="canvasLocation" x="4663" y="-200"/>
         </scene>
         <!--OrderMemoVC-->
         <scene sceneID="WXE-Fw-gZO">
@@ -116,7 +116,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="OrderMemoVC" storyboardName="Fedex" referencedIdentifier="OrderMemoVC" id="O0Z-m0-YSd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOY-Qa-VtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5022" y="-102"/>
+            <point key="canvasLocation" x="4641" y="-102"/>
         </scene>
         <!--OrderVC-->
         <scene sceneID="jHH-5m-KmV">
@@ -124,7 +124,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="OrderVC" storyboardName="Fedex" referencedIdentifier="OrderVC" id="7Eh-60-a4N" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnJ-Rm-12l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4801" y="-151"/>
+            <point key="canvasLocation" x="4420" y="-151"/>
         </scene>
         <!--DirectVC-->
         <scene sceneID="WBn-CX-7qq">
@@ -132,7 +132,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="DirectVC" storyboardName="Direct" referencedIdentifier="DirectVC" id="q39-cr-Ln9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aW3-MN-ckI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4801" y="100"/>
+            <point key="canvasLocation" x="4420" y="100"/>
         </scene>
         <!--Deal Page-->
         <scene sceneID="Y1L-hp-tX3">
@@ -367,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJI-jG-iVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4222" y="-50"/>
+            <point key="canvasLocation" x="3952" y="-50"/>
         </scene>
         <!--Item Details-->
         <scene sceneID="sWh-fs-rrx">
@@ -755,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFy-Vr-g5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3412" y="-50"/>
+            <point key="canvasLocation" x="3265" y="-50"/>
         </scene>
     </scenes>
     <resources>

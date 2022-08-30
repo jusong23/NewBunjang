@@ -40,6 +40,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="TD7-VT-wEj"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1E7-sG-kVU">
                                 <rect key="frame" x="8" y="256" width="75" height="10"/>

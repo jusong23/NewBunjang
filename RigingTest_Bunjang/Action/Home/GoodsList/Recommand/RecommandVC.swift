@@ -11,6 +11,9 @@ class RecommandVC: UIViewController {
     
     var ItemListsDataModel = itemListsDataModel ()
     let getItems = get_2_4_items()
+    
+
+
 
     @IBOutlet var collectionView: UICollectionView!
     let layout = UICollectionViewFlowLayout()
@@ -40,6 +43,7 @@ class RecommandVC: UIViewController {
                                                   address: result.baseResult[i].address ?? "",
                                                   period: result.baseResult[i].period ?? "",
                                                   imageURL: result.baseResult[i].imageURL ?? "")
+                
             }
             
                 self.collectionView.reloadData()
@@ -63,9 +67,9 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         var cellItemName = self.ItemListsDataModel.getItemName(index: indexPath.row)
         var cellAddress = self.ItemListsDataModel.getAddress(index: indexPath.row)
         var cellPeriod = self.ItemListsDataModel.getPeriod(index: indexPath.row)
+
     
         UserDefaults.standard.setValue(cellItemIdx, forKey: "SELECTED")
-        
         
         guard let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "ItemDetails") as? ItemDetails else {return}
         ViewController.itemindex = cellItemIdx
@@ -88,8 +92,15 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         var cellItemName = self.ItemListsDataModel.getItemName(index: indexPath.row)
         var cellAddress = self.ItemListsDataModel.getAddress(index: indexPath.row)
         var cellPeriod = self.ItemListsDataModel.getPeriod(index: indexPath.row)
+        var cellImageUrl = self.ItemListsDataModel.getImageURL(index: indexPath.row)
         
-        cell.imageUrl.image = UIImage(named: cellImage)
+        var url = URL(string: cellImageUrl ?? "")
+        
+        var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+        
+        cell.imageUrl?.load_2_4(url_2_4: (url ?? fakeUrl)!)
+        
+//        cell.imageUrl.image = UIImage(named: cellImage)
         cell.cost.text = String(cellCost)
         cell.itemName.text = String(cellItemName)
         cell.address.text = cellAddress
@@ -102,4 +113,16 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
 }
 
-
+extension UIImageView {
+    func load_2_4(url_2_4: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url_2_4) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+}

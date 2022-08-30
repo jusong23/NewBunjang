@@ -423,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				9B3D97E028B608F0006B4D32 /* Home */,
+				9B9546A228BD1AA70076C798 /* My */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -522,7 +523,6 @@
 			isa = PBXGroup;
 			children = (
 				9B3D97DD28B608B8006B4D32 /* Model */,
-				9B9546A228BD1AA70076C798 /* My */,
 				9B4C031528B097950070C89E /* Configuration */,
 				9B4C031728B097B50070C89E /* Network */,
 				9B4C031628B097A10070C89E /* Action */,
@@ -660,8 +660,8 @@
 		9B5E23B228B4C37600432616 /* 1. Users */ = {
 			isa = PBXGroup;
 			children = (
-				9B9546A728BD1E1B0076C798 /* 1.5_UserInfo */,
 				9B04173B28B626CF0029A45C /* 1.1_sign-up */,
+				9B9546A728BD1E1B0076C798 /* 1.5_UserInfo */,
 			);
 			path = "1. Users";
 			sourceTree = "<group>";
