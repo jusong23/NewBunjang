@@ -59,7 +59,11 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountVC") as? AccountVC else { return }
             viewController.UserName = self.UserName
-            self.navigationController?.pushViewController(viewController, animated: true)        }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if indexPath.row == 1 {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AlarmVC") as? AlarmVC else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
         return
     }
     
@@ -83,7 +87,6 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
           } else {
               cell.lable?.text = "로그아웃 (" + (self.UserName ?? "") + ")"
           }
-
         return cell
     }
 

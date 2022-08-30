@@ -617,12 +617,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDj-PY-ev0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="1037"/>
+            <point key="canvasLocation" x="2104" y="1176"/>
         </scene>
-        <!--View Controller-->
+        <!--AlarmVC-->
         <scene sceneID="G2D-yz-Ziu">
             <objects>
-                <viewController id="vpl-Fs-eFw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlarmVC" id="vpl-Fs-eFw" customClass="AlarmVC" customModule="RigingTest_Bunjang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F6c-qt-vgh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -637,6 +637,9 @@
                                         <leftBarButtonItems>
                                             <barButtonItem image="chevron.backward" catalog="system" id="5c6-Hc-ltA">
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="tapBackButton:" destination="vpl-Fs-eFw" id="z7f-Us-TwZ"/>
+                                                </connections>
                                             </barButtonItem>
                                             <barButtonItem title="알림 설정" id="Whg-jb-pSc">
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -645,9 +648,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-Mf-COo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-Mf-COo">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e3e-9w-ExD"/>
@@ -663,12 +666,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="5g6-Mf-COo" id="P2t-Mm-cq9"/>
+                        <outlet property="tableView" destination="5g6-Mf-COo" id="nQ7-uW-IOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsb-TQ-rSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3165" y="1037"/>
+            <point key="canvasLocation" x="2799" y="1176"/>
         </scene>
     </scenes>
     <resources>

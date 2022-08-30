@@ -109,6 +109,9 @@
 		9B9FF2F928BDEEAE0037A3DF /* AccountCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */; };
 		9B9FF2FC28BDF6390037A3DF /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2FA28BDF6390037A3DF /* SettingCell.swift */; };
 		9B9FF2FD28BDF6390037A3DF /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF2FB28BDF6390037A3DF /* SettingCell.xib */; };
+		9B9FF30428BDFA4F0037A3DF /* AlarmCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF30228BDFA4F0037A3DF /* AlarmCells.swift */; };
+		9B9FF30528BDFA4F0037A3DF /* AlarmCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF30328BDFA4F0037A3DF /* AlarmCells.xib */; };
+		9B9FF30728BDFAF80037A3DF /* AlarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF30628BDFAF80037A3DF /* AlarmVC.swift */; };
 		9BABEE8828B5062A00C6F136 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABEE8728B5062A00C6F136 /* ContentViewController.swift */; };
 		9BB3225728BCF5C400E60C01 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3225628BCF5C400E60C01 /* OrderType.swift */; };
 		9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8918E28B358CA00CC08D8 /* mainTabbarVC.swift */; };
@@ -225,6 +228,9 @@
 		9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCells.xib; sourceTree = "<group>"; };
 		9B9FF2FA28BDF6390037A3DF /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		9B9FF2FB28BDF6390037A3DF /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		9B9FF30228BDFA4F0037A3DF /* AlarmCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCells.swift; sourceTree = "<group>"; };
+		9B9FF30328BDFA4F0037A3DF /* AlarmCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmCells.xib; sourceTree = "<group>"; };
+		9B9FF30628BDFAF80037A3DF /* AlarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmVC.swift; sourceTree = "<group>"; };
 		9BABEE8728B5062A00C6F136 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		9BB3225628BCF5C400E60C01 /* OrderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderType.swift; path = ../../../../../Desktop/OrderType.swift; sourceTree = "<group>"; };
 		9BB8918E28B358CA00CC08D8 /* mainTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabbarVC.swift; sourceTree = "<group>"; };
@@ -803,6 +809,7 @@
 		9B9546BA28BDEA330076C798 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B9FF2FE28BDFA080037A3DF /* Alarm */,
 				9B9FF2F228BDED870037A3DF /* Account */,
 			);
 			path = Controllers;
@@ -838,6 +845,7 @@
 				9B8E696228BB3106007BFC6D /* SellReserve */,
 				9B95468A28BD13770076C798 /* RecordsTabman.swift */,
 				9B9C521A28B23F1D00570BB1 /* My.storyboard */,
+				9B9FF30628BDFAF80037A3DF /* AlarmVC.swift */,
 				9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */,
 				9B9546B028BDD9630076C798 /* SettingVC.swift */,
 			);
@@ -857,6 +865,23 @@
 			children = (
 				9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */,
 				9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9B9FF2FE28BDFA080037A3DF /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				9B9FF2FF28BDFA220037A3DF /* Cells */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		9B9FF2FF28BDFA220037A3DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B9FF30228BDFA4F0037A3DF /* AlarmCells.swift */,
+				9B9FF30328BDFA4F0037A3DF /* AlarmCells.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -932,6 +957,7 @@
 				9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */,
 				9B9C521728B23F0000570BB1 /* Register.storyboard in Resources */,
 				9B9546A028BD17760076C798 /* BuyCells.xib in Resources */,
+				9B9FF30528BDFA4F0037A3DF /* AlarmCells.xib in Resources */,
 				9B9FF2FD28BDF6390037A3DF /* SettingCell.xib in Resources */,
 				9B08CF9D28B0BE16006782C4 /* Search.storyboard in Resources */,
 				9B9366D528B379400029149B /* Rg_Cell.xib in Resources */,
@@ -1051,6 +1077,7 @@
 				9B95469928BD154A0076C798 /* purchaseAPI.swift in Sources */,
 				9B32B9E428BAF0CA00FB7651 /* ST_orders.swift in Sources */,
 				9BB3225728BCF5C400E60C01 /* OrderType.swift in Sources */,
+				9B9FF30728BDFAF80037A3DF /* AlarmVC.swift in Sources */,
 				9B4C030228B097830070C89E /* AppDelegate.swift in Sources */,
 				9B65EED128B9EB8000A548E0 /* ST_payment_userId(POST).swift in Sources */,
 				9B9366CC28B374520029149B /* Rg_Category.swift in Sources */,
@@ -1081,6 +1108,7 @@
 				9B95469228BD14430076C798 /* SellVC.swift in Sources */,
 				9B45337828B1F0B7003163FE /* LastSeenVC.swift in Sources */,
 				9BB8919228B35C8C00CC08D8 /* RegisterVC.swift in Sources */,
+				9B9FF30428BDFA4F0037A3DF /* AlarmCells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
