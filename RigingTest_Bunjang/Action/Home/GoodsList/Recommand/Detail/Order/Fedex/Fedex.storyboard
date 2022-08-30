@@ -875,6 +875,11 @@
                                                             <constraint firstAttribute="width" constant="64" id="8rQ-O6-exa"/>
                                                             <constraint firstAttribute="height" constant="64" id="sJQ-PK-1vE"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAu-qT-B2n">
                                                         <rect key="frame" x="96" y="91" width="98" height="27.5"/>
@@ -1585,6 +1590,7 @@
                         <outlet property="TOTAL_" destination="bwO-qX-bba" id="70f-ch-nav"/>
                         <outlet property="address" destination="jtF-BL-O5j" id="9yb-UH-EHB"/>
                         <outlet property="addressDetail" destination="g5r-Id-DvJ" id="isI-1v-2m3"/>
+                        <outlet property="itemImage" destination="fCm-He-laN" id="0of-O5-1qH"/>
                         <outlet property="orderMemo" destination="V8X-kl-KdR" id="Xe3-2i-Si5"/>
                         <outlet property="otherDealCheck" destination="2sa-md-CIu" id="cc3-dv-rqH"/>
                         <outlet property="personCheck" destination="EQ3-u3-kxK" id="SaP-Ak-qYw"/>

@@ -40,6 +40,7 @@ class OrderVC : UIViewController {
     @IBOutlet var TOTAL_: UILabel!
     @IBOutlet var RegisteredCard: UILabel!
     @IBOutlet var RegisterLabel: UIButton!
+    @IBOutlet weak var itemImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,6 +102,7 @@ class OrderVC : UIViewController {
                 var SafePayCost = result.baseResult.safePayCost
                 var IsIncludeOrderTip = result.baseResult.isIncludeOrderTip
                 var TotalCost = result.baseResult.totalCost
+                var ImageURl = result.baseResult.itemImageURL
                 
                 self.COST.text = ItemCost
                 self.COST_.text = ItemCost
@@ -111,7 +113,12 @@ class OrderVC : UIViewController {
                 self.TOTAL.text = TotalCost
                 self.TOTAL_.text = TotalCost
                 
+                var url = URL(string: ImageURl ?? "")
                 
+                var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+                
+                self.itemImage.load_12_1(url_12_1: (url ?? fakeUrl)!)
+                                                
             case let .failure(error):
                 debugPrint("error \(error)")
             }
@@ -189,3 +196,19 @@ extension OrderVC: SendCardName_Delegate {
 
     }
 }
+
+extension UIImageView {
+    func load_12_1(url_12_1: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url_12_1) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+}
+
+

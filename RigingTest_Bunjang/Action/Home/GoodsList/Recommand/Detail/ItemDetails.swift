@@ -130,9 +130,7 @@ class ItemDetails: UIViewController {
             var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
             
             self.RC_image.load_2_6(url_2_6: (url ?? fakeUrl)!)
-            
-            print(imageUrl)
-            
+                        
             UserDefaults.standard.setValue(itemindex, forKey: "RealSelectedKey")
             Item.Idx = itemindex
         }
