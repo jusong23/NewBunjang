@@ -78,7 +78,6 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         ViewController.address = cellAddress
         ViewController.period = cellPeriod
         
-        
         self.navigationController?.pushViewController(ViewController, animated: true)
     }
     
@@ -99,8 +98,6 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
         
         cell.imageUrl?.load_2_4(url_2_4: (url ?? fakeUrl)!)
-        
-//        cell.imageUrl.image = UIImage(named: cellImage)
         cell.cost.text = String(cellCost)
         cell.itemName.text = String(cellItemName)
         cell.address.text = cellAddress
