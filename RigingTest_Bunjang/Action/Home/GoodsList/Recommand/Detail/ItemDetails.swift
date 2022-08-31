@@ -12,7 +12,8 @@ import MaterialComponents
 class ItemDetails: UIViewController {
 
     let getItemsIdx = get_2_6_item_itemIdx()
-
+    let Post_5_2 = post_5_2 ()
+    
     var itemindex: Int?
     var cost: String?
     var itemName: String?
@@ -36,6 +37,7 @@ class ItemDetails: UIViewController {
     @IBOutlet var RC_isCanExchage: UIButton!
     @IBOutlet var RC_itemContent: UILabel!
     @IBOutlet weak var RC_image: UIImageView!
+    @IBOutlet weak var heartButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,10 +138,19 @@ class ItemDetails: UIViewController {
         }
     }
     
-    
     @IBAction func tapBackButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func tapZzeamButton(_ sender: Any) {
+        self.heartButton.isSelected = true
+        self.heartButton.tintColor = .mainRed
+        self.heartButton.setImage(UIImage(systemName: "heart.fill"), for: .selected)
+        
+        self.Post_5_2.post_5_2_lies(accessToken: JwtToken.token, userIdx: User.Idx, itemIdx: Int(Item.Idx ?? 0))
+    }
+    
+    
 }
 
 extension ItemDetails: returnToHomeDelegate {

@@ -22,6 +22,12 @@
 		9B08CF9F28B0C4E7006782C4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08CF9E28B0C4E7006782C4 /* LoginVC.swift */; };
 		9B08CFA228B0C5E7006782C4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08CFA128B0C5E7006782C4 /* BaseViewController.swift */; };
 		9B08CFA528B0C636006782C4 /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08CFA428B0C636006782C4 /* componentSetting.swift */; };
+		9B1358C328BF3A2E00501F5B /* LikesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1358C228BF3A2E00501F5B /* LikesAPI.swift */; };
+		9B1358C528BF3ADB00501F5B /* ST_LikesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1358C428BF3ADA00501F5B /* ST_LikesAPI.swift */; };
+		9B1358C828BF403A00501F5B /* GetLikesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1358C728BF403A00501F5B /* GetLikesAPI.swift */; };
+		9B1358CA28BF404A00501F5B /* ST_GetLikes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1358C928BF404A00501F5B /* ST_GetLikes.swift */; };
+		9B1358DB28BF434300501F5B /* ZzeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1358D928BF434300501F5B /* ZzeamCell.swift */; };
+		9B1358DC28BF434300501F5B /* ZzeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1358DA28BF434300501F5B /* ZzeamCell.xib */; };
 		9B27799228B8CB0B0025B744 /* Fedex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B27799128B8CB0B0025B744 /* Fedex.storyboard */; };
 		9B27799428B8CB450025B744 /* DealPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B27799328B8CB440025B744 /* DealPage.storyboard */; };
 		9B27799628B8CB6D0025B744 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B27799528B8CB6D0025B744 /* Detail.storyboard */; };
@@ -139,6 +145,12 @@
 		9B08CF9E28B0C4E7006782C4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9B08CFA128B0C5E7006782C4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9B08CFA428B0C636006782C4 /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = componentSetting.swift; sourceTree = "<group>"; };
+		9B1358C228BF3A2E00501F5B /* LikesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesAPI.swift; sourceTree = "<group>"; };
+		9B1358C428BF3ADA00501F5B /* ST_LikesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_LikesAPI.swift; sourceTree = "<group>"; };
+		9B1358C728BF403A00501F5B /* GetLikesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLikesAPI.swift; sourceTree = "<group>"; };
+		9B1358C928BF404A00501F5B /* ST_GetLikes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_GetLikes.swift; sourceTree = "<group>"; };
+		9B1358D928BF434300501F5B /* ZzeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZzeamCell.swift; sourceTree = "<group>"; };
+		9B1358DA28BF434300501F5B /* ZzeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZzeamCell.xib; sourceTree = "<group>"; };
 		9B27799128B8CB0B0025B744 /* Fedex.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Fedex.storyboard; sourceTree = "<group>"; };
 		9B27799328B8CB440025B744 /* DealPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DealPage.storyboard; sourceTree = "<group>"; };
 		9B27799528B8CB6D0025B744 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
@@ -347,6 +359,50 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		9B1358C028BF393A00501F5B /* 5. Likes */ = {
+			isa = PBXGroup;
+			children = (
+				9B1358C628BF401300501F5B /* 5.1_LikesGET */,
+				9B1358C128BF3A1100501F5B /* 5.2_likesPOST */,
+			);
+			path = "5. Likes";
+			sourceTree = "<group>";
+		};
+		9B1358C128BF3A1100501F5B /* 5.2_likesPOST */ = {
+			isa = PBXGroup;
+			children = (
+				9B1358C228BF3A2E00501F5B /* LikesAPI.swift */,
+				9B1358C428BF3ADA00501F5B /* ST_LikesAPI.swift */,
+			);
+			path = 5.2_likesPOST;
+			sourceTree = "<group>";
+		};
+		9B1358C628BF401300501F5B /* 5.1_LikesGET */ = {
+			isa = PBXGroup;
+			children = (
+				9B1358C728BF403A00501F5B /* GetLikesAPI.swift */,
+				9B1358C928BF404A00501F5B /* ST_GetLikes.swift */,
+			);
+			path = 5.1_LikesGET;
+			sourceTree = "<group>";
+		};
+		9B1358CB28BF421C00501F5B /* Zzeam */ = {
+			isa = PBXGroup;
+			children = (
+				9B1358CC28BF422300501F5B /* Cells */,
+			);
+			path = Zzeam;
+			sourceTree = "<group>";
+		};
+		9B1358CC28BF422300501F5B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B1358D928BF434300501F5B /* ZzeamCell.swift */,
+				9B1358DA28BF434300501F5B /* ZzeamCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9B27798D28B8CAC90025B744 /* Order */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,9 +450,9 @@
 		9B27799928B8CC9D0025B744 /* 12. Orders */ = {
 			isa = PBXGroup;
 			children = (
-				9B95469528BD15200076C798 /* 12.4_order_purchase */,
 				9B27799C28B8CD1F0025B744 /* 12.1_orders_indirect */,
 				9B32B9E228BAF0B700FB7651 /* 12.3_orders */,
+				9B95469528BD15200076C798 /* 12.4_order_purchase */,
 			);
 			path = "12. Orders";
 			sourceTree = "<group>";
@@ -475,6 +531,7 @@
 		9B45337A28B20A1E003163FE /* Interesting */ = {
 			isa = PBXGroup;
 			children = (
+				9B1358CB28BF421C00501F5B /* Zzeam */,
 				9B45337B28B20A49003163FE /* Interesting.storyboard */,
 				9B42E59D28B1DB7500737F24 /* HomeCategoryVC.swift */,
 				9B45337728B1F0B7003163FE /* LastSeenVC.swift */,
@@ -568,6 +625,7 @@
 			children = (
 				9B5E23B228B4C37600432616 /* 1. Users */,
 				9B5E23B328B4C37D00432616 /* 2. Items */,
+				9B1358C028BF393A00501F5B /* 5. Likes */,
 				9B27799928B8CC9D0025B744 /* 12. Orders */,
 				9B65EECA28B9EAEC00A548E0 /* 13. Payment */,
 			);
@@ -965,6 +1023,7 @@
 				9B9FF2F928BDEEAE0037A3DF /* AccountCells.xib in Resources */,
 				9B9C521B28B23F1D00570BB1 /* My.storyboard in Resources */,
 				9B49BFD428B254790016449B /* RcmdCell.xib in Resources */,
+				9B1358DC28BF434300501F5B /* ZzeamCell.xib in Resources */,
 				9B5E23AC28B39DAC00432616 /* Rc_Cell.xib in Resources */,
 				9B27799828B8CB870025B744 /* Direct.storyboard in Resources */,
 				9B27799628B8CB6D0025B744 /* Detail.storyboard in Resources */,
@@ -1034,9 +1093,11 @@
 				9B04174028B627600029A45C /* ST_items.swift in Sources */,
 				9B3E6A1528BB1357003B06CC /* My_Tabbman.swift in Sources */,
 				9B048FEC28B10313009DC9B2 /* BannerCell.swift in Sources */,
+				9B1358CA28BF404A00501F5B /* ST_GetLikes.swift in Sources */,
 				9B65EECF28B9EB6000A548E0 /* paymentAPI_POST.swift in Sources */,
 				9B45337628B1F09F003163FE /* ZzeamVC.swift in Sources */,
 				9B9366CE28B376E70029149B /* Rg_Tag.swift in Sources */,
+				9B1358C328BF3A2E00501F5B /* LikesAPI.swift in Sources */,
 				9B70F9B528B898A3006BE642 /* RegisterAddressVC.swift in Sources */,
 				9B08CFA528B0C636006782C4 /* componentSetting.swift in Sources */,
 				9B42E59E28B1DB7500737F24 /* HomeCategoryVC.swift in Sources */,
@@ -1049,6 +1110,7 @@
 				9B08CFA228B0C5E7006782C4 /* BaseViewController.swift in Sources */,
 				9B49BFD328B254790016449B /* RcmdCell.swift in Sources */,
 				9BF1E72F28B0E113000E3186 /* HomeVC.swift in Sources */,
+				9B1358C528BF3ADB00501F5B /* ST_LikesAPI.swift in Sources */,
 				9B3E6A1728BB13B0003B06CC /* NowSelling.swift in Sources */,
 				9B65EEC528B9E58800A548E0 /* Dr_OrderType.swift in Sources */,
 				9B65EED428B9F11600A548E0 /* patmentAPI_GET.swift in Sources */,
@@ -1104,10 +1166,12 @@
 				9B65EEC728B9E62200A548E0 /* Dr_SelecteCard.swift in Sources */,
 				9B4C030428B097830070C89E /* SceneDelegate.swift in Sources */,
 				9B04174528B63FA40029A45C /* ItemDetails.swift in Sources */,
+				9B1358DB28BF434300501F5B /* ZzeamCell.swift in Sources */,
 				9B9546A428BD1AC70076C798 /* PurchaseList.swift in Sources */,
 				9B95469228BD14430076C798 /* SellVC.swift in Sources */,
 				9B45337828B1F0B7003163FE /* LastSeenVC.swift in Sources */,
 				9BB8919228B35C8C00CC08D8 /* RegisterVC.swift in Sources */,
+				9B1358C828BF403A00501F5B /* GetLikesAPI.swift in Sources */,
 				9B9FF30428BDFA4F0037A3DF /* AlarmCells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,6 @@ class RecommandVC: UIViewController {
     
     var ItemListsDataModel = itemListsDataModel ()
     let getItems = get_2_4_items()
-    
-
-
 
     @IBOutlet var collectionView: UICollectionView!
     let layout = UICollectionViewFlowLayout()
@@ -109,6 +106,7 @@ extension RecommandVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.itemName.text = String(cellItemName)
         cell.address.text = cellAddress
         cell.period.text = cellPeriod
+        
         
         if cellIsSafePayment == 0 {
 //            cell.safePatmentView.isHidden = true

@@ -33,7 +33,6 @@ class Rc_Cell: UICollectionViewCell {
             self.heartButton.isSelected = true
             self.heartButton.tintColor = .mainRed
             self.heartButton.setImage(UIImage(systemName: "heart.fill"), for: .selected)
-            // 찜 API에 보내고 0 -> 1
         } else {
             self.heartButton.isSelected = false
             self.heartButton.tintColor = .lightGray

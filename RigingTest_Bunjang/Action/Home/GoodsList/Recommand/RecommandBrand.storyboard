@@ -681,6 +681,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapZzeamButton:" destination="isU-gS-RTv" eventType="touchUpInside" id="vrb-RS-dek"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYt-3e-fKG">
                                         <rect key="frame" x="67.5" y="12" width="124" height="46"/>
@@ -771,6 +774,7 @@
                         <outlet property="RC_likeCount" destination="R12-LB-wru" id="k2l-HA-Epe"/>
                         <outlet property="RC_period" destination="uQc-WD-JYs" id="1sW-h0-CXl"/>
                         <outlet property="RC_viewCount" destination="0MX-Kj-o4c" id="xf7-aq-tb1"/>
+                        <outlet property="heartButton" destination="5zQ-42-mkk" id="SxK-En-uUR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFy-Vr-g5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
