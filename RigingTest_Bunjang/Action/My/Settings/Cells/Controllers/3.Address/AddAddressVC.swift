@@ -9,7 +9,7 @@ import UIKit
 
 class AddAddressVC: UIViewController {
     
-    var BaseAddress = 999
+    var BaseAddress = 0
     var Post_4_1 = post_4_1 ()
 
     @IBOutlet weak var checkButton: UIButton!
@@ -27,10 +27,12 @@ class AddAddressVC: UIViewController {
             self.checkButton.isSelected = true
             self.checkButton.tintColor = .mainRed
             self.checkButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .selected)
+            self.BaseAddress = 1
         } else {
             self.checkButton.isSelected = false
             self.checkButton.tintColor = .lightGray
             self.checkButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .selected)
+            self.BaseAddress = 0
         }
     }
     
@@ -45,24 +47,10 @@ class AddAddressVC: UIViewController {
             address: self.userAddressTF.text ?? "",
             detailAddress: self.userDetailAddressTF.text ?? "",
             phoneNumber: self.userPhoneNumberTF.text ?? "",
-            isBaseAddress: 0,
-            userIdx: 32)
+            isBaseAddress: self.BaseAddress,
+            userIdx: Int(User.Idx) ?? 0)
         
-//        self.Post_4_1.post_4_1_(
-//            accessToken: JwtToken.token,
-//            userName: self.userNameTF.text ?? "",
-//            address: self.userAddressTF.text ?? "",
-//            detailAddress: self.userDetailAddressTF.text ?? "",
-//            phoneNumber: self.userPhoneNumberTF.text ?? "",
-//            isBaseAddress: 0,
-//            userIdx: 32 )
-        
-//        self.navigationController?.popViewController(animated: true)
     }
-    
-//    func postAddress() {
-//
-//    }
 
 }
 

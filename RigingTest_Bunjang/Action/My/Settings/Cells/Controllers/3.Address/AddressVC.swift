@@ -19,9 +19,12 @@ class AddressVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "AddressCell", bundle: .main), forCellReuseIdentifier: "AddressCell")
-        gettingAddress()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        gettingAddress()
+        self.tableView.reloadData()
+    }
     
     @IBAction func tapToAdd(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AddAddressVC") as? AddAddressVC else { return }
