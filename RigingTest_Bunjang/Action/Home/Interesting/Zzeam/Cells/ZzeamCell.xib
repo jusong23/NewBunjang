@@ -11,27 +11,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ZzeamCell" reuseIdentifier="ZzeamCell" id="OxU-zi-b5u" customClass="ZzeamCell" customModule="RigingTest_Bunjang" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="180" height="270"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                <rect key="frame" x="0.0" y="0.0" width="180" height="270"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxb-Wj-xD7">
-                        <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="270"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[XL]아디다스 X 데상트 웜업 (A$-32-85)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhL-LI-DAe">
-                                <rect key="frame" x="8" y="220" width="164" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhL-LI-DAe">
+                                <rect key="frame" x="8" y="230" width="164" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtK-kB-zQN">
-                                <rect key="frame" x="8" y="196" width="164" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[XL]아디다스 X 데상트 웜업 (A$-32-85)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtK-kB-zQN">
+                                <rect key="frame" x="8" y="196" width="164" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="xXB-Y1-EaK"/>
+                                    <constraint firstAttribute="height" constant="30" id="xXB-Y1-EaK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -47,22 +47,22 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Lq6-j1-ZUc">
-                                <rect key="frame" x="8" y="251" width="75" height="10"/>
+                                <rect key="frame" x="8" y="248" width="72" height="10"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지역정보 없음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TE-Sg-ple">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="10"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빈티지wear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TE-Sg-ple">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="10"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
                                         <color key="textColor" white="0.46197385200000002" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi7-s7-Ted">
-                                        <rect key="frame" x="47" y="0.0" width="3" height="10"/>
+                                        <rect key="frame" x="44" y="0.0" width="3" height="10"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
                                         <color key="textColor" white="0.46197385200000002" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3분 전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3q-kw-bu2">
-                                        <rect key="frame" x="53" y="0.0" width="22" height="10"/>
+                                        <rect key="frame" x="50" y="0.0" width="22" height="10"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
                                         <color key="textColor" white="0.46197385200000002" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -85,7 +85,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lv-ix-viO">
-                                <rect key="frame" x="8" y="265.5" width="24" height="12"/>
+                                <rect key="frame" x="8" y="262.5" width="24" height="12"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="B8t-0I-Uq9"/>
@@ -110,10 +110,10 @@
                             <constraint firstItem="OhL-LI-DAe" firstAttribute="top" secondItem="KtK-kB-zQN" secondAttribute="bottom" constant="4" id="Lg0-Tx-kMy"/>
                             <constraint firstAttribute="trailing" secondItem="OhL-LI-DAe" secondAttribute="trailing" constant="8" id="M2q-a4-UCU"/>
                             <constraint firstItem="OhL-LI-DAe" firstAttribute="leading" secondItem="kxb-Wj-xD7" secondAttribute="leading" constant="8" id="TDt-uT-s0Q"/>
+                            <constraint firstAttribute="height" constant="270" id="TrQ-S2-xcq"/>
                             <constraint firstItem="8Lv-ix-viO" firstAttribute="leading" secondItem="kxb-Wj-xD7" secondAttribute="leading" constant="8" id="WTp-Ns-MEI"/>
                             <constraint firstItem="KtK-kB-zQN" firstAttribute="top" secondItem="HJ8-qE-FOA" secondAttribute="bottom" constant="8" symbolic="YES" id="iOi-ZO-Clp"/>
                             <constraint firstItem="KtK-kB-zQN" firstAttribute="leading" secondItem="kxb-Wj-xD7" secondAttribute="leading" constant="8" id="meF-zH-PYC"/>
-                            <constraint firstAttribute="height" constant="300" id="mjO-6H-bs8"/>
                             <constraint firstItem="kqm-mE-MYL" firstAttribute="top" secondItem="kxb-Wj-xD7" secondAttribute="top" constant="12" id="nYR-Pg-6f6"/>
                             <constraint firstItem="Lq6-j1-ZUc" firstAttribute="top" secondItem="OhL-LI-DAe" secondAttribute="bottom" constant="4.5" id="wb3-Qy-rg2"/>
                             <constraint firstItem="8Lv-ix-viO" firstAttribute="top" secondItem="Lq6-j1-ZUc" secondAttribute="bottom" constant="4.5" id="zqA-lq-bJN"/>
@@ -130,14 +130,19 @@
             </constraints>
             <size key="customSize" width="180" height="300"/>
             <connections>
+                <outlet property="ItemCost" destination="OhL-LI-DAe" id="Nsr-OW-Yfg"/>
+                <outlet property="ItemName" destination="KtK-kB-zQN" id="XqR-Ga-y4g"/>
+                <outlet property="StoreName" destination="2TE-Sg-ple" id="6E6-Lo-izc"/>
                 <outlet property="address" destination="2TE-Sg-ple" id="kIX-HM-dVn"/>
                 <outlet property="cost" destination="KtK-kB-zQN" id="yAp-SP-JAc"/>
                 <outlet property="heartButton" destination="kqm-mE-MYL" id="02z-UH-9Dg"/>
                 <outlet property="imageHeight" destination="wtT-K5-Frg" id="tSO-of-VMp"/>
                 <outlet property="imageUrl" destination="HJ8-qE-FOA" id="cQg-gJ-2rw"/>
+                <outlet property="imageView" destination="HJ8-qE-FOA" id="yog-z3-EG8"/>
                 <outlet property="itemName" destination="OhL-LI-DAe" id="w2f-94-sJ2"/>
                 <outlet property="period" destination="D3q-kw-bu2" id="HMp-e6-J5C"/>
                 <outlet property="safePatmentView" destination="8Lv-ix-viO" id="ybH-uI-4OG"/>
+                <outlet property="uploadTime" destination="D3q-kw-bu2" id="bKS-ha-kkl"/>
             </connections>
             <point key="canvasLocation" x="260.86956521739131" y="174.10714285714286"/>
         </collectionViewCell>
