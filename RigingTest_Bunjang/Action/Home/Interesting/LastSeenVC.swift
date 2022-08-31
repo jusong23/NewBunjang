@@ -47,7 +47,6 @@ class LastSeenVC: UIViewController {
             }
         })
     }
-    
 }
 
 extension LastSeenVC: UICollectionViewDelegate, UICollectionViewDataSource {

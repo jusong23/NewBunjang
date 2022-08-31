@@ -63,6 +63,9 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
         } else if indexPath.row == 1 {
             guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AlarmVC") as? AlarmVC else { return }
             self.navigationController?.pushViewController(viewController, animated: true)
+        } else if indexPath.row == 3 {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AddressVC") as? AddressVC else { return }
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
         return
     }

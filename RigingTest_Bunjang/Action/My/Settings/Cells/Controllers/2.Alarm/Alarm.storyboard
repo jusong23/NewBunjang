@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AlarmVC-->
+        <scene sceneID="G2D-yz-Ziu">
+            <objects>
+                <viewController storyboardIdentifier="AlarmVC" id="vpl-Fs-eFw" customClass="AlarmVC" customModule="RigingTest_Bunjang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F6c-qt-vgh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIN-5D-rgD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mgI-39-ysX"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="DPB-Zy-JnS">
+                                        <leftBarButtonItems>
+                                            <barButtonItem image="chevron.backward" catalog="system" id="5c6-Hc-ltA">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="tapBackButton:" destination="vpl-Fs-eFw" id="z7f-Us-TwZ"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="알림 설정" id="Whg-jb-pSc">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-Mf-COo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e3e-9w-ExD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RIN-5D-rgD" firstAttribute="leading" secondItem="e3e-9w-ExD" secondAttribute="leading" id="CIm-jU-u2J"/>
+                            <constraint firstItem="RIN-5D-rgD" firstAttribute="trailing" secondItem="e3e-9w-ExD" secondAttribute="trailing" id="LHO-3I-3FD"/>
+                            <constraint firstItem="5g6-Mf-COo" firstAttribute="top" secondItem="RIN-5D-rgD" secondAttribute="bottom" id="QsF-Aq-24q"/>
+                            <constraint firstItem="5g6-Mf-COo" firstAttribute="bottom" secondItem="e3e-9w-ExD" secondAttribute="bottom" id="egi-Yf-cHE"/>
+                            <constraint firstItem="RIN-5D-rgD" firstAttribute="top" secondItem="e3e-9w-ExD" secondAttribute="top" id="gfU-La-yrP"/>
+                            <constraint firstItem="5g6-Mf-COo" firstAttribute="trailing" secondItem="e3e-9w-ExD" secondAttribute="trailing" id="igZ-YX-aHp"/>
+                            <constraint firstItem="5g6-Mf-COo" firstAttribute="leading" secondItem="e3e-9w-ExD" secondAttribute="leading" id="ojg-hM-pt0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="5g6-Mf-COo" id="nQ7-uW-IOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsb-TQ-rSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799" y="1176"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

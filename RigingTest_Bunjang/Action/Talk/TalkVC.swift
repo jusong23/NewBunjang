@@ -40,5 +40,5 @@ extension TalkVC: UITableViewDataSource, UITableViewDelegate {
         return 68
     }
 
-     
+
 }
