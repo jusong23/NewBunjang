@@ -39,7 +39,7 @@ class BuyVC: UIViewController {
                         itemUrl: result.baseResult[i].itemURL ?? "",
                         storeName: result.baseResult[i].storeName ?? "",
                         orderTime: result.baseResult[i].orderTime)
-                }
+                    }
                 
                 self.tableView.reloadData()
 
@@ -59,9 +59,20 @@ extension BuyVC: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "BuyCells", for: indexPath) as? BuyCells else { return UITableViewCell() }
+        
+        var cellImageUrl = self.purchaseDataModel.getItemUrl(index: indexPath.row)
+        
+        var url = URL(string: cellImageUrl ?? "")
+        
+        var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+        
+        cell.ImageView.load_12_4(url_12_4: (url ?? fakeUrl)!)
+        
         cell.ItemName.text = self.purchaseDataModel.getItemName(index: indexPath.row)
         cell.ItemCost.text = self.purchaseDataModel.getItemCost(index: indexPath.row)
         cell.OrderTime.text = self.purchaseDataModel.getOrderTime(index: indexPath.row)
+        
+        
     return cell
     }
 
@@ -70,4 +81,18 @@ extension BuyVC: UITableViewDataSource, UITableViewDelegate {
     }
 
 
+}
+
+extension UIImageView {
+    func load_12_4(url_12_4: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url_12_4) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }

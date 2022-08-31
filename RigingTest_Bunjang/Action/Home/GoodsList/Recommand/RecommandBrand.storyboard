@@ -390,7 +390,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="tb0-vc-u59" firstAttribute="top" secondItem="QVR-54-5Fx" secondAttribute="top" id="KKj-C5-X4Z"/>
                                                     <constraint firstAttribute="trailing" secondItem="tb0-vc-u59" secondAttribute="trailing" id="Pa9-RT-Xqp"/>

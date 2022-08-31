@@ -608,12 +608,12 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6S-ue-1ma">
-                                <rect key="frame" x="345.5" y="104" width="48.5" height="14.5"/>
+                                <rect key="frame" x="345" y="104" width="49" height="16"/>
                                 <attributedString key="attributedText">
                                     <fragment content="주소 추가">
                                         <attributes>
                                             <color key="NSColor" red="0.38731060606060608" green="0.38731060606060608" blue="0.38731060606060608" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
                                         </attributes>

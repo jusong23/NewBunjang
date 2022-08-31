@@ -146,7 +146,7 @@ class OrderVC : UIViewController {
     @IBAction func tapOrderMemo(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "OrderMemoVC") as! OrderMemoVC
         let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
-        bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 290
+        bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 310
         bottomSheet.scrimColor = UIColor.darkGray.withAlphaComponent(0.5)
         vc.delegate = self
         present(bottomSheet, animated: true, completion: nil)
