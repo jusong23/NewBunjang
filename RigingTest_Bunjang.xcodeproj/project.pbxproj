@@ -651,6 +651,7 @@
 		9B4C031728B097B50070C89E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9B9DDA9F28BF6EDA0051C7FA /* 10. Chats */,
 				9B5E23B228B4C37600432616 /* 1. Users */,
 				9B5E23B328B4C37D00432616 /* 2. Items */,
 				9B9DDA8B28BF61620051C7FA /* 3. SalesView */,
@@ -980,6 +981,21 @@
 				9B9DDA9C28BF66F10051C7FA /* SalesViewListDataModel.swift */,
 			);
 			path = LastSeen;
+			sourceTree = "<group>";
+		};
+		9B9DDA9F28BF6EDA0051C7FA /* 10. Chats */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DDAA028BF6EF20051C7FA /* 10.3_chatRooms */,
+			);
+			path = "10. Chats";
+			sourceTree = "<group>";
+		};
+		9B9DDAA028BF6EF20051C7FA /* 10.3_chatRooms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 10.3_chatRooms;
 			sourceTree = "<group>";
 		};
 		9B9FF2F228BDED870037A3DF /* Account */ = {

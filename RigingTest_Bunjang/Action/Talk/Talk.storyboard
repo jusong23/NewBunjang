@@ -74,6 +74,7 @@
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="AddImage" destination="7fn-QI-72q" id="FuW-mG-Lna"/>
                         <outlet property="tableView" destination="ErU-2K-N9C" id="Po2-DY-fcC"/>
                     </connections>
                 </viewController>

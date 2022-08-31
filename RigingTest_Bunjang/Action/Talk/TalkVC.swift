@@ -9,6 +9,8 @@ import UIKit
 
 class TalkVC: UIViewController {
 
+    @IBOutlet weak var AddImage: UIImageView!
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -16,14 +18,13 @@ class TalkVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "TalkCell", bundle: .main), forCellReuseIdentifier: "TalkCell")
-
+        
     }
     
     
 }
 
 extension TalkVC: UITableViewDataSource, UITableViewDelegate {
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
