@@ -10,6 +10,7 @@ import UIKit
 class AddressVC: UIViewController {
 
     var getAddress = get_4_2_address ()
+    var addressListDataModel = AddressListDataModel ()
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var AddAddress: UIButton!
@@ -29,7 +30,17 @@ class AddressVC: UIViewController {
             switch result {
             case let .success(result):
 
-            print(result)
+                for i in 0..<result.baseResult.count {
+                    self.addressListDataModel.inputData(
+                        userName: result.baseResult[i].userName,
+                        address: result.baseResult[i].address,
+                        detailAddress: result.baseResult[i].detailAddress,
+                        phoneNumber: result.baseResult[i].phoneNumber,
+                        isBaseAddress: result.baseResult[i].isBaseAddress)
+                }
+                        
+                self.tableView.reloadData()
+                print(result.baseResult.count)
                 
             case let .failure(error):
                 debugPrint("error \(error)")
@@ -42,12 +53,22 @@ class AddressVC: UIViewController {
 extension AddressVC: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.addressListDataModel.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AddressCell", for: indexPath) as? AddressCell else { return UITableViewCell() }
 
+        var cellUserName = self.addressListDataModel.getUserName(index: indexPath.row)
+        var cellAddress = self.addressListDataModel.getAddress(index: indexPath.row)
+        var cellDetailAddress = self.addressListDataModel.getDetail(index: indexPath.row)
+        var cellPhoneNumber = self.addressListDataModel.getPhoneNumber(index: indexPath.row)
+        
+        cell.UserName.text = cellUserName
+        cell.Address.text = cellAddress
+        cell.DetailAddress.text = cellDetailAddress
+        cell.PhoneNumber.text = cellPhoneNumber
+        
         return cell
     }
 

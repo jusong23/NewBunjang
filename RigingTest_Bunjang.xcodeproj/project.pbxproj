@@ -100,6 +100,8 @@
 		9B938B9528BF786400C8D8B5 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B938B9328BF786400C8D8B5 /* AddressCell.xib */; };
 		9B938B9928BF7D5400C8D8B5 /* ST_address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9828BF7D5400C8D8B5 /* ST_address.swift */; };
 		9B938B9B28BF7D5F00C8D8B5 /* addressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */; };
+		9B938B9F28BF7E9400C8D8B5 /* AddressList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */; };
+		9B938BA128BF7EA100C8D8B5 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */; };
 		9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468A28BD13770076C798 /* RecordsTabman.swift */; };
 		9B95469028BD142C0076C798 /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468F28BD142C0076C798 /* BuyVC.swift */; };
 		9B95469228BD14430076C798 /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469128BD14430076C798 /* SellVC.swift */; };
@@ -242,6 +244,8 @@
 		9B938B9328BF786400C8D8B5 /* AddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
 		9B938B9828BF7D5400C8D8B5 /* ST_address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_address.swift; sourceTree = "<group>"; };
 		9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressAPI.swift; sourceTree = "<group>"; };
+		9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressList.swift; sourceTree = "<group>"; };
+		9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		9B95468A28BD13770076C798 /* RecordsTabman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsTabman.swift; sourceTree = "<group>"; };
 		9B95468F28BD142C0076C798 /* BuyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVC.swift; sourceTree = "<group>"; };
 		9B95469128BD14430076C798 /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
@@ -890,6 +894,15 @@
 			path = Purchase;
 			sourceTree = "<group>";
 		};
+		9B938B9D28BF7E8600C8D8B5 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */,
+				9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
 		9B95469528BD15200076C798 /* 12.4_order_purchase */ = {
 			isa = PBXGroup;
 			children = (
@@ -911,6 +924,7 @@
 		9B9546A228BD1AA70076C798 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				9B938B9D28BF7E8600C8D8B5 /* Address */,
 				9B938B9C28BF7E6A00C8D8B5 /* Purchase */,
 			);
 			path = My;
@@ -1320,6 +1334,7 @@
 				9B04173828B623B20029A45C /* UIColor.swift in Sources */,
 				9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */,
 				9B2779A028B8CD750025B744 /* ST_orderIndirect.swift in Sources */,
+				9B938B9F28BF7E9400C8D8B5 /* AddressList.swift in Sources */,
 				9B9546AB28BD1FAA0076C798 /* UserInfoAPI.swift in Sources */,
 				9B3D97E928B60968006B4D32 /* ItemLists.swift in Sources */,
 				9B5E23AE28B4B87D00432616 /* OtherLoginVC.swift in Sources */,
@@ -1330,6 +1345,7 @@
 				9B9DDA9228BF61AD0051C7FA /* ST_SalesView.swift in Sources */,
 				9B04174928B64E480029A45C /* ST_itemIdx.swift in Sources */,
 				9B5E23AB28B39DAC00432616 /* Rc_Cell.swift in Sources */,
+				9B938BA128BF7EA100C8D8B5 /* AddressModel.swift in Sources */,
 				9B65EEC328B9E42400A548E0 /* DirectVC.swift in Sources */,
 				9B5E23B828B4C50C00432616 /* ST_sign-up.swift in Sources */,
 				9B27799E28B8CD3A0025B744 /* orderIndirectAPI.swift in Sources */,
