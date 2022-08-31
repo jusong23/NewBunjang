@@ -65,6 +65,7 @@
 		9B4C030E28B097890070C89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C030C28B097890070C89E /* LaunchScreen.storyboard */; };
 		9B4C034928B0A2770070C89E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C034828B0A2770070C89E /* Login.storyboard */; };
 		9B4C034F28B0B6260070C89E /* mainTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C034E28B0B6250070C89E /* mainTabbar.storyboard */; };
+		9B4C410F28BF9C5300D99BF2 /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C410E28BF9C5300D99BF2 /* AddAddressVC.swift */; };
 		9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D18FC28B8E5E100B24CEB /* SelectKey.swift */; };
 		9B5E239628B3975800432616 /* TalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E239528B3975700432616 /* TalkVC.swift */; };
 		9B5E23A328B398DB00432616 /* TalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E23A128B398DB00432616 /* TalkCell.swift */; };
@@ -213,6 +214,7 @@
 		9B4C030F28B097890070C89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4C034828B0A2770070C89E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		9B4C034E28B0B6250070C89E /* mainTabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainTabbar.storyboard; sourceTree = "<group>"; };
+		9B4C410E28BF9C5300D99BF2 /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddAddressVC.swift; path = Settings/Cells/Controllers/3.Address/AddAddressVC.swift; sourceTree = "<group>"; };
 		9B5D18FC28B8E5E100B24CEB /* SelectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectKey.swift; sourceTree = "<group>"; };
 		9B5E239528B3975700432616 /* TalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkVC.swift; sourceTree = "<group>"; };
 		9B5E23A128B398DB00432616 /* TalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkCell.swift; sourceTree = "<group>"; };
@@ -1046,6 +1048,7 @@
 				9B8E696228BB3106007BFC6D /* SellReserve */,
 				9B95468A28BD13770076C798 /* RecordsTabman.swift */,
 				9B9C521A28B23F1D00570BB1 /* My.storyboard */,
+				9B4C410E28BF9C5300D99BF2 /* AddAddressVC.swift */,
 				9B9546B028BDD9630076C798 /* SettingVC.swift */,
 			);
 			path = My;
@@ -1361,6 +1364,7 @@
 				9B65EED128B9EB8000A548E0 /* ST_payment_userId(POST).swift in Sources */,
 				9B9366CC28B374520029149B /* Rg_Category.swift in Sources */,
 				9B95469F28BD17760076C798 /* BuyCells.swift in Sources */,
+				9B4C410F28BF9C5300D99BF2 /* AddAddressVC.swift in Sources */,
 				9B9FF2FC28BDF6390037A3DF /* SettingCell.swift in Sources */,
 				9B95469428BD14500076C798 /* MoneyVC.swift in Sources */,
 				9B9DDA9028BF61880051C7FA /* salesViewAPI.swift in Sources */,
