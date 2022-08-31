@@ -9,6 +9,7 @@ import UIKit
 
 class MyVC: UIViewController {
 
+    @IBOutlet weak var userImage: UIImageView!
     var getUserInfo = get_1_5_UserInfo ()
     
     @IBOutlet weak var UserName: UILabel!
@@ -27,6 +28,14 @@ class MyVC: UIViewController {
             case let .success(result):
           
                 self.UserName.text = result.baseResult.getUserRes.userName
+                var ImageUrl = result.baseResult.getUserRes.profileImgURL
+                
+                var url = URL(string: ImageUrl ?? "")
+                
+                var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+                
+                self.userImage.load_1_5(url_1_5: (url ?? fakeUrl)!)
+            
                 
             case let .failure(error):
                 debugPrint("error \(error)")
@@ -46,3 +55,4 @@ class MyVC: UIViewController {
     }
     
 }
+

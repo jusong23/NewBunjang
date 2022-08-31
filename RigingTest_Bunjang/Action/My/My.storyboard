@@ -442,6 +442,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="UserName" destination="56a-hl-ore" id="enK-0N-bse"/>
+                        <outlet property="userImage" destination="CEe-ZQ-MIh" id="d1a-Xa-cba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9G-BQ-1iN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -599,17 +600,20 @@
                                     <navigationItem id="BoA-8g-3B0">
                                         <barButtonItem key="rightBarButtonItem" image="xmark" catalog="system" id="G4b-Hs-BhV">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="tapBackButton:" destination="KuP-FP-7mW" id="1Uf-8k-e74"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6S-ue-1ma">
-                                <rect key="frame" x="330" y="104" width="64" height="19"/>
+                                <rect key="frame" x="345.5" y="104" width="48.5" height="14.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="주소 추가">
                                         <attributes>
                                             <color key="NSColor" red="0.38731060606060608" green="0.38731060606060608" blue="0.38731060606060608" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
                                         </attributes>
@@ -623,6 +627,7 @@
                                     <constraint firstAttribute="height" constant="31" id="aEd-2R-Hu5"/>
                                     <constraint firstAttribute="width" constant="67" id="lMj-xJ-oqL"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소 관리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ft2-ZN-ziw">
@@ -661,7 +666,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJj-wH-sch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207.2463768115945" y="1192.6339285714284"/>
+            <point key="canvasLocation" x="2219" y="1176"/>
         </scene>
     </scenes>
     <resources>

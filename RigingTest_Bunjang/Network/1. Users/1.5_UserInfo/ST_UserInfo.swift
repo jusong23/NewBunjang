@@ -1,11 +1,11 @@
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let userInfo = try? newJSONDecoder().decode(UserInfo.self, from: jsonData)
+//   let chatRooms = try? newJSONDecoder().decode(ChatRooms.self, from: jsonData)
 
 import Foundation
 
-// MARK: - UserInfo
+// MARK: - ChatRooms
 struct UserInfo: Codable {
     let isSuccess: Bool
     let code: Int
@@ -15,13 +15,13 @@ struct UserInfo: Codable {
 
 // MARK: - BaseResult
 struct BaseResult_1_5: Codable {
-    let getUserRes: GetUserRes_1_5
+    let getUserRes: GetUserRes
     let getUserItemResList: [JSONAny_1_5]
 }
 
 // MARK: - GetUserRes
-struct GetUserRes_1_5: Codable {
-    let profileImgURL: JSONNull_1_5?
+struct GetUserRes: Codable {
+    let profileImgURL: String
     let userName: String
     let grade, isSelfVerification, likeCnt, commentCnt: Int
     let followerCnt, followingCnt: Int

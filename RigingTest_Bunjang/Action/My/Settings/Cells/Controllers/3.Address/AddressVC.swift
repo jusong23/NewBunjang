@@ -21,6 +21,10 @@ class AddressVC: UIViewController {
         tableView.register(UINib(nibName: "AddressCell", bundle: .main), forCellReuseIdentifier: "AddressCell")
         gettingAddress()
     }
+        
+    @IBAction func tapBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     func gettingAddress() {
         self.getAddress.getAddress(accessToken: JwtToken.token, onCompleted: {
@@ -74,7 +78,23 @@ extension AddressVC: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+}
+
+extension UIImageView {
+    func load_1_5(url_1_5: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url_1_5) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }
 
 
-}
+
+

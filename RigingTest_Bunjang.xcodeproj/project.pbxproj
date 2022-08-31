@@ -102,6 +102,8 @@
 		9B938B9B28BF7D5F00C8D8B5 /* addressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */; };
 		9B938B9F28BF7E9400C8D8B5 /* AddressList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */; };
 		9B938BA128BF7EA100C8D8B5 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */; };
+		9B938BA528BF837900C8D8B5 /* ChatRoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA428BF837900C8D8B5 /* ChatRoomList.swift */; };
+		9B938BA728BF838B00C8D8B5 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA628BF838B00C8D8B5 /* ChatRoomModel.swift */; };
 		9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468A28BD13770076C798 /* RecordsTabman.swift */; };
 		9B95469028BD142C0076C798 /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468F28BD142C0076C798 /* BuyVC.swift */; };
 		9B95469228BD14430076C798 /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469128BD14430076C798 /* SellVC.swift */; };
@@ -246,6 +248,8 @@
 		9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressAPI.swift; sourceTree = "<group>"; };
 		9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressList.swift; sourceTree = "<group>"; };
 		9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		9B938BA428BF837900C8D8B5 /* ChatRoomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomList.swift; sourceTree = "<group>"; };
+		9B938BA628BF838B00C8D8B5 /* ChatRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
 		9B95468A28BD13770076C798 /* RecordsTabman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsTabman.swift; sourceTree = "<group>"; };
 		9B95468F28BD142C0076C798 /* BuyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVC.swift; sourceTree = "<group>"; };
 		9B95469128BD14430076C798 /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
@@ -525,6 +529,7 @@
 		9B3D97DD28B608B8006B4D32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B938BA228BF835D00C8D8B5 /* Talk */,
 				9B3D97E028B608F0006B4D32 /* Home */,
 				9B9546A228BD1AA70076C798 /* My */,
 			);
@@ -673,12 +678,12 @@
 		9B4C031728B097B50070C89E /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				9B938B9628BF7D3000C8D8B5 /* 4. Address */,
-				9B9DDA9F28BF6EDA0051C7FA /* 10. Chats */,
 				9B5E23B228B4C37600432616 /* 1. Users */,
 				9B5E23B328B4C37D00432616 /* 2. Items */,
 				9B9DDA8B28BF61620051C7FA /* 3. SalesView */,
+				9B938B9628BF7D3000C8D8B5 /* 4. Address */,
 				9B1358C028BF393A00501F5B /* 5. Likes */,
+				9B9DDA9F28BF6EDA0051C7FA /* 10. Chats */,
 				9B27799928B8CC9D0025B744 /* 12. Orders */,
 				9B65EECA28B9EAEC00A548E0 /* 13. Payment */,
 			);
@@ -854,6 +859,7 @@
 		9B938B8E28BF754500C8D8B5 /* 3.Address */ = {
 			isa = PBXGroup;
 			children = (
+				9B938B8F28BF75A400C8D8B5 /* AddressVC.swift */,
 				9B938B9128BF784A00C8D8B5 /* Cells */,
 			);
 			path = 3.Address;
@@ -901,6 +907,23 @@
 				9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */,
 			);
 			path = Address;
+			sourceTree = "<group>";
+		};
+		9B938BA228BF835D00C8D8B5 /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				9B938BA328BF836600C8D8B5 /* ChatsRooms */,
+			);
+			path = Talk;
+			sourceTree = "<group>";
+		};
+		9B938BA328BF836600C8D8B5 /* ChatsRooms */ = {
+			isa = PBXGroup;
+			children = (
+				9B938BA428BF837900C8D8B5 /* ChatRoomList.swift */,
+				9B938BA628BF838B00C8D8B5 /* ChatRoomModel.swift */,
+			);
+			path = ChatsRooms;
 			sourceTree = "<group>";
 		};
 		9B95469528BD15200076C798 /* 12.4_order_purchase */ = {
@@ -1009,7 +1032,6 @@
 				9B8E696228BB3106007BFC6D /* SellReserve */,
 				9B95468A28BD13770076C798 /* RecordsTabman.swift */,
 				9B9C521A28B23F1D00570BB1 /* My.storyboard */,
-				9B938B8F28BF75A400C8D8B5 /* AddressVC.swift */,
 				9B9546B028BDD9630076C798 /* SettingVC.swift */,
 			);
 			path = My;
@@ -1263,6 +1285,7 @@
 				9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */,
 				9B04174328B628530029A45C /* JWT.swift in Sources */,
 				9B32B9E628BAF0DB00FB7651 /* orderAPI.swift in Sources */,
+				9B938BA728BF838B00C8D8B5 /* ChatRoomModel.swift in Sources */,
 				9B9366D428B379400029149B /* Rg_Cell.swift in Sources */,
 				9B95469028BD142C0076C798 /* BuyVC.swift in Sources */,
 				9B04174028B627600029A45C /* ST_items.swift in Sources */,
@@ -1276,6 +1299,7 @@
 				9B1358C328BF3A2E00501F5B /* LikesAPI.swift in Sources */,
 				9B70F9B528B898A3006BE642 /* RegisterAddressVC.swift in Sources */,
 				9B08CFA528B0C636006782C4 /* componentSetting.swift in Sources */,
+				9B938BA528BF837900C8D8B5 /* ChatRoomList.swift in Sources */,
 				9B42E59E28B1DB7500737F24 /* HomeCategoryVC.swift in Sources */,
 				9B9FF2F428BDEDA30037A3DF /* AccountVC.swift in Sources */,
 				9B04174B28B64E5E0029A45C /* itemIdxAPI.swift in Sources */,

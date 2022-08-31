@@ -35,8 +35,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채팅 메세지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-tn-Aai">
-                        <rect key="frame" x="68" y="39" width="42" height="11"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <rect key="frame" x="68" y="38" width="46.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -50,14 +50,14 @@
                         <state key="normal" image="IMG_1951"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4p-bY-vtv">
-                        <rect key="frame" x="113" y="39" width="3" height="11"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <rect key="frame" x="117.5" y="38" width="3" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채팅 메세지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUx-Ce-CHa">
-                        <rect key="frame" x="119" y="39" width="42" height="11"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <rect key="frame" x="123.5" y="38" width="46.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -79,7 +79,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="Qv1-oK-hQL"/>
             <connections>
-                <outlet property="LastChat" destination="UUx-Ce-CHa" id="TPm-Ul-3Vo"/>
+                <outlet property="LastChat" destination="3aS-tn-Aai" id="zg1-rS-bhC"/>
                 <outlet property="Period" destination="UUx-Ce-CHa" id="p4T-DA-0Z2"/>
                 <outlet property="StoreImage" destination="25g-Ej-c9P" id="lPt-RL-cj6"/>
                 <outlet property="StoreName" destination="UKx-38-zLT" id="TyD-yr-NHE"/>
