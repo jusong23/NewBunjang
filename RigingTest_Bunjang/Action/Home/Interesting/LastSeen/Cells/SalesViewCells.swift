@@ -9,9 +9,16 @@ import UIKit
 
 class SalesViewCells: UICollectionViewCell {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var ItemName: UILabel!
+    @IBOutlet weak var ItemCost: UILabel!
+    @IBOutlet weak var uploadTime: UILabel!
+    @IBOutlet weak var isSafeMark: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.uploadTime.sizeToFit()
     }
 
 }

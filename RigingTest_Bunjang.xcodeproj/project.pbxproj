@@ -116,6 +116,8 @@
 		9B9DDA9228BF61AD0051C7FA /* ST_SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9128BF61AD0051C7FA /* ST_SalesView.swift */; };
 		9B9DDA9728BF62E30051C7FA /* SalesViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9528BF62E30051C7FA /* SalesViewCells.swift */; };
 		9B9DDA9828BF62E30051C7FA /* SalesViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9628BF62E30051C7FA /* SalesViewCells.xib */; };
+		9B9DDA9B28BF66E30051C7FA /* SalesViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9A28BF66E30051C7FA /* SalesViewList.swift */; };
+		9B9DDA9D28BF66F10051C7FA /* SalesViewListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9C28BF66F10051C7FA /* SalesViewListDataModel.swift */; };
 		9B9FF2F428BDEDA30037A3DF /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */; };
 		9B9FF2F828BDEEAE0037A3DF /* AccountCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */; };
 		9B9FF2F928BDEEAE0037A3DF /* AccountCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */; };
@@ -247,6 +249,8 @@
 		9B9DDA9128BF61AD0051C7FA /* ST_SalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_SalesView.swift; sourceTree = "<group>"; };
 		9B9DDA9528BF62E30051C7FA /* SalesViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewCells.swift; sourceTree = "<group>"; };
 		9B9DDA9628BF62E30051C7FA /* SalesViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesViewCells.xib; sourceTree = "<group>"; };
+		9B9DDA9A28BF66E30051C7FA /* SalesViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewList.swift; sourceTree = "<group>"; };
+		9B9DDA9C28BF66F10051C7FA /* SalesViewListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewListDataModel.swift; sourceTree = "<group>"; };
 		9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCells.swift; sourceTree = "<group>"; };
 		9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCells.xib; sourceTree = "<group>"; };
@@ -508,6 +512,7 @@
 		9B3D97E028B608F0006B4D32 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9B9DDA9928BF66CF0051C7FA /* LastSeen */,
 				9B1358DD28BF462A00501F5B /* Zzeam */,
 				9B3D97E528B60923006B4D32 /* Recommand */,
 			);
@@ -968,6 +973,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		9B9DDA9928BF66CF0051C7FA /* LastSeen */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DDA9A28BF66E30051C7FA /* SalesViewList.swift */,
+				9B9DDA9C28BF66F10051C7FA /* SalesViewListDataModel.swift */,
+			);
+			path = LastSeen;
+			sourceTree = "<group>";
+		};
 		9B9FF2F228BDED870037A3DF /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -1211,6 +1225,7 @@
 				9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */,
 				9B65EEBF28B9C96300A548E0 /* SelectCard.swift in Sources */,
 				9B32B9E128BAEA6A00FB7651 /* Idx.swift in Sources */,
+				9B9DDA9D28BF66F10051C7FA /* SalesViewListDataModel.swift in Sources */,
 				9B5E239628B3975800432616 /* TalkVC.swift in Sources */,
 				9B04173828B623B20029A45C /* UIColor.swift in Sources */,
 				9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */,
@@ -1235,6 +1250,7 @@
 				9B95469228BD14430076C798 /* SellVC.swift in Sources */,
 				9B45337828B1F0B7003163FE /* LastSeenVC.swift in Sources */,
 				9BB8919228B35C8C00CC08D8 /* RegisterVC.swift in Sources */,
+				9B9DDA9B28BF66E30051C7FA /* SalesViewList.swift in Sources */,
 				9B1358C828BF403A00501F5B /* GetLikesAPI.swift in Sources */,
 				9B9FF30428BDFA4F0037A3DF /* AlarmCells.swift in Sources */,
 			);
