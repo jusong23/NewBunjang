@@ -34,11 +34,11 @@ func gettingChatRoom() {
     
             for i in 0..<result.baseResult.count {
                 self.ChatRoomDataModel.inputData(
-                    storeImageUrl: result.baseResult[i].storeName,
+                    storeImageUrl: result.baseResult[i].storeImageURL,
                     storeName: result.baseResult[i].storeName,
                     period: result.baseResult[i].period,
                     lastChat: result.baseResult[i].lastChat)
-            }
+                }
     
             self.tableView.reloadData()
             print(result.baseResult.count)

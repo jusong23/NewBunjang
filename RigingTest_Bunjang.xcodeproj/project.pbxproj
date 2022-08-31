@@ -98,12 +98,14 @@
 		9B938B9028BF75A400C8D8B5 /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B8F28BF75A400C8D8B5 /* AddressVC.swift */; };
 		9B938B9428BF786400C8D8B5 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9228BF786400C8D8B5 /* AddressCell.swift */; };
 		9B938B9528BF786400C8D8B5 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B938B9328BF786400C8D8B5 /* AddressCell.xib */; };
-		9B938B9928BF7D5400C8D8B5 /* ST_address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9828BF7D5400C8D8B5 /* ST_address.swift */; };
-		9B938B9B28BF7D5F00C8D8B5 /* addressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */; };
+		9B938B9928BF7D5400C8D8B5 /* addressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9828BF7D5400C8D8B5 /* addressAPI.swift */; };
+		9B938B9B28BF7D5F00C8D8B5 /* ST_address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9A28BF7D5F00C8D8B5 /* ST_address.swift */; };
 		9B938B9F28BF7E9400C8D8B5 /* AddressList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */; };
 		9B938BA128BF7EA100C8D8B5 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */; };
 		9B938BA528BF837900C8D8B5 /* ChatRoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA428BF837900C8D8B5 /* ChatRoomList.swift */; };
 		9B938BA728BF838B00C8D8B5 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA628BF838B00C8D8B5 /* ChatRoomModel.swift */; };
+		9B938BAA28BF8EA000C8D8B5 /* ST_addressPOST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BA928BF8EA000C8D8B5 /* ST_addressPOST.swift */; };
+		9B938BAC28BF8EB300C8D8B5 /* addressPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B938BAB28BF8EB300C8D8B5 /* addressPostAPI.swift */; };
 		9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468A28BD13770076C798 /* RecordsTabman.swift */; };
 		9B95469028BD142C0076C798 /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95468F28BD142C0076C798 /* BuyVC.swift */; };
 		9B95469228BD14430076C798 /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95469128BD14430076C798 /* SellVC.swift */; };
@@ -244,12 +246,14 @@
 		9B938B8F28BF75A400C8D8B5 /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		9B938B9228BF786400C8D8B5 /* AddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
 		9B938B9328BF786400C8D8B5 /* AddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
-		9B938B9828BF7D5400C8D8B5 /* ST_address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_address.swift; sourceTree = "<group>"; };
-		9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressAPI.swift; sourceTree = "<group>"; };
+		9B938B9828BF7D5400C8D8B5 /* addressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressAPI.swift; sourceTree = "<group>"; };
+		9B938B9A28BF7D5F00C8D8B5 /* ST_address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_address.swift; sourceTree = "<group>"; };
 		9B938B9E28BF7E9400C8D8B5 /* AddressList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressList.swift; sourceTree = "<group>"; };
 		9B938BA028BF7EA100C8D8B5 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		9B938BA428BF837900C8D8B5 /* ChatRoomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomList.swift; sourceTree = "<group>"; };
 		9B938BA628BF838B00C8D8B5 /* ChatRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
+		9B938BA928BF8EA000C8D8B5 /* ST_addressPOST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_addressPOST.swift; sourceTree = "<group>"; };
+		9B938BAB28BF8EB300C8D8B5 /* addressPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressPostAPI.swift; sourceTree = "<group>"; };
 		9B95468A28BD13770076C798 /* RecordsTabman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsTabman.swift; sourceTree = "<group>"; };
 		9B95468F28BD142C0076C798 /* BuyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVC.swift; sourceTree = "<group>"; };
 		9B95469128BD14430076C798 /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
@@ -877,6 +881,7 @@
 		9B938B9628BF7D3000C8D8B5 /* 4. Address */ = {
 			isa = PBXGroup;
 			children = (
+				9B938BA828BF8E8600C8D8B5 /* 4.1_addressPOST */,
 				9B938B9728BF7D3B00C8D8B5 /* 4.2_address */,
 			);
 			path = "4. Address";
@@ -885,8 +890,8 @@
 		9B938B9728BF7D3B00C8D8B5 /* 4.2_address */ = {
 			isa = PBXGroup;
 			children = (
-				9B938B9828BF7D5400C8D8B5 /* ST_address.swift */,
-				9B938B9A28BF7D5F00C8D8B5 /* addressAPI.swift */,
+				9B938B9828BF7D5400C8D8B5 /* addressAPI.swift */,
+				9B938B9A28BF7D5F00C8D8B5 /* ST_address.swift */,
 			);
 			path = 4.2_address;
 			sourceTree = "<group>";
@@ -924,6 +929,15 @@
 				9B938BA628BF838B00C8D8B5 /* ChatRoomModel.swift */,
 			);
 			path = ChatsRooms;
+			sourceTree = "<group>";
+		};
+		9B938BA828BF8E8600C8D8B5 /* 4.1_addressPOST */ = {
+			isa = PBXGroup;
+			children = (
+				9B938BA928BF8EA000C8D8B5 /* ST_addressPOST.swift */,
+				9B938BAB28BF8EB300C8D8B5 /* addressPostAPI.swift */,
+			);
+			path = 4.1_addressPOST;
 			sourceTree = "<group>";
 		};
 		9B95469528BD15200076C798 /* 12.4_order_purchase */ = {
@@ -1279,7 +1293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3E6A1928BB13D6003B06CC /* NowReserving.swift in Sources */,
-				9B938B9928BF7D5400C8D8B5 /* ST_address.swift in Sources */,
+				9B938B9928BF7D5400C8D8B5 /* addressAPI.swift in Sources */,
 				9B65EED628B9F13800A548E0 /* ST_patments_userId(GET).swift in Sources */,
 				9B9DDA9728BF62E30051C7FA /* SalesViewCells.swift in Sources */,
 				9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */,
@@ -1287,6 +1301,7 @@
 				9B32B9E628BAF0DB00FB7651 /* orderAPI.swift in Sources */,
 				9B938BA728BF838B00C8D8B5 /* ChatRoomModel.swift in Sources */,
 				9B9366D428B379400029149B /* Rg_Cell.swift in Sources */,
+				9B938BAA28BF8EA000C8D8B5 /* ST_addressPOST.swift in Sources */,
 				9B95469028BD142C0076C798 /* BuyVC.swift in Sources */,
 				9B04174028B627600029A45C /* ST_items.swift in Sources */,
 				9B3E6A1528BB1357003B06CC /* My_Tabbman.swift in Sources */,
@@ -1358,6 +1373,7 @@
 				9B04173828B623B20029A45C /* UIColor.swift in Sources */,
 				9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */,
 				9B2779A028B8CD750025B744 /* ST_orderIndirect.swift in Sources */,
+				9B938BAC28BF8EB300C8D8B5 /* addressPostAPI.swift in Sources */,
 				9B938B9F28BF7E9400C8D8B5 /* AddressList.swift in Sources */,
 				9B9546AB28BD1FAA0076C798 /* UserInfoAPI.swift in Sources */,
 				9B3D97E928B60968006B4D32 /* ItemLists.swift in Sources */,
@@ -1365,7 +1381,7 @@
 				9B08CF9F28B0C4E7006782C4 /* LoginVC.swift in Sources */,
 				9B9DDA8528BF47430051C7FA /* ZzeamListModel.swift in Sources */,
 				9B3D97EE28B60A6C006B4D32 /* ItemListsModel.swift in Sources */,
-				9B938B9B28BF7D5F00C8D8B5 /* addressAPI.swift in Sources */,
+				9B938B9B28BF7D5F00C8D8B5 /* ST_address.swift in Sources */,
 				9B9DDA9228BF61AD0051C7FA /* ST_SalesView.swift in Sources */,
 				9B04174928B64E480029A45C /* ST_itemIdx.swift in Sources */,
 				9B5E23AB28B39DAC00432616 /* Rc_Cell.swift in Sources */,
