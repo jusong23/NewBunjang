@@ -38,15 +38,32 @@ class AddAddressVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    func postAddress() {
+    @IBAction func addAddress(_ sender: Any) {
         self.Post_4_1.post_4_1_(
             accessToken: JwtToken.token,
             userName: self.userNameTF.text ?? "",
             address: self.userAddressTF.text ?? "",
             detailAddress: self.userDetailAddressTF.text ?? "",
             phoneNumber: self.userPhoneNumberTF.text ?? "",
-            isBaseAddress: self.BaseAddress,
-            userIdx: Int(User.Idx) ?? 0 )
+            isBaseAddress: 0,
+            userIdx: 32)
+        
+//        self.Post_4_1.post_4_1_(
+//            accessToken: JwtToken.token,
+//            userName: self.userNameTF.text ?? "",
+//            address: self.userAddressTF.text ?? "",
+//            detailAddress: self.userDetailAddressTF.text ?? "",
+//            phoneNumber: self.userPhoneNumberTF.text ?? "",
+//            isBaseAddress: 0,
+//            userIdx: 32 )
+        
+//        self.navigationController?.popViewController(animated: true)
     }
+    
+//    func postAddress() {
+//
+//    }
 
 }
+
+

@@ -738,6 +738,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addAddress:" destination="QDT-xS-0dQ" eventType="touchUpInside" id="edh-xF-hND"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대폰번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onZ-xs-2dW">
                                 <rect key="frame" x="24" y="329" width="74" height="21"/>
@@ -795,35 +798,31 @@
                                     <constraint firstAttribute="height" constant="1" id="UIB-PN-eEB"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-tU-C9k">
-                                <rect key="frame" x="24" y="578" width="26" height="26"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="26" id="2yU-JJ-q8Z"/>
-                                    <constraint firstAttribute="height" constant="26" id="3bv-uP-gEw"/>
-                                </constraints>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="checkmark.circle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="checkBaseAddress:" destination="QDT-xS-0dQ" eventType="touchUpInside" id="DcN-9a-VFz"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기본주소로 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-Nm-low">
-                                <rect key="frame" x="57" y="580.5" width="107.5" height="21"/>
+                                <rect key="frame" x="51" y="578.5" width="107.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="0.46197385200000002" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLs-DK-I75">
+                                <rect key="frame" x="20" y="576" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="9UH-Nd-whF"/>
+                                    <constraint firstAttribute="width" constant="26" id="b82-kh-caO"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="checkmark.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="checkBaseAddress:" destination="QDT-xS-0dQ" eventType="touchUpInside" id="JHm-yP-c4P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hHB-wC-4mB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mmk-F1-2rb" firstAttribute="top" secondItem="sYk-Yg-jlL" secondAttribute="bottom" constant="8" symbolic="YES" id="1AT-sn-h6N"/>
                             <constraint firstItem="ay4-Kc-9fa" firstAttribute="top" secondItem="onZ-xs-2dW" secondAttribute="bottom" constant="8" symbolic="YES" id="3na-Dk-FKh"/>
-                            <constraint firstItem="r8g-tU-C9k" firstAttribute="top" secondItem="VOn-1g-lcI" secondAttribute="bottom" constant="12" id="4aa-bo-Ca7"/>
                             <constraint firstItem="lvO-Qg-hTs" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" id="4hk-Cf-V8m"/>
                             <constraint firstItem="onZ-xs-2dW" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="6fg-4U-33M"/>
                             <constraint firstItem="zNt-PA-fiu" firstAttribute="top" secondItem="ay4-Kc-9fa" secondAttribute="bottom" id="8jh-4u-tyn"/>
@@ -831,7 +830,6 @@
                             <constraint firstItem="sYk-Yg-jlL" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="AQ4-R5-mhm"/>
                             <constraint firstItem="lvO-Qg-hTs" firstAttribute="trailing" secondItem="hHB-wC-4mB" secondAttribute="trailing" id="Ah0-pV-WmW"/>
                             <constraint firstItem="ay4-Kc-9fa" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="EQf-Xp-DTR"/>
-                            <constraint firstItem="Y16-Nm-low" firstAttribute="leading" secondItem="r8g-tU-C9k" secondAttribute="trailing" constant="7" id="ErF-x7-NbH"/>
                             <constraint firstItem="hHB-wC-4mB" firstAttribute="trailing" secondItem="364-5N-1f5" secondAttribute="trailing" constant="24" id="Ev8-7I-gXc"/>
                             <constraint firstItem="dzd-Hz-o7P" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="G09-SK-1Lr"/>
                             <constraint firstItem="hHB-wC-4mB" firstAttribute="trailing" secondItem="mmk-F1-2rb" secondAttribute="trailing" constant="24" id="Hgz-IM-pt6"/>
@@ -846,6 +844,7 @@
                             <constraint firstItem="mmk-F1-2rb" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="SGT-uL-19s"/>
                             <constraint firstItem="JF9-m8-RKa" firstAttribute="trailing" secondItem="VZr-xL-4Dl" secondAttribute="trailingMargin" id="Skk-fC-CHN"/>
                             <constraint firstItem="YHN-Kb-Pze" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="Tjn-2v-73u"/>
+                            <constraint firstItem="Y16-Nm-low" firstAttribute="leading" secondItem="NLs-DK-I75" secondAttribute="trailing" constant="5" id="U2m-Lx-bq7"/>
                             <constraint firstItem="hHB-wC-4mB" firstAttribute="trailing" secondItem="ay4-Kc-9fa" secondAttribute="trailing" constant="24" id="Vwt-nJ-kaI"/>
                             <constraint firstItem="JF9-m8-RKa" firstAttribute="top" secondItem="mmk-F1-2rb" secondAttribute="bottom" id="Ypz-eX-GHM"/>
                             <constraint firstItem="BHf-jh-xoD" firstAttribute="bottom" secondItem="hHB-wC-4mB" secondAttribute="bottom" id="buC-8W-C78"/>
@@ -856,18 +855,19 @@
                             <constraint firstItem="JF9-m8-RKa" firstAttribute="leading" secondItem="VZr-xL-4Dl" secondAttribute="leadingMargin" id="drQ-Yx-L2Y"/>
                             <constraint firstItem="0pb-MG-a9R" firstAttribute="leading" secondItem="VZr-xL-4Dl" secondAttribute="leadingMargin" id="dxS-0p-Reo"/>
                             <constraint firstItem="lvO-Qg-hTs" firstAttribute="top" secondItem="hHB-wC-4mB" secondAttribute="top" id="esk-vH-ilV"/>
-                            <constraint firstItem="r8g-tU-C9k" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="ga3-kz-qlD"/>
+                            <constraint firstItem="Y16-Nm-low" firstAttribute="centerY" secondItem="NLs-DK-I75" secondAttribute="centerY" id="gGd-3q-vEh"/>
                             <constraint firstItem="YHN-Kb-Pze" firstAttribute="top" secondItem="zNt-PA-fiu" secondAttribute="bottom" constant="24" id="i4z-nk-dz7"/>
+                            <constraint firstItem="NLs-DK-I75" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="20" id="isf-CG-3JV"/>
                             <constraint firstItem="zNt-PA-fiu" firstAttribute="leading" secondItem="VZr-xL-4Dl" secondAttribute="leadingMargin" id="j2C-Xd-3DL"/>
                             <constraint firstItem="0pb-MG-a9R" firstAttribute="top" secondItem="364-5N-1f5" secondAttribute="bottom" id="jVU-jB-onQ"/>
                             <constraint firstItem="hHB-wC-4mB" firstAttribute="trailing" secondItem="dzd-Hz-o7P" secondAttribute="trailing" constant="24" id="jZF-eM-dDY"/>
                             <constraint firstItem="364-5N-1f5" firstAttribute="top" secondItem="YHN-Kb-Pze" secondAttribute="bottom" constant="8" symbolic="YES" id="jaJ-c9-VpX"/>
+                            <constraint firstItem="NLs-DK-I75" firstAttribute="top" secondItem="VOn-1g-lcI" secondAttribute="bottom" constant="10" id="jem-5X-k6L"/>
                             <constraint firstItem="364-5N-1f5" firstAttribute="leading" secondItem="hHB-wC-4mB" secondAttribute="leading" constant="24" id="lFF-jm-jLU"/>
                             <constraint firstItem="0pb-MG-a9R" firstAttribute="trailing" secondItem="VZr-xL-4Dl" secondAttribute="trailingMargin" id="lpK-6t-4Rd"/>
                             <constraint firstItem="TwY-0m-Wr1" firstAttribute="top" secondItem="0pb-MG-a9R" secondAttribute="bottom" constant="24" id="nz6-gV-vdQ"/>
                             <constraint firstItem="sYk-Yg-jlL" firstAttribute="top" secondItem="qaN-U9-W9Q" secondAttribute="bottom" constant="48" id="ppQ-7o-cCy"/>
                             <constraint firstAttribute="trailing" secondItem="VOn-1g-lcI" secondAttribute="trailing" constant="24" id="ryB-VX-ycZ"/>
-                            <constraint firstItem="Y16-Nm-low" firstAttribute="centerY" secondItem="r8g-tU-C9k" secondAttribute="centerY" id="uji-AZ-Gv1"/>
                             <constraint firstItem="JF9-m8-RKa" firstAttribute="trailing" secondItem="VZr-xL-4Dl" secondAttribute="trailingMargin" id="yVr-vl-yTG"/>
                             <constraint firstItem="JF9-m8-RKa" firstAttribute="leading" secondItem="VZr-xL-4Dl" secondAttribute="leadingMargin" id="yak-vM-1hX"/>
                             <constraint firstItem="qaN-U9-W9Q" firstAttribute="top" secondItem="lvO-Qg-hTs" secondAttribute="bottom" constant="70" id="yds-R3-Id5"/>
@@ -875,7 +875,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="checkButton" destination="r8g-tU-C9k" id="4ri-3k-jJq"/>
+                        <outlet property="checkButton" destination="NLs-DK-I75" id="mFd-n5-f9t"/>
                         <outlet property="userAddressTF" destination="364-5N-1f5" id="Jil-2J-sr9"/>
                         <outlet property="userDetailAddressTF" destination="dzd-Hz-o7P" id="9e5-Zq-xUF"/>
                         <outlet property="userNameTF" destination="mmk-F1-2rb" id="XoI-NE-zfy"/>
