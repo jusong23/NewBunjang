@@ -10,6 +10,7 @@ import UIKit
 class ZzeamVC: UIViewController {
 
     var GetLikes = get_5_1_likes ()
+    var ZzeamDataModel = ZzeamsListsDataModel ()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -21,6 +22,7 @@ class ZzeamVC: UIViewController {
         self.collectionView.register(UINib(nibName: "ZzeamCell", bundle: nil), forCellWithReuseIdentifier: "ZzeamCell")
     }
     
+    
     func gettingLikes() {
         self.GetLikes.getLikes(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
@@ -28,8 +30,11 @@ class ZzeamVC: UIViewController {
      
             switch result {
             case let .success(result):
-                
-            print(result)
+                                
+                for i in 0..<result.baseResult.count {
+                    self.ZzeamDataModel.inputData(itemIdx: result.baseResult[i].itemIdx, itemName: result.baseResult[i].itemName, cost: result.baseResult[i].cost, userName: result.baseResult[i].userName, status: result.baseResult[i].status, isSafePayment: result.baseResult[i].isSafePayment, uploadTime: result.baseResult[i].uploadTime, imageUrl: result.baseResult[i].imageURL)
+                }
+                self.collectionView.reloadData()
                 
             case let .failure(error):
                 debugPrint("error \(error)")
@@ -41,11 +46,11 @@ class ZzeamVC: UIViewController {
 
 extension ZzeamVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.ZzeamDataModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        
 //        var cellItemIdx = self.ItemListsDataModel.getItemIdx(index: indexPath.row)
 //        var cellCost = self.ItemListsDataModel.getCost(index: indexPath.row)
 //        var cellItemName = self.ItemListsDataModel.getItemName(index: indexPath.row)
@@ -72,28 +77,40 @@ extension ZzeamVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ZzeamCell", for: indexPath) as! ZzeamCell
         
-//        var cellImage = self.ItemListsDataModel.getImageURL(index: indexPath.row)
-//        var cellCost = self.ItemListsDataModel.getCost(index: indexPath.row)
-//        var cellItemName = self.ItemListsDataModel.getItemName(index: indexPath.row)
-//        var cellAddress = self.ItemListsDataModel.getAddress(index: indexPath.row)
-//        var cellPeriod = self.ItemListsDataModel.getPeriod(index: indexPath.row)
-//        var cellImageUrl = self.ItemListsDataModel.getImageURL(index: indexPath.row)
-//        var cellIsSafePayment = self.ItemListsDataModel.getIsSafePayment(index: indexPath.row)
-//        var cellLikeCnt = self.ItemListsDataModel.getLikeCnt(index: indexPath.row)
+        var cellItemName = self.ZzeamDataModel.getItemName(index: indexPath.row)
+        var cellCost = self.ZzeamDataModel.getCost(index: indexPath.row)
+        var cellUserName = self.ZzeamDataModel.getUserName(index: indexPath.row)
+        var cellUploadTime = self.ZzeamDataModel.getUploadTime(index: indexPath.row)
+        var cellImageUrl = self.ZzeamDataModel.getImageURL(index: indexPath.row)
 //
-//        var url = URL(string: cellImageUrl ?? "")
-//
-//        var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+        var url = URL(string: cellImageUrl ?? "")
+
+        var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
         
-//        cell.imageUrl?.load_2_4(url_2_4: (url ?? fakeUrl)!)
-//        cell.cost.text = String(cellCost)
-//        cell.itemName.text = String(cellItemName)
-//        cell.address.text = cellAddress
-//        cell.period.text = cellPeriod
+        cell.imageView?.load_5_1(url_5_1: (url ?? fakeUrl)!)
         
-        cell.itemName.sizeToFit()
+        cell.ItemName.text = cellItemName
+        cell.ItemCost.text = cellCost
+        cell.StoreName.text = cellUserName
+        cell.uploadTime.text = cellUploadTime
+        
+        cell.ItemName.sizeToFit()
         
         return cell
     }
     
+}
+
+extension UIImageView {
+    func load_5_1(url_5_1: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url_5_1) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }

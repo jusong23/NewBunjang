@@ -10,6 +10,7 @@ import UIKit
 class ZzeamCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var ItemName: UILabel!
     @IBOutlet weak var ItemCost: UILabel!
     @IBOutlet weak var StoreName: UILabel!

@@ -110,6 +110,12 @@
 		9B9C521928B23F1000570BB1 /* Talk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521828B23F1000570BB1 /* Talk.storyboard */; };
 		9B9C521B28B23F1D00570BB1 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C521A28B23F1D00570BB1 /* My.storyboard */; };
 		9B9C522028B2424100570BB1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C521F28B2424100570BB1 /* SearchVC.swift */; };
+		9B9DDA8328BF47370051C7FA /* ZzeamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA8228BF47370051C7FA /* ZzeamList.swift */; };
+		9B9DDA8528BF47430051C7FA /* ZzeamListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA8428BF47430051C7FA /* ZzeamListModel.swift */; };
+		9B9DDA9028BF61880051C7FA /* salesViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA8F28BF61880051C7FA /* salesViewAPI.swift */; };
+		9B9DDA9228BF61AD0051C7FA /* ST_SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9128BF61AD0051C7FA /* ST_SalesView.swift */; };
+		9B9DDA9728BF62E30051C7FA /* SalesViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9528BF62E30051C7FA /* SalesViewCells.swift */; };
+		9B9DDA9828BF62E30051C7FA /* SalesViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9DDA9628BF62E30051C7FA /* SalesViewCells.xib */; };
 		9B9FF2F428BDEDA30037A3DF /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */; };
 		9B9FF2F828BDEEAE0037A3DF /* AccountCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */; };
 		9B9FF2F928BDEEAE0037A3DF /* AccountCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */; };
@@ -235,6 +241,12 @@
 		9B9C521828B23F1000570BB1 /* Talk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Talk.storyboard; sourceTree = "<group>"; };
 		9B9C521A28B23F1D00570BB1 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		9B9C521F28B2424100570BB1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		9B9DDA8228BF47370051C7FA /* ZzeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZzeamList.swift; sourceTree = "<group>"; };
+		9B9DDA8428BF47430051C7FA /* ZzeamListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZzeamListModel.swift; sourceTree = "<group>"; };
+		9B9DDA8F28BF61880051C7FA /* salesViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salesViewAPI.swift; sourceTree = "<group>"; };
+		9B9DDA9128BF61AD0051C7FA /* ST_SalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_SalesView.swift; sourceTree = "<group>"; };
+		9B9DDA9528BF62E30051C7FA /* SalesViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewCells.swift; sourceTree = "<group>"; };
+		9B9DDA9628BF62E30051C7FA /* SalesViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesViewCells.xib; sourceTree = "<group>"; };
 		9B9FF2F328BDEDA30037A3DF /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		9B9FF2F628BDEEAE0037A3DF /* AccountCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCells.swift; sourceTree = "<group>"; };
 		9B9FF2F728BDEEAE0037A3DF /* AccountCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCells.xib; sourceTree = "<group>"; };
@@ -406,6 +418,8 @@
 		9B1358DD28BF462A00501F5B /* Zzeam */ = {
 			isa = PBXGroup;
 			children = (
+				9B9DDA8228BF47370051C7FA /* ZzeamList.swift */,
+				9B9DDA8428BF47430051C7FA /* ZzeamListModel.swift */,
 			);
 			path = Zzeam;
 			sourceTree = "<group>";
@@ -539,6 +553,7 @@
 		9B45337A28B20A1E003163FE /* Interesting */ = {
 			isa = PBXGroup;
 			children = (
+				9B9DDA9328BF62C80051C7FA /* LastSeen */,
 				9B1358CB28BF421C00501F5B /* Zzeam */,
 				9B45337B28B20A49003163FE /* Interesting.storyboard */,
 				9B42E59D28B1DB7500737F24 /* HomeCategoryVC.swift */,
@@ -633,6 +648,7 @@
 			children = (
 				9B5E23B228B4C37600432616 /* 1. Users */,
 				9B5E23B328B4C37D00432616 /* 2. Items */,
+				9B9DDA8B28BF61620051C7FA /* 3. SalesView */,
 				9B1358C028BF393A00501F5B /* 5. Likes */,
 				9B27799928B8CC9D0025B744 /* 12. Orders */,
 				9B65EECA28B9EAEC00A548E0 /* 13. Payment */,
@@ -918,6 +934,40 @@
 			path = My;
 			sourceTree = "<group>";
 		};
+		9B9DDA8B28BF61620051C7FA /* 3. SalesView */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DDA8C28BF616B0051C7FA /* 3.1_salesView */,
+			);
+			path = "3. SalesView";
+			sourceTree = "<group>";
+		};
+		9B9DDA8C28BF616B0051C7FA /* 3.1_salesView */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DDA8F28BF61880051C7FA /* salesViewAPI.swift */,
+				9B9DDA9128BF61AD0051C7FA /* ST_SalesView.swift */,
+			);
+			path = 3.1_salesView;
+			sourceTree = "<group>";
+		};
+		9B9DDA9328BF62C80051C7FA /* LastSeen */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DDA9428BF62CF0051C7FA /* Cells */,
+			);
+			path = LastSeen;
+			sourceTree = "<group>";
+		};
+		9B9DDA9428BF62CF0051C7FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DDA9528BF62E30051C7FA /* SalesViewCells.swift */,
+				9B9DDA9628BF62E30051C7FA /* SalesViewCells.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9B9FF2F228BDED870037A3DF /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,6 +1067,7 @@
 				9B45337C28B20A49003163FE /* Interesting.storyboard in Resources */,
 				9B08CF9B28B0BE09006782C4 /* Home.storyboard in Resources */,
 				9B9C521528B21E7300570BB1 /* WholeMenu.storyboard in Resources */,
+				9B9DDA9828BF62E30051C7FA /* SalesViewCells.xib in Resources */,
 				9B4C034928B0A2770070C89E /* Login.storyboard in Resources */,
 				9B4C030B28B097890070C89E /* Assets.xcassets in Resources */,
 				9B5E23A428B398DB00432616 /* TalkCell.xib in Resources */,
@@ -1093,6 +1144,7 @@
 			files = (
 				9B3E6A1928BB13D6003B06CC /* NowReserving.swift in Sources */,
 				9B65EED628B9F13800A548E0 /* ST_patments_userId(GET).swift in Sources */,
+				9B9DDA9728BF62E30051C7FA /* SalesViewCells.swift in Sources */,
 				9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */,
 				9B04174328B628530029A45C /* JWT.swift in Sources */,
 				9B32B9E628BAF0DB00FB7651 /* orderAPI.swift in Sources */,
@@ -1111,6 +1163,7 @@
 				9B42E59E28B1DB7500737F24 /* HomeCategoryVC.swift in Sources */,
 				9B9FF2F428BDEDA30037A3DF /* AccountVC.swift in Sources */,
 				9B04174B28B64E5E0029A45C /* itemIdxAPI.swift in Sources */,
+				9B9DDA8328BF47370051C7FA /* ZzeamList.swift in Sources */,
 				9B9546B128BDD9630076C798 /* SettingVC.swift in Sources */,
 				9B70F9AD28B86D4F006BE642 /* DealPage.swift in Sources */,
 				9B8E696628BB317C007BFC6D /* MyVC.swift in Sources */,
@@ -1154,6 +1207,7 @@
 				9B95469F28BD17760076C798 /* BuyCells.swift in Sources */,
 				9B9FF2FC28BDF6390037A3DF /* SettingCell.swift in Sources */,
 				9B95469428BD14500076C798 /* MoneyVC.swift in Sources */,
+				9B9DDA9028BF61880051C7FA /* salesViewAPI.swift in Sources */,
 				9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */,
 				9B65EEBF28B9C96300A548E0 /* SelectCard.swift in Sources */,
 				9B32B9E128BAEA6A00FB7651 /* Idx.swift in Sources */,
@@ -1165,7 +1219,9 @@
 				9B3D97E928B60968006B4D32 /* ItemLists.swift in Sources */,
 				9B5E23AE28B4B87D00432616 /* OtherLoginVC.swift in Sources */,
 				9B08CF9F28B0C4E7006782C4 /* LoginVC.swift in Sources */,
+				9B9DDA8528BF47430051C7FA /* ZzeamListModel.swift in Sources */,
 				9B3D97EE28B60A6C006B4D32 /* ItemListsModel.swift in Sources */,
+				9B9DDA9228BF61AD0051C7FA /* ST_SalesView.swift in Sources */,
 				9B04174928B64E480029A45C /* ST_itemIdx.swift in Sources */,
 				9B5E23AB28B39DAC00432616 /* Rc_Cell.swift in Sources */,
 				9B65EEC328B9E42400A548E0 /* DirectVC.swift in Sources */,
