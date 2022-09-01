@@ -869,7 +869,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kakao" translatesAutoresizingMaskIntoConstraints="NO" id="fCm-He-laN">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="fCm-He-laN">
                                                         <rect key="frame" x="20" y="92" width="64" height="64"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="64" id="8rQ-O6-exa"/>
@@ -1736,7 +1736,7 @@
         <image name="IMG_2001" width="1242" height="294"/>
         <image name="IMG_2003" width="1096" height="580"/>
         <image name="IMG_2004" width="1242" height="1698"/>
-        <image name="Kakao" width="318" height="318"/>
+        <image name="Loading" width="358" height="326"/>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>

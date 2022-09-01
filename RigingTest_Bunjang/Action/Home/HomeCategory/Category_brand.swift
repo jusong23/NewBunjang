@@ -141,9 +141,9 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
         var FollowingCheck = FollowingCheck.Key
         
         if FollowingCheck == 1 {
-            Follow()
-        } else {
             UnFollow()
+        } else {
+            Follow()
         }
     }
     

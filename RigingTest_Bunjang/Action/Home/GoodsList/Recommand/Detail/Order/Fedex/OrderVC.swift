@@ -153,7 +153,6 @@ class OrderVC : UIViewController {
     }
     
     @IBAction func register(_ sender: Any) {
-        self.Complete()
         postOrder.post_12_3_payment(accessToken: JwtToken.token,
                                     addressIdx: Address_ST.Idx,
                                     itemIdx: Item.Idx ?? 9999,
@@ -162,10 +161,12 @@ class OrderVC : UIViewController {
                                     isDirectDeal: DealType.Idx ?? 999,
                                     paymentIdx: Payment.Idx ?? 9999)
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        self.Complete()
+
     }
 
     func Complete() {
-        let alert = UIAlertController(title: "성공", message: "브랜드 결제가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "성공", message: " 결제가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: "확인", style: .default) { (action) in }
         alert.addAction(okAction)
         present(alert, animated: false, completion: nil)
