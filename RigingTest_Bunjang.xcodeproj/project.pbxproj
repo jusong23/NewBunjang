@@ -70,6 +70,8 @@
 		9B5B80AA28C041A3001AAFB9 /* RecommandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80A928C041A3001AAFB9 /* RecommandModel.swift */; };
 		9B5B80AE28C04284001AAFB9 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80AD28C04284001AAFB9 /* SearchAPI.swift */; };
 		9B5B80B028C04290001AAFB9 /* ST_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80AF28C04290001AAFB9 /* ST_Search.swift */; };
+		9B5B80B628C06A27001AAFB9 /* BrandsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80B528C06A27001AAFB9 /* BrandsAPI.swift */; };
+		9B5B80B828C06A3A001AAFB9 /* ST_Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80B728C06A3A001AAFB9 /* ST_Brands.swift */; };
 		9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D18FC28B8E5E100B24CEB /* SelectKey.swift */; };
 		9B5E239628B3975800432616 /* TalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E239528B3975700432616 /* TalkVC.swift */; };
 		9B5E23A328B398DB00432616 /* TalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E23A128B398DB00432616 /* TalkCell.swift */; };
@@ -223,6 +225,8 @@
 		9B5B80A928C041A3001AAFB9 /* RecommandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandModel.swift; sourceTree = "<group>"; };
 		9B5B80AD28C04284001AAFB9 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 		9B5B80AF28C04290001AAFB9 /* ST_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_Search.swift; sourceTree = "<group>"; };
+		9B5B80B528C06A27001AAFB9 /* BrandsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsAPI.swift; sourceTree = "<group>"; };
+		9B5B80B728C06A3A001AAFB9 /* ST_Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_Brands.swift; sourceTree = "<group>"; };
 		9B5D18FC28B8E5E100B24CEB /* SelectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectKey.swift; sourceTree = "<group>"; };
 		9B5E239528B3975700432616 /* TalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkVC.swift; sourceTree = "<group>"; };
 		9B5E23A128B398DB00432616 /* TalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkCell.swift; sourceTree = "<group>"; };
@@ -589,6 +593,7 @@
 		9B42E5A028B1EF3400737F24 /* HomeCategory */ = {
 			isa = PBXGroup;
 			children = (
+				9B5B80B128C06822001AAFB9 /* SearchBrand */,
 				9B9C521428B21E7300570BB1 /* WholeMenu.storyboard */,
 				9B45339A28B2177D003163FE /* Category_brand.swift */,
 				9B45339828B2175F003163FE /* Category_category.swift */,
@@ -698,7 +703,8 @@
 				9B9DDA8B28BF61620051C7FA /* 3. SalesView */,
 				9B938B9628BF7D3000C8D8B5 /* 4. Address */,
 				9B1358C028BF393A00501F5B /* 5. Likes */,
-				9B5B80AB28C0424D001AAFB9 /* 7. Brands */,
+				9B5B80AB28C0424D001AAFB9 /* 7. Searches */,
+				9B5B80B328C069D3001AAFB9 /* 8. Brands */,
 				9B9DDA9F28BF6EDA0051C7FA /* 10. Chats */,
 				9B27799928B8CC9D0025B744 /* 12. Orders */,
 				9B65EECA28B9EAEC00A548E0 /* 13. Payment */,
@@ -760,12 +766,12 @@
 			path = RecommandBrand;
 			sourceTree = "<group>";
 		};
-		9B5B80AB28C0424D001AAFB9 /* 7. Brands */ = {
+		9B5B80AB28C0424D001AAFB9 /* 7. Searches */ = {
 			isa = PBXGroup;
 			children = (
 				9B5B80AC28C04266001AAFB9 /* 7.2 Search */,
 			);
-			path = "7. Brands";
+			path = "7. Searches";
 			sourceTree = "<group>";
 		};
 		9B5B80AC28C04266001AAFB9 /* 7.2 Search */ = {
@@ -775,6 +781,30 @@
 				9B5B80AF28C04290001AAFB9 /* ST_Search.swift */,
 			);
 			path = "7.2 Search";
+			sourceTree = "<group>";
+		};
+		9B5B80B128C06822001AAFB9 /* SearchBrand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchBrand;
+			sourceTree = "<group>";
+		};
+		9B5B80B328C069D3001AAFB9 /* 8. Brands */ = {
+			isa = PBXGroup;
+			children = (
+				9B5B80B428C069EE001AAFB9 /* 8.2 Brands */,
+			);
+			path = "8. Brands";
+			sourceTree = "<group>";
+		};
+		9B5B80B428C069EE001AAFB9 /* 8.2 Brands */ = {
+			isa = PBXGroup;
+			children = (
+				9B5B80B528C06A27001AAFB9 /* BrandsAPI.swift */,
+				9B5B80B728C06A3A001AAFB9 /* ST_Brands.swift */,
+			);
+			path = "8.2 Brands";
 			sourceTree = "<group>";
 		};
 		9B5E239728B3978800432616 /* Cell */ = {
@@ -1342,6 +1372,7 @@
 				9B5B80B028C04290001AAFB9 /* ST_Search.swift in Sources */,
 				9B3E6A1928BB13D6003B06CC /* NowReserving.swift in Sources */,
 				9B938B9928BF7D5400C8D8B5 /* addressAPI.swift in Sources */,
+				9B5B80B628C06A27001AAFB9 /* BrandsAPI.swift in Sources */,
 				9B65EED628B9F13800A548E0 /* ST_patments_userId(GET).swift in Sources */,
 				9B9DDA9728BF62E30051C7FA /* SalesViewCells.swift in Sources */,
 				9B9546A628BD1AD90076C798 /* PurchaseListModel.swift in Sources */,
@@ -1392,6 +1423,7 @@
 				9B9C522028B2424100570BB1 /* SearchVC.swift in Sources */,
 				9B048FEF28B10EBF009DC9B2 /* bannerImage.swift in Sources */,
 				9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */,
+				9B5B80B828C06A3A001AAFB9 /* ST_Brands.swift in Sources */,
 				9B9546A928BD1E340076C798 /* ST_UserInfo.swift in Sources */,
 				9B3E6A1B28BB13FB003B06CC /* CompleteSelling.swift in Sources */,
 				9B9FF2F828BDEEAE0037A3DF /* AccountCells.swift in Sources */,

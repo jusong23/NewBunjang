@@ -304,7 +304,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNK-gV-mig">
-                                                <rect key="frame" x="0.0" y="112" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="81" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가나다순" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-Wq-Zwn">
                                                         <rect key="frame" x="19" y="18" width="70" height="24"/>
@@ -333,7 +333,7 @@
                                                         <state key="normal" image="checkmark.circle" catalog="system"/>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="St2-yD-JZZ" firstAttribute="centerY" secondItem="oNK-gV-mig" secondAttribute="centerY" id="ILr-tS-mEh"/>
                                                     <constraint firstItem="St2-yD-JZZ" firstAttribute="leading" secondItem="iFm-vP-IMI" secondAttribute="trailing" constant="3" id="OW0-Kh-vl2"/>
@@ -346,13 +346,21 @@
                                                     <constraint firstItem="iGQ-MB-5Jd" firstAttribute="centerY" secondItem="g9g-Wq-Zwn" secondAttribute="centerY" id="yUQ-f3-1CK"/>
                                                 </constraints>
                                             </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-Zt-HfW">
+                                                <rect key="frame" x="0.0" y="141" width="414" height="661"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="oNK-gV-mig" secondAttribute="trailing" id="8ie-qd-49h"/>
+                                            <constraint firstAttribute="trailing" secondItem="zAa-Zt-HfW" secondAttribute="trailing" id="J31-ud-fK6"/>
                                             <constraint firstItem="pWW-Y1-wo5" firstAttribute="top" secondItem="Cwq-cB-bAU" secondAttribute="top" constant="10" id="PME-hZ-1qa"/>
+                                            <constraint firstItem="zAa-Zt-HfW" firstAttribute="top" secondItem="oNK-gV-mig" secondAttribute="bottom" id="TXQ-in-JFg"/>
                                             <constraint firstItem="pWW-Y1-wo5" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" constant="10" id="TzT-dM-S5N"/>
-                                            <constraint firstItem="oNK-gV-mig" firstAttribute="top" secondItem="pWW-Y1-wo5" secondAttribute="bottom" constant="51" id="leg-0e-dQL"/>
+                                            <constraint firstItem="zAa-Zt-HfW" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" id="UJc-6X-qjz"/>
+                                            <constraint firstItem="oNK-gV-mig" firstAttribute="top" secondItem="pWW-Y1-wo5" secondAttribute="bottom" constant="20" id="leg-0e-dQL"/>
+                                            <constraint firstAttribute="bottom" secondItem="zAa-Zt-HfW" secondAttribute="bottom" id="lop-V6-3R0"/>
                                             <constraint firstItem="oNK-gV-mig" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" id="rF9-Xt-POp"/>
                                             <constraint firstAttribute="trailing" secondItem="pWW-Y1-wo5" secondAttribute="trailing" constant="10" id="tYX-MD-T2K"/>
                                         </constraints>
@@ -383,10 +391,13 @@
                             <constraint firstItem="XDD-gI-oBf" firstAttribute="trailing" secondItem="4h8-gL-SwG" secondAttribute="trailing" id="vbV-7W-f3v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="zAa-Zt-HfW" id="TmF-I1-Bw9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTv-2a-cmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4542" y="-236"/>
+            <point key="canvasLocation" x="4540.579710144928" y="-236.38392857142856"/>
         </scene>
     </scenes>
     <resources>
@@ -401,9 +412,6 @@
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
