@@ -9,6 +9,8 @@ import UIKit
 
 class Rg_Cell: UITableViewCell {
 
+    @IBOutlet weak var Category: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
