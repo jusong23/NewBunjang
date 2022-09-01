@@ -46,6 +46,20 @@ class Category_brand: UIViewController {
         }
     }
     
+    public func Follow() {
+        let alert = UIAlertController(title: "성공", message: "브랜드 팔로우가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in }
+        alert.addAction(okAction)
+        present(alert, animated: false, completion: nil)
+    }
+    
+    public func UnFollow() {
+        let alert = UIAlertController(title: "성공", message: "브랜드 팔로우가 해지되었습니다.", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in }
+        alert.addAction(okAction)
+        present(alert, animated: false, completion: nil)
+    }
+    
     func gettingMyFollow() {
         self.MyFollow.getMyFollow(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
@@ -113,7 +127,6 @@ class Category_brand: UIViewController {
         })
     }
     
-    
 }
 
 extension Category_brand: UITableViewDataSource, UITableViewDelegate {
@@ -122,8 +135,16 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         var cellBrandIdx = self.BrandsDataModel.getBrandIdx(index: indexPath.row)
-        
+
         self.PostBrandFollow.post_15_1_BrandFollow(accessToken: JwtToken.token, userIdx: User.Idx, brandIdx: cellBrandIdx)
+        
+        var FollowingCheck = FollowingCheck.Key
+        
+        if FollowingCheck == 1 {
+            Follow()
+        } else {
+            UnFollow()
+        }
     }
     
     
@@ -169,7 +190,6 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
         var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
         
         cell.brandImage.load_8_1(url_8_1: (url ?? fakeUrl)!)
-        
         
         return cell
     }

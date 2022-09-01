@@ -30,3 +30,8 @@ struct Payment {
 struct Order {
     static var Idx: Int?
 }
+
+struct FollowingCheck {
+    static var Key: Int?
+}
+

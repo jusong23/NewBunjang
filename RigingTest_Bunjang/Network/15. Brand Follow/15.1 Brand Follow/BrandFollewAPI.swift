@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - [POST] 15.1 브랜드 팔로우 / 언팔로우
 class post_15_1 {
-        
+            
     func post_15_1_BrandFollow(accessToken:String, userIdx:String, brandIdx:Int) {
             let Testurl = URL(string: "https://prod.jinsoo.shop/brand-follows/\(userIdx)/\(brandIdx)")!
 
@@ -51,6 +51,13 @@ class post_15_1 {
                     let decoder = JSONDecoder()
                     // json 객체에서 data 유형의 인스턴스로 디코딩하는 객체! Decodable, Codable 프로토콜을 준수하는 라인!
                     let result = try decoder.decode(BrandFollow.self, from: data)
+                
+                    
+                    if result.baseResult.resultMessage == "브랜드 팔로우 성공" {
+                        FollowingCheck.Key = 1
+                    } else {
+                        FollowingCheck.Key = 0
+                    }
                     
                     print(result)
                 }

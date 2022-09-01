@@ -32,7 +32,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="YbL-yC-HXn">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="YbL-yC-HXn">
                         <rect key="frame" x="20" y="9" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="EzH-gE-07f"/>
@@ -113,6 +113,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="img1" width="1970" height="1342"/>
+        <image name="Loading" width="358" height="326"/>
     </resources>
 </document>
