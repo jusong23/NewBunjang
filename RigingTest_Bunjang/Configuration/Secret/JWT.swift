@@ -8,8 +8,11 @@
 import Foundation
 
 struct JwtToken {
-    static let token: String = "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWR4IjozMiwiaWF0IjoxNjYxNTc5MzY0LCJleHAiOjE2NjMwNTA1OTN9.Se891bmMjPw8DnWrWdg_gHrzNOJUEvmEFTNTDrwIsqA"
+    static var token: String?
 }
 
+public var AccessToken = ""
 
 // 전화번호로 로그인 상태 / 유저아이디 32
+
+//"eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWR4IjozMiwiaWF0IjoxNjYxNTc5MzY0LCJleHAiOjE2NjMwNTA1OTN9.Se891bmMjPw8DnWrWdg_gHrzNOJUEvmEFTNTDrwIsqA"

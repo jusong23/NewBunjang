@@ -9,6 +9,8 @@ import UIKit
 
 class OtherLoginVC: UIViewController {
     
+    var Post_1_1 = post_1_1 ()
+    
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var birthTextField: UITextField!
     @IBOutlet var phoneNumberTextField: UITextField!
@@ -22,28 +24,14 @@ class OtherLoginVC: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-//        makeRootVC()
     }
-    
-//    func makeRootVC() {
-//        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "OtherLoginVC") as? OtherLoginVC else {return}
-//        self.view.window?.rootViewController = viewController
-//        self.view.window?.makeKeyAndVisible()
-//    }
-    
-//    @IBAction func tapToMainTabbar(_ sender: Any) {
-//        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") else { return }
-//            self.navigationController?.pushViewController(viewController, animated: true)
-//    }
-    
 
     @IBAction func signUp(_ sender: Any) {
-        postSignUp(
+        self.Post_1_1.post_1_1_SignUp(
             userName: self.userNameTextField.text ?? "",
             phoneNumber: self.phoneNumberTextField.text ?? "",
-            birth: self.birthTextField.text ?? ""
-        )
-       
+            birth: self.birthTextField.text ?? "")
+        
         DispatchQueue.main.async {
             guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") else { return }
             self.view.window?.rootViewController = viewController

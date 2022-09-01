@@ -16,7 +16,7 @@ struct Item {
 }
 
 struct User {
-    static let Idx: String = "32"
+    static var Idx: String?
 }
 
 struct DealType {
@@ -34,4 +34,6 @@ struct Order {
 struct FollowingCheck {
     static var Key: Int?
 }
+
+public var UserIdx = ""
 
