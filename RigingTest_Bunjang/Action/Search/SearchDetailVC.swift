@@ -37,7 +37,9 @@ class SearchDetailVC: UIViewController {
             
             for i in 0..<result.baseResult.count {
                 if result.baseResult[i].brandName == SearchWord {
-                    print(result.baseResult[i])
+                    
+                    self.SearchedDataModel.removeData()
+                    
                     self.SearchedDataModel.inputData(
                         brandIdx: result.baseResult[i].brandIdx,
                         brandName: result.baseResult[i].brandName,
@@ -87,7 +89,7 @@ extension SearchDetailVC: UITableViewDataSource, UITableViewDelegate {
         
         var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
         
-        cell.brandImage.load_8_1(url_8_1: (url ?? fakeUrl)!)
+        cell.brandImage.load_8_2(url_8_2: (url ?? fakeUrl)!)
         
         
         return cell

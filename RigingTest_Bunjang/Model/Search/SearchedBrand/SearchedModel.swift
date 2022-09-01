@@ -39,4 +39,11 @@ class SearchedListDataModel {
     
     public func inputData(brandIdx:Int, brandName:String, brandSubName:String, brandItemCount:String, isFollowCheck:Int, storeImageUrl:String) {
         self.SearchedListsStruct.append(SearchedList(brandIdx: brandIdx, brandName: brandName, brandSubName: brandSubName, brandItemCount: brandItemCount, isFollowCheck: isFollowCheck, storeImageUrl: storeImageUrl))
-    }}
+    }
+    
+    public func removeData() {
+        self.SearchedListsStruct.removeAll()
+    }
+    
+}
+
