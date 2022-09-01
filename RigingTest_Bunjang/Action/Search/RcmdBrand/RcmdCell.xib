@@ -84,6 +84,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="brandImage" destination="YbL-yC-HXn" id="maY-1B-Ii1"/>
+                <outlet property="brandItemCnt" destination="r1v-At-Gwp" id="JDH-xp-ras"/>
+                <outlet property="brandName" destination="jbT-9m-O6t" id="nYP-4m-6Ek"/>
+                <outlet property="brandSubName" destination="onS-1J-8o6" id="PMF-7g-FsR"/>
+            </connections>
             <point key="canvasLocation" x="215.94202898550725" y="127.90178571428571"/>
         </tableViewCell>
     </objects>

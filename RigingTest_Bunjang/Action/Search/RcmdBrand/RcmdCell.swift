@@ -9,6 +9,12 @@ import UIKit
 
 class RcmdCell: UITableViewCell {
 
+    @IBOutlet weak var brandImage: UIImageView!
+    
+    @IBOutlet weak var brandName: UILabel!
+    @IBOutlet weak var brandSubName: UILabel!
+    @IBOutlet weak var brandItemCnt: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

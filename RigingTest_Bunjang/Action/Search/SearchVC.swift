@@ -8,6 +8,9 @@
 import UIKit
 
 class SearchVC: UIViewController {
+    
+    var Searches = get_7_2_search ()
+    var recommandBrandDataModel = RecommandBrandListDataModel ()
 
     @IBOutlet var UnderView: UIView!
     @IBOutlet var TopView: UIView!
@@ -20,9 +23,35 @@ class SearchVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "RcmdCell", bundle: .main), forCellReuseIdentifier: "RcmdCell")
-
+        gettingSearch()
     }
     
+    func gettingSearch() {
+        self.Searches.getAddress(accessToken: JwtToken.token,
+                                 userIdx:User.Idx, onCompleted: {
+            [weak self] result in // 순환 참조 방지, 전달인자로 result
+            guard let self = self else { return } // 일시적으로 strong ref가 되게
+        
+            switch result {
+            case let .success(result):
+        
+                for i in 0..<result.baseResult.brandNameList.count {
+                    self.recommandBrandDataModel.inputData(
+                        brandName: result.baseResult.brandNameList[i].brandName,
+                        brandSubName: result.baseResult.brandNameList[i].brandSubName,
+                        imageUrl: result.baseResult.brandNameList[i].imageURL,
+                        brandItemCnt: result.baseResult.brandNameList[i].brandItemCnt,
+                        isFollowing: result.baseResult.brandNameList[i].isFollowing)
+                }
+                
+                print(result.baseResult.brandNameList.count)
+                
+            case let .failure(error):
+                debugPrint("error \(error)")
+            }
+        })
+    }
+        
     
     @IBAction func tapDismissButton(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)

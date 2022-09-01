@@ -176,12 +176,32 @@
                                                     <constraint firstItem="fxB-fc-Hlx" firstAttribute="leading" secondItem="jJA-wi-77a" secondAttribute="leading" constant="20" id="zso-ut-LKc"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRi-xI-quo">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-w9-ppn">
+                                                        <rect key="frame" x="20" y="10" width="91.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="xbI-w9-ppn" firstAttribute="leading" secondItem="YRi-xI-quo" secondAttribute="leading" constant="20" id="HVb-h3-UsZ"/>
+                                                    <constraint firstItem="xbI-w9-ppn" firstAttribute="top" secondItem="YRi-xI-quo" secondAttribute="top" constant="10" id="jep-ql-9Po"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="jJA-wi-77a" secondAttribute="trailing" id="4Q2-jX-34F"/>
+                                            <constraint firstAttribute="trailing" secondItem="YRi-xI-quo" secondAttribute="trailing" id="6GS-vs-os8"/>
+                                            <constraint firstItem="YRi-xI-quo" firstAttribute="leading" secondItem="hog-5L-kdI" secondAttribute="leading" id="JER-cK-L72"/>
                                             <constraint firstItem="jJA-wi-77a" firstAttribute="top" secondItem="hog-5L-kdI" secondAttribute="top" constant="100" id="Oog-xb-rlk"/>
+                                            <constraint firstItem="YRi-xI-quo" firstAttribute="top" secondItem="hog-5L-kdI" secondAttribute="top" id="Rf0-SL-Cb0"/>
                                             <constraint firstAttribute="bottom" secondItem="jJA-wi-77a" secondAttribute="bottom" id="dIP-ov-sNF"/>
+                                            <constraint firstItem="jJA-wi-77a" firstAttribute="top" secondItem="YRi-xI-quo" secondAttribute="bottom" id="mgI-6J-hFw"/>
                                             <constraint firstItem="jJA-wi-77a" firstAttribute="leading" secondItem="hog-5L-kdI" secondAttribute="leading" id="sCk-tx-6KN"/>
                                         </constraints>
                                     </view>
