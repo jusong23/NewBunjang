@@ -51,7 +51,7 @@ class ItemDetails: UIViewController {
         self.RC_itemContent.sizeToFit()
         
         // MARK: - [GET] 2.6 상품 목록 가져오기(최신순) /items/:itemIdx
-        self.getItemsIdx.getItemsIdx(accessToken: JwtToken.token, itemIdx: self.selectedKey, userIdx: User.Idx, onCompleted: {
+        self.getItemsIdx.getItemsIdx(accessToken: JwtToken.token ?? "", itemIdx: self.selectedKey, userIdx: User.Idx ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
      
@@ -153,7 +153,7 @@ class ItemDetails: UIViewController {
         self.heartButton.tintColor = .mainRed
         self.heartButton.setImage(UIImage(systemName: "heart.fill"), for: .selected)
         
-        self.Post_5_2.post_5_2_lies(accessToken: JwtToken.token, userIdx: User.Idx, itemIdx: Int(Item.Idx ?? 0))
+        self.Post_5_2.post_5_2_lies(accessToken: JwtToken.token ?? "", userIdx: User.Idx ?? "", itemIdx: Int(Item.Idx ?? 0))
     }
     
     

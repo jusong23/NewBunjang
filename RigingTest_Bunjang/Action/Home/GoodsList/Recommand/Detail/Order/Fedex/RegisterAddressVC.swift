@@ -29,7 +29,7 @@ class RegisterAddressVC: UIViewController {
         self.addressDetail.sizeToFit()
         
         // MARK: - [GET] 12.1 택배 거래시 필요한 데이터 가져오기 /indirect/\(itemInx)/0
-        self.getOrderIndirect.getOrderIndirect(accessToken: JwtToken.token, itemIdx: RealSelectedKey, onCompleted: {
+        self.getOrderIndirect.getOrderIndirect(accessToken: JwtToken.token ?? "", itemIdx: RealSelectedKey, onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
     

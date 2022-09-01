@@ -17,11 +17,11 @@ class Dr_SelecteCard: UIViewController {
     }
     
     func postCardInfo(accountName:String) {
-        Post_13_1.post_13_1_payment(accessToken: JwtToken.token, accountName: accountName, userIdx: User.Idx)
+        Post_13_1.post_13_1_payment(accessToken: JwtToken.token ?? "", accountName: accountName, userIdx: User.Idx ?? "")
     }
     
     func getCardInfo() {
-        Get_13_2.getPayments(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+        Get_13_2.getPayments(accessToken: JwtToken.token ?? "", userIdx: User.Idx ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
      

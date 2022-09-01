@@ -94,7 +94,7 @@ class OrderVC : UIViewController {
         }
         
         // MARK: - 12. 1
-        self.getOrderIndirect.getOrderIndirect(accessToken: JwtToken.token, itemIdx: self.SELECTED_KEY_ORDER ?? 999, onCompleted: {
+        self.getOrderIndirect.getOrderIndirect(accessToken: JwtToken.token ?? "", itemIdx: self.SELECTED_KEY_ORDER ?? 999, onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
     
@@ -168,10 +168,10 @@ class OrderVC : UIViewController {
         
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") as? mainTabbarVC else {return}
         
-        postOrder.post_12_3_payment(accessToken: JwtToken.token,
+        postOrder.post_12_3_payment(accessToken: JwtToken.token ?? "",
                                     addressIdx: Address_ST.Idx,
                                     itemIdx: Item.Idx ?? 9999,
-                                    buyUserIdx: Int(User.Idx) ?? 9999,
+                                    buyUserIdx: Int(User.Idx ?? "") ?? 9999,
                                     orderRequest: self.orderMemo.text ?? "요청사항 없음",
                                     isDirectDeal: DealType.Idx ?? 999,
                                     paymentIdx: Payment.Idx ?? 9999)

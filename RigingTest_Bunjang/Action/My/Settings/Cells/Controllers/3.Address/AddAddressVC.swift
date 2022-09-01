@@ -42,13 +42,13 @@ class AddAddressVC: UIViewController {
     
     @IBAction func addAddress(_ sender: Any) {
         self.Post_4_1.post_4_1_(
-            accessToken: JwtToken.token,
+            accessToken: JwtToken.token ?? "",
             userName: self.userNameTF.text ?? "",
             address: self.userAddressTF.text ?? "",
             detailAddress: self.userDetailAddressTF.text ?? "",
             phoneNumber: self.userPhoneNumberTF.text ?? "",
             isBaseAddress: self.BaseAddress,
-            userIdx: Int(User.Idx) ?? 0)
+            userIdx: Int(User.Idx ?? "") ?? 0)
         
     }
 

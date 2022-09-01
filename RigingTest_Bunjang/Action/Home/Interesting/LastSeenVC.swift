@@ -23,7 +23,7 @@ class LastSeenVC: UIViewController {
     }
     
     func gettingSalesView() {
-        self.GetSalesView.getSalesView(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+        self.GetSalesView.getSalesView(accessToken: JwtToken.token ?? "", userIdx: User.Idx ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
      

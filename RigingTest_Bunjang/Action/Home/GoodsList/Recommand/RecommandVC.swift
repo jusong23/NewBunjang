@@ -10,7 +10,8 @@ import UIKit
 class RecommandVC: UIViewController {
     
     var ItemListsDataModel = itemListsDataModel ()
-    let getItems = get_2_4_items()
+    let
+    getItems = get_2_4_items()
 
     @IBOutlet var collectionView: UICollectionView!
     let layout = UICollectionViewFlowLayout()
@@ -26,7 +27,7 @@ class RecommandVC: UIViewController {
     
     
     func appendItems() {
-        getItems.getItems(accessToken: JwtToken.token, onCompleted: {
+        getItems.getItems(accessToken: JwtToken.token ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
      

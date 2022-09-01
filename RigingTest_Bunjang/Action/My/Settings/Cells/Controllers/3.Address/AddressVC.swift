@@ -36,7 +36,7 @@ class AddressVC: UIViewController {
     }
     
     func gettingAddress() {
-        self.getAddress.getAddress(accessToken: JwtToken.token, onCompleted: {
+        self.getAddress.getAddress(accessToken: JwtToken.token ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
      

@@ -25,7 +25,7 @@ class TalkVC: UIViewController {
     }
     
 func gettingChatRoom() {
-    self.ChatRooms.getChathRoom(accessToken: JwtToken.token, onCompleted: {
+    self.ChatRooms.getChathRoom(accessToken: JwtToken.token ?? "", onCompleted: {
         [weak self] result in // 순환 참조 방지, 전달인자로 result
         guard let self = self else { return } // 일시적으로 strong ref가 되게
     

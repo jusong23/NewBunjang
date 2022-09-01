@@ -21,7 +21,7 @@ class SelectCard: UIViewController {
     }
     
     func postCardInfo(accountName:String) {
-        Post_13_1.post_13_1_payment(accessToken: JwtToken.token, accountName: accountName, userIdx: User.Idx)
+        Post_13_1.post_13_1_payment(accessToken: JwtToken.token ?? "", accountName: accountName, userIdx: User.Idx ?? "")
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -61,7 +61,7 @@ class Category_brand: UIViewController {
     }
     
     func gettingMyFollow() {
-        self.MyFollow.getMyFollow(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+        self.MyFollow.getMyFollow(accessToken: JwtToken.token ?? "", userIdx: User.Idx ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
         
@@ -101,7 +101,7 @@ class Category_brand: UIViewController {
     }
     
     func gettingBrands() {
-        self.GetBrands.getBrands(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+        self.GetBrands.getBrands(accessToken: JwtToken.token ?? "", userIdx: User.Idx ?? "", onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
         
@@ -136,7 +136,7 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
         
         var cellBrandIdx = self.BrandsDataModel.getBrandIdx(index: indexPath.row)
 
-        self.PostBrandFollow.post_15_1_BrandFollow(accessToken: JwtToken.token, userIdx: User.Idx, brandIdx: cellBrandIdx)
+        self.PostBrandFollow.post_15_1_BrandFollow(accessToken: JwtToken.token ?? "", userIdx: User.Idx ?? "", brandIdx: cellBrandIdx)
         
         var FollowingCheck = FollowingCheck.Key
         
