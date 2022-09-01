@@ -38,11 +38,13 @@ class OtherLoginVC: UIViewController {
     
 
     @IBAction func signUp(_ sender: Any) {
-        postSignUp(
-            userName: self.userNameTextField.text ?? "",
-            phoneNumber: self.phoneNumberTextField.text ?? "",
-            birth: self.birthTextField.text ?? ""
-        )
+//        postSignUp(
+//            userName: self.userNameTextField.text ?? "",
+//            phoneNumber: self.phoneNumberTextField.text ?? "",
+//            birth: self.birthTextField.text ?? ""
+//        )
+        
+        postLogin(phoneNumber: self.phoneNumberTextField.text ?? "")
        
         DispatchQueue.main.async {
             guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") else { return }

@@ -12,10 +12,10 @@ import Alamofire
 
 // MARK: - [POST] 1.1 전화번호로 회원가입 /app/users/sign-up
 
-func postSignUp(userName:String, phoneNumber:String, birth: String) {
+func postLogin(phoneNumber:String) {
         let Testurl = URL(string: "https://prod.jinsoo.shop/app/users/sign-up")!
 
-        var profile = SignUp(userName: userName, phoneNumber: phoneNumber, birth: birth)
+        var profile = LoginRequest(phoneNumber: phoneNumber)
         
         guard let jsonData = try? JSONEncoder().encode(profile) else {
             print("error: cannot encode data")
