@@ -336,6 +336,9 @@
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="checkmark.circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="MyFollowingButton:" destination="Jpr-l1-XtF" eventType="touchUpInside" id="m9j-EK-W1n"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -443,6 +446,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Oot-Yj-Wxe"/>
                     <connections>
+                        <outlet property="myFollowing" destination="iFm-vP-IMI" id="lag-fD-t6b"/>
                         <outlet property="searchTextField" destination="fT1-NJ-8LK" id="Qkf-g1-AVj"/>
                         <outlet property="tableView" destination="zAa-Zt-HfW" id="TmF-I1-Bw9"/>
                     </connections>

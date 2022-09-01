@@ -10,12 +10,16 @@ import UIKit
 class Category_brand: UIViewController {
 
     var GetBrands = get_8_1_brands ()
+    var MyFollow = get_8_2_MyFollow ()
     var PostBrandFollow = post_15_1 ()
     var BrandsDataModel = BrandListDataModel ()
-    var searchCheck = 0
+    var MyFollwingDataModel = MyFollwingListDataModel ()
+    
+    var MyFollowingCheck = 0
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var myFollowing: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,53 @@ class Category_brand: UIViewController {
         gettingBrands()
     }
     
+    @IBAction func MyFollowingButton(_ sender: Any) {
+        if self.myFollowing.isSelected == false {
+            self.myFollowing.isSelected = true
+            self.myFollowing.tintColor = .mainRed
+            self.myFollowing.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .selected)
+            gettingMyFollow()
+            self.MyFollowingCheck = 1
+        } else {
+            self.myFollowing.isSelected = false
+            self.myFollowing.tintColor = .lightGray
+            self.myFollowing.setImage(UIImage(systemName: "checkmark.circle"), for: .selected)
+            self.MyFollowingCheck = 0
+            self.tableView.reloadData()
+        }
+    }
+    
+    func gettingMyFollow() {
+        self.MyFollow.getMyFollow(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+            [weak self] result in // 순환 참조 방지, 전달인자로 result
+            guard let self = self else { return } // 일시적으로 strong ref가 되게
+        
+            switch result {
+            case let .success(result):
+        
+                self.MyFollwingDataModel.removeData()
+
+                
+                for i in 0..<result.baseResult.count {
+                    
+                    self.MyFollwingDataModel.inputData(
+                        brandIdx: result.baseResult[i].brandRes.brandIdx,
+                        brandName: result.baseResult[i].brandRes.brandName,
+                        brandSubName: result.baseResult[i].brandRes.brandSubName,
+                        brandItemCount: result.baseResult[i].brandRes.brandItemCount,
+                        isFollowCheck: result.baseResult[i].brandRes.isFollowCheck,
+                        storeImageUrl: result.baseResult[i].brandRes.storeImageURL)
+                    
+                    }
+        
+                self.tableView.reloadData()
+                
+                
+            case let .failure(error):
+                debugPrint("error \(error)")
+            }
+        })
+    }
     
     @IBAction func tapToSearchButton(_ sender: Any) {
         print("it work")
@@ -77,6 +128,11 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if self.MyFollowingCheck == 1 {
+            return self.MyFollwingDataModel.count
+        }
+        
         return self.BrandsDataModel.count
             
     }
@@ -94,6 +150,19 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
         cell.brandSubName.text = cellBrandSubName
         cell.brandItemCnt.text = cellBrandItemCnt
         
+        if self.MyFollowingCheck == 1 {
+            cell.brandName.text = self.MyFollwingDataModel.getBrandName(index: indexPath.row)
+            cell.brandSubName.text = self.MyFollwingDataModel.getBrandSubName(index: indexPath.row)
+            cell.brandItemCnt.text = self.MyFollwingDataModel.getBrandItemCount(index: indexPath.row)
+            
+            var cellImageUrl = self.MyFollwingDataModel.getStoreImageUrl(index: indexPath.row)
+            
+            var url = URL(string: cellImageUrl ?? "")
+            
+            var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
+            
+            cell.brandImage.load_8_1(url_8_1: (url ?? fakeUrl)!)
+        }
         
         var url = URL(string: cellImageUrl ?? "")
         
