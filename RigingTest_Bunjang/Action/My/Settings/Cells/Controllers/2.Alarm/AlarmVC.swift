@@ -97,6 +97,12 @@ extension AlarmVC: UITableViewDataSource, UITableViewDelegate {
         
         if indexPath.section == 0 {
             cell.label.text = self.section_1[indexPath.row]
+            cell.Switch.isOn = false
+            
+            if indexPath.row == 0 {
+                cell.label.textColor = .mainRed
+            }
+            
           } else if indexPath.section == 1 {
               cell.label.text = self.section_2[indexPath.row]
           } else if indexPath.section == 2 {

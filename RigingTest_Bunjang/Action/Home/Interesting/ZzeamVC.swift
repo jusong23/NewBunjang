@@ -23,6 +23,8 @@ class ZzeamVC: UIViewController {
     }
     
     
+    
+    
     func gettingLikes() {
         self.GetLikes.getLikes(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result

@@ -9,16 +9,35 @@ import UIKit
 
 class MyVC: UIViewController {
 
-    @IBOutlet weak var userImage: UIImageView!
     var getUserInfo = get_1_5_UserInfo ()
-    
+    var GetLikes = get_5_1_likes ()
+
     @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var NumberOfZzeam: UILabel!
-    
+    @IBOutlet weak var userImage: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getitngUserInfo()
+        gettingLikes()
     }
+    
+    func gettingLikes() {
+        self.GetLikes.getLikes(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+            [weak self] result in // 순환 참조 방지, 전달인자로 result
+            guard let self = self else { return } // 일시적으로 strong ref가 되게
+     
+            switch result {
+            case let .success(result):
+                                
+                self.NumberOfZzeam.text = String(result.baseResult.count)
+                
+            case let .failure(error):
+                debugPrint("error \(error)")
+            }
+        })
+    }
+    
     
     func getitngUserInfo() {
         self.getUserInfo.getUserInfo(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
