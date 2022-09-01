@@ -158,6 +158,7 @@
 		9BCF949928C08297002B88B3 /* ST_SearchBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF949828C08297002B88B3 /* ST_SearchBrand.swift */; };
 		9BCF949D28C08BFD002B88B3 /* SearchedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF949C28C08BFD002B88B3 /* SearchedList.swift */; };
 		9BCF949F28C08C09002B88B3 /* SearchedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF949E28C08C09002B88B3 /* SearchedModel.swift */; };
+		9BCF94A128C0D701002B88B3 /* SearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF94A028C0D701002B88B3 /* SearchDetailVC.swift */; };
 		9BEA8D6628B8B0A000724169 /* OrderMemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA8D6528B8B0A000724169 /* OrderMemoVC.swift */; };
 		9BF1E72928B0D20A000E3186 /* pageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1E72828B0D20A000E3186 /* pageControl.swift */; };
 		9BF1E72F28B0E113000E3186 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1E72E28B0E113000E3186 /* HomeVC.swift */; };
@@ -319,6 +320,7 @@
 		9BCF949828C08297002B88B3 /* ST_SearchBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_SearchBrand.swift; sourceTree = "<group>"; };
 		9BCF949C28C08BFD002B88B3 /* SearchedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedList.swift; sourceTree = "<group>"; };
 		9BCF949E28C08C09002B88B3 /* SearchedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedModel.swift; sourceTree = "<group>"; };
+		9BCF94A028C0D701002B88B3 /* SearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchDetailVC.swift; path = RigingTest_Bunjang/Action/Search/SearchDetailVC.swift; sourceTree = "<group>"; };
 		9BEA8D6528B8B0A000724169 /* OrderMemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMemoVC.swift; sourceTree = "<group>"; };
 		9BF1E72828B0D20A000E3186 /* pageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageControl.swift; sourceTree = "<group>"; };
 		9BF1E72E28B0E113000E3186 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -649,6 +651,7 @@
 		9B4C02F528B097830070C89E = {
 			isa = PBXGroup;
 			children = (
+				9BCF94A028C0D701002B88B3 /* SearchDetailVC.swift */,
 				9B4C030028B097830070C89E /* RigingTest_Bunjang */,
 				9B4C02FF28B097830070C89E /* Products */,
 				6529EBDFF945C0531EE0C24E /* Pods */,
@@ -1471,6 +1474,7 @@
 				9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */,
 				9B5B80B828C06A3A001AAFB9 /* ST_Brands.swift in Sources */,
 				9B9546A928BD1E340076C798 /* ST_UserInfo.swift in Sources */,
+				9BCF94A128C0D701002B88B3 /* SearchDetailVC.swift in Sources */,
 				9B3E6A1B28BB13FB003B06CC /* CompleteSelling.swift in Sources */,
 				9B9FF2F828BDEEAE0037A3DF /* AccountCells.swift in Sources */,
 				9B5B80AE28C04284001AAFB9 /* SearchAPI.swift in Sources */,

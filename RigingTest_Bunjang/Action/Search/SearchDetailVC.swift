@@ -1,19 +1,19 @@
 //
-//  Category_brand.swift
+//  SearchDetailVC.swift
 //  RigingTest_Bunjang
 //
-//  Created by 이주송 on 2022/08/21.
+//  Created by 이주송 on 2022/09/01.
 //
 
 import UIKit
 
-class Category_brand: UIViewController {
+class SearchDetailVC: UIViewController {
 
-    var GetBrands = get_8_1_brands ()
-    var BrandsDataModel = BrandListDataModel ()
-    var searchCheck = 0
+    var SearchBrands = get_8_2_SearchBrands ()
+    var SearchedDataModel = SearchedListDataModel ()
     
     @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var searchTextField: UITextField!
     
     override func viewDidLoad() {
@@ -22,65 +22,62 @@ class Category_brand: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "RcmdCell", bundle: .main), forCellReuseIdentifier: "RcmdCell")
-        gettingBrands()
     }
     
-    
-    @IBAction func tapToSearchButton(_ sender: Any) {
-        print("it work")
+    @IBAction func DoSearch(_ sender: Any) {
+        
+        var SearchWord = self.searchTextField.text ?? ""
 
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchDetailVC") else {return}
-        viewController.modalPresentationStyle = .fullScreen
-        self.present(viewController, animated: true, completion: nil)
-    }
-    
-    func gettingBrands() {
-        self.GetBrands.getBrands(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {
+        self.SearchBrands.getSearchBrands(accessToken: JwtToken.token, searchWord: SearchWord, onCompleted: {
             [weak self] result in // 순환 참조 방지, 전달인자로 result
             guard let self = self else { return } // 일시적으로 strong ref가 되게
         
             switch result {
             case let .success(result):
-        
-                for i in 0..<result.baseResult.count {
-                    self.BrandsDataModel.inputData(
+            
+            for i in 0..<result.baseResult.count {
+                if result.baseResult[i].brandName == SearchWord {
+                    print(result.baseResult[i])
+                    self.SearchedDataModel.inputData(
                         brandIdx: result.baseResult[i].brandIdx,
                         brandName: result.baseResult[i].brandName,
                         brandSubName: result.baseResult[i].brandSubName,
                         brandItemCount: result.baseResult[i].brandItemCount,
                         isFollowCheck: result.baseResult[i].isFollowCheck,
                         storeImageUrl: result.baseResult[i].storeImageURL)
-                    }
-        
-                self.tableView.reloadData()
-                print(result.baseResult.count)
-        
+                    self.tableView.reloadData()
+                }
+            }
+            
             case let .failure(error):
                 debugPrint("error \(error)")
             }
         })
+                
     }
+    
+    @IBAction func tapBackButton(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
+    
 }
 
-extension Category_brand: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
+
+extension SearchDetailVC: UITableViewDataSource, UITableViewDelegate {
+        
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.BrandsDataModel.count
+        return self.SearchedDataModel.count
             
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RcmdCell", for: indexPath) as? RcmdCell else { return UITableViewCell() }
 
-        var cellBrandName = self.BrandsDataModel.getBrandName(index: indexPath.row)
-        var cellBrandSubName = self.BrandsDataModel.getBrandSubName(index: indexPath.row)
-        var cellImageUrl = self.BrandsDataModel.getStoreImageUrl(index: indexPath.row)
-        var cellBrandItemCnt = self.BrandsDataModel.getBrandItemCount(index: indexPath.row)
+        var cellBrandName = self.SearchedDataModel.getBrandName(index: indexPath.row)
+        var cellBrandSubName = self.SearchedDataModel.getBrandSubName(index: indexPath.row)
+        var cellImageUrl = self.SearchedDataModel.getStoreImageUrl(index: indexPath.row)
+        var cellBrandItemCnt = self.SearchedDataModel.getBrandItemCount(index: indexPath.row)
         
         cell.brandName.text = cellBrandName
         cell.brandSubName.text = cellBrandSubName
@@ -102,9 +99,9 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension UIImageView {
-    func load_8_1(url_8_1: URL) {
+    func load_8_2(url_8_2: URL) {
         DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url_8_1) {
+            if let data = try? Data(contentsOf: url_8_2) {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async {
                         self?.image = image
@@ -114,4 +111,3 @@ extension UIImageView {
         }
     }
 }
-
