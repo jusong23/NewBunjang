@@ -38,6 +38,8 @@ class ItemDetails: UIViewController {
     @IBOutlet var RC_itemContent: UILabel!
     @IBOutlet weak var RC_image: UIImageView!
     @IBOutlet weak var heartButton: UIButton!
+    @IBOutlet weak var SafePay: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +80,10 @@ class ItemDetails: UIViewController {
                     self.RC_isCanExchage.setTitle("교환불가", for: .normal)
                 } else {
                     self.RC_isCanExchage.setTitle("교환가능", for: .normal)
+                }
+                
+                if result.baseResult.isSafePayment == 0 {
+                    self.SafePay.isHidden = true
                 }
                 
                 self.RC_itemContent.text = result.baseResult.itemContent

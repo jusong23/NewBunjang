@@ -32,7 +32,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kakao" translatesAutoresizingMaskIntoConstraints="NO" id="HJ8-qE-FOA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="HJ8-qE-FOA">
                                 <rect key="frame" x="8" y="8" width="164" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="DuV-rE-tWx"/>
@@ -122,7 +122,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Kakao" width="318" height="318"/>
+        <image name="Loading" width="358" height="326"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -231,7 +231,7 @@
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.39573469065656575" green="0.39573469065656575" blue="0.39573469065656575" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <font key="NSFont" size="10" name="AppleSDGothicNeo-Medium"/>
-                                                                    <font key="NSOriginalFont" size="9" name=".AppleSDGothicNeoI-Regular"/>
+                                                                    <font key="NSOriginalFont" metaFont="miniSystem"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
@@ -311,7 +311,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Category_brand" storyboardName="WholeMenu" referencedIdentifier="Category_brand" id="MJv-MP-bdK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7H-IQ-fpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2659" y="625"/>
+            <point key="canvasLocation" x="2536" y="625"/>
         </scene>
         <!--Category_category-->
         <scene sceneID="JL0-PC-dEH">
@@ -319,7 +319,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Category_category" storyboardName="WholeMenu" referencedIdentifier="Category_category" id="LBZ-Wa-tst" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="259-ei-av0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2659" y="593"/>
+            <point key="canvasLocation" x="2536" y="593"/>
         </scene>
         <!--MainCategoryVC-->
         <scene sceneID="r4S-bh-zUq">
@@ -327,7 +327,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="MainCategoryVC" storyboardName="WholeMenu" referencedIdentifier="MainCategoryVC" id="RQA-NN-dYm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdp-lI-Qc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="625"/>
+            <point key="canvasLocation" x="2049" y="625"/>
         </scene>
         <!--TBCategoryVC-->
         <scene sceneID="cDa-vs-Lcw">
@@ -335,7 +335,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="TBCategoryVC" storyboardName="WholeMenu" referencedIdentifier="TBCategoryVC" id="ZJf-Qo-fds" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOm-yb-bPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2420" y="625"/>
+            <point key="canvasLocation" x="2299" y="625"/>
         </scene>
         <!--Category_service-->
         <scene sceneID="Lch-Dm-89n">
@@ -343,7 +343,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Category_service" storyboardName="WholeMenu" referencedIdentifier="Category_service" id="s2G-Q4-eMP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tri-AW-bIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2660" y="657"/>
+            <point key="canvasLocation" x="2538" y="658"/>
         </scene>
     </scenes>
     <resources>

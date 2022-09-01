@@ -493,41 +493,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsq-ih-T8C">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Tv-8ny">
-                                        <rect key="frame" x="20" y="10" width="16.5" height="24"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="chevron.left" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tapBackButton:" destination="cAo-5a-NXm" eventType="touchUpInside" id="ewH-FU-Pbx"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yws-Qc-xBc">
-                                        <rect key="frame" x="56.5" y="10" width="70" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="f1c-Tv-8ny" firstAttribute="leading" secondItem="bsq-ih-T8C" secondAttribute="leading" constant="20" id="6aT-E8-Sin"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="UFl-9d-i9b"/>
-                                    <constraint firstAttribute="height" constant="44" id="djO-1f-1y1"/>
-                                    <constraint firstItem="yws-Qc-xBc" firstAttribute="leading" secondItem="f1c-Tv-8ny" secondAttribute="trailing" constant="20" id="ebg-T1-U1t"/>
-                                    <constraint firstItem="yws-Qc-xBc" firstAttribute="centerY" secondItem="bsq-ih-T8C" secondAttribute="centerY" id="hAm-Yq-ELC"/>
-                                    <constraint firstItem="f1c-Tv-8ny" firstAttribute="centerY" secondItem="bsq-ih-T8C" secondAttribute="centerY" id="rnd-fG-4ZP"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="S7S-bD-qJ3">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsq-ih-T8C">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yws-Qc-xBc">
+                                        <rect key="frame" x="20" y="10" width="70" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRQ-ma-KO4">
+                                        <rect key="frame" x="373" y="11" width="21" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="xmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="cAo-5a-NXm" eventType="touchUpInside" id="IJD-eu-tI0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="yws-Qc-xBc" firstAttribute="leading" secondItem="bsq-ih-T8C" secondAttribute="leading" constant="20" id="2T0-u0-yC7"/>
+                                    <constraint firstAttribute="trailing" secondItem="mRQ-ma-KO4" secondAttribute="trailing" constant="20" id="Jpn-Qc-TaO"/>
+                                    <constraint firstItem="mRQ-ma-KO4" firstAttribute="centerY" secondItem="bsq-ih-T8C" secondAttribute="centerY" id="NAO-YE-Emd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="UFl-9d-i9b"/>
+                                    <constraint firstAttribute="height" constant="44" id="djO-1f-1y1"/>
+                                    <constraint firstItem="yws-Qc-xBc" firstAttribute="centerY" secondItem="bsq-ih-T8C" secondAttribute="centerY" id="hAm-Yq-ELC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bCx-0I-55u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -560,19 +560,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGv-lQ-4gn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-UZ-JhK">
-                                        <rect key="frame" x="20" y="10" width="16.5" height="24"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="chevron.left" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tapBackButton:" destination="kSg-pr-EN0" eventType="touchUpInside" id="2HY-LR-ZdH"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="태그" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-c3-d5E">
-                                        <rect key="frame" x="56.5" y="10" width="35" height="24"/>
+                                        <rect key="frame" x="20" y="10" width="35" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -580,14 +569,24 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="Rsi-UZ-JhK" firstAttribute="centerY" secondItem="FGv-lQ-4gn" secondAttribute="centerY" id="5Pm-QK-ZB3"/>
                                     <constraint firstItem="pC9-c3-d5E" firstAttribute="centerY" secondItem="FGv-lQ-4gn" secondAttribute="centerY" id="Hy3-kX-LCu"/>
-                                    <constraint firstItem="pC9-c3-d5E" firstAttribute="leading" secondItem="Rsi-UZ-JhK" secondAttribute="trailing" constant="20" id="Z72-tk-w0n"/>
-                                    <constraint firstItem="Rsi-UZ-JhK" firstAttribute="leading" secondItem="FGv-lQ-4gn" secondAttribute="leading" constant="20" id="efb-PP-jIw"/>
+                                    <constraint firstItem="pC9-c3-d5E" firstAttribute="leading" secondItem="FGv-lQ-4gn" secondAttribute="leading" constant="20" id="d33-kL-cfC"/>
                                     <constraint firstAttribute="height" constant="44" id="vXf-Bb-L2h"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="wKi-RI-GPF"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL5-1e-LeA">
+                                <rect key="frame" x="373" y="55" width="21" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBackButton:" destination="cAo-5a-NXm" eventType="touchUpInside" id="4My-yc-BhC"/>
+                                    <action selector="tapBackButton:" destination="kSg-pr-EN0" eventType="touchUpInside" id="Era-gV-Vjk"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="태그를 입력해주세요.(최대 5개)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="geg-s3-BNx">
                                 <rect key="frame" x="20" y="104" width="319" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -673,6 +672,8 @@
                             <constraint firstItem="LuW-q3-qCY" firstAttribute="top" secondItem="FGv-lQ-4gn" secondAttribute="bottom" constant="10" id="aOx-C5-wg3"/>
                             <constraint firstItem="0ZW-xJ-2TL" firstAttribute="leading" secondItem="37K-Am-3KJ" secondAttribute="leading" id="c2K-w2-O7w"/>
                             <constraint firstItem="eIw-OM-4N4" firstAttribute="leading" secondItem="37K-Am-3KJ" secondAttribute="leading" constant="9" id="ege-39-SEW"/>
+                            <constraint firstItem="37K-Am-3KJ" firstAttribute="trailing" secondItem="xL5-1e-LeA" secondAttribute="trailing" constant="20" id="h1v-Nm-kwo"/>
+                            <constraint firstItem="xL5-1e-LeA" firstAttribute="centerY" secondItem="FGv-lQ-4gn" secondAttribute="centerY" id="nG9-4E-cxq"/>
                             <constraint firstItem="0ZW-xJ-2TL" firstAttribute="trailing" secondItem="37K-Am-3KJ" secondAttribute="trailing" id="oBu-hd-nY5"/>
                             <constraint firstItem="eIw-OM-4N4" firstAttribute="centerY" secondItem="geg-s3-BNx" secondAttribute="centerY" id="pgr-rd-Fno"/>
                             <constraint firstItem="geg-s3-BNx" firstAttribute="leading" secondItem="eIw-OM-4N4" secondAttribute="trailing" id="qBr-cM-VtX"/>
@@ -696,6 +697,7 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

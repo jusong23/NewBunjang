@@ -68,7 +68,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-gE-lzH">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="CEe-ZQ-MIh">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="CEe-ZQ-MIh">
                                                         <rect key="frame" x="20" y="15" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="6gm-pF-zc3"/>
@@ -891,13 +891,13 @@
         <image name="IMG_2012" width="1242" height="490"/>
         <image name="IMG_2013" width="1242" height="218"/>
         <image name="IMG_2014" width="1242" height="352"/>
+        <image name="Loading" width="358" height="326"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="img2" width="1960" height="1336"/>
         <image name="light.max" catalog="system" width="128" height="72"/>
         <image name="parkingsign.circle" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>

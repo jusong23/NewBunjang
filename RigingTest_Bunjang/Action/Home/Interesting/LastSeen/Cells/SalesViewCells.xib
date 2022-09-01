@@ -41,7 +41,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otP-mj-bNY">
                                 <rect key="frame" x="8" y="8" width="164" height="164"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kakao" translatesAutoresizingMaskIntoConstraints="NO" id="nPA-fa-eWH">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="nPA-fa-eWH">
                                         <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="164" id="skK-Tf-rkp"/>
@@ -122,7 +122,7 @@
     </objects>
     <resources>
         <image name="IMG_1949" width="104" height="49"/>
-        <image name="Kakao" width="318" height="318"/>
+        <image name="Loading" width="358" height="326"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

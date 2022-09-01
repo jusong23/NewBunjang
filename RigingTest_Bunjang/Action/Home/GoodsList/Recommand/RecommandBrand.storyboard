@@ -95,7 +95,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Y3A-te-Rst"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1W-G8-Aqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -774,6 +774,7 @@
                         <outlet property="RC_likeCount" destination="R12-LB-wru" id="k2l-HA-Epe"/>
                         <outlet property="RC_period" destination="uQc-WD-JYs" id="1sW-h0-CXl"/>
                         <outlet property="RC_viewCount" destination="0MX-Kj-o4c" id="xf7-aq-tb1"/>
+                        <outlet property="SafePay" destination="79U-wx-vzg" id="zCa-hi-c9c"/>
                         <outlet property="heartButton" destination="5zQ-42-mkk" id="SxK-En-uUR"/>
                     </connections>
                 </viewController>
@@ -808,9 +809,6 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

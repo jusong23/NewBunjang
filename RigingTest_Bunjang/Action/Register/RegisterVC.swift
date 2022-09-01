@@ -16,7 +16,8 @@ class RegisterVC: UIViewController {
     
     @IBAction func tapToCategoryButton(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Rg_Category") else { return }
-                    self.navigationController?.pushViewController(viewController, animated: true)
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
     }
     
     @IBAction func tapDismissButton(_ sender: Any) {
@@ -25,7 +26,8 @@ class RegisterVC: UIViewController {
     
     @IBAction func tapToTagButton(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Rg_Tag") else { return }
-                    self.navigationController?.pushViewController(viewController, animated: true)
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
     }
 }
 

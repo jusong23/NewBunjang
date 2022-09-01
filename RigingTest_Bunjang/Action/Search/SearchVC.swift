@@ -41,6 +41,8 @@ class SearchVC: UIViewController {
         self.LabelView.isHidden = true
     }
     
+
+    
     func gettingSearch() {
         self.Searches.getAddress(accessToken: JwtToken.token,
                                  userIdx:User.Idx, onCompleted: {
@@ -59,6 +61,11 @@ class SearchVC: UIViewController {
                         isFollowing: result.baseResult.brandNameList[i].isFollowing)
                 }
                 
+                if result.baseResult.searchList.count != 0 {
+                    self.TopAnchorForMainView.constant = 100
+                    self.SearchWord.text = result.baseResult.searchList.last?.searchText
+                    self.LabelView.isHidden = false
+                }
                 
                 DispatchQueue.main.async {
                     self.tableView.reloadData()

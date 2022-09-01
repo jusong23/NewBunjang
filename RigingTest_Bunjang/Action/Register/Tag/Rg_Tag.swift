@@ -14,6 +14,6 @@ class Rg_Tag: UIViewController {
     }
     
     @IBAction func tapBackButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.presentingViewController?.dismiss(animated: true)
     }
 }
