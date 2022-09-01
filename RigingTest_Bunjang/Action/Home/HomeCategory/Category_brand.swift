@@ -60,6 +60,8 @@ class Category_brand: UIViewController {
             }
         })
     }
+    
+    
 }
 
 extension Category_brand: UITableViewDataSource, UITableViewDelegate {
@@ -82,9 +84,11 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
         var cellImageUrl = self.BrandsDataModel.getStoreImageUrl(index: indexPath.row)
         var cellBrandItemCnt = self.BrandsDataModel.getBrandItemCount(index: indexPath.row)
         
+        
         cell.brandName.text = cellBrandName
         cell.brandSubName.text = cellBrandSubName
         cell.brandItemCnt.text = cellBrandItemCnt
+        
         
         var url = URL(string: cellImageUrl ?? "")
         

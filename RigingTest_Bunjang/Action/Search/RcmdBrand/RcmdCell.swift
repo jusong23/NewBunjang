@@ -14,6 +14,7 @@ class RcmdCell: UITableViewCell {
     @IBOutlet weak var brandName: UILabel!
     @IBOutlet weak var brandSubName: UILabel!
     @IBOutlet weak var brandItemCnt: UILabel!
+    @IBOutlet weak var brandFollowButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

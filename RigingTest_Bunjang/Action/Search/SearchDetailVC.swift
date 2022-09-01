@@ -85,6 +85,8 @@ extension SearchDetailVC: UITableViewDataSource, UITableViewDelegate {
         cell.brandSubName.text = cellBrandSubName
         cell.brandItemCnt.text = cellBrandItemCnt
         
+
+        
         var url = URL(string: cellImageUrl ?? "")
         
         var fakeUrl = URL(string: "https://cdn1.domeggook.com/upload/item/2022/08/17/1660728672D2FC60FB94167B9A7FBEE4/1660728672D2FC60FB94167B9A7FBEE4_stt_150.png?hash=c816d722ffe0ddd7f0f464b7056047fc")
