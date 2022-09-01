@@ -153,6 +153,9 @@ class OrderVC : UIViewController {
     }
     
     @IBAction func register(_ sender: Any) {
+        
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") as? mainTabbarVC else {return}
+        
         postOrder.post_12_3_payment(accessToken: JwtToken.token,
                                     addressIdx: Address_ST.Idx,
                                     itemIdx: Item.Idx ?? 9999,
@@ -160,7 +163,11 @@ class OrderVC : UIViewController {
                                     orderRequest: self.orderMemo.text ?? "요청사항 없음",
                                     isDirectDeal: DealType.Idx ?? 999,
                                     paymentIdx: Payment.Idx ?? 9999)
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+//        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        self.view.window?.rootViewController = viewController
+        self.view.window?.makeKeyAndVisible()
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
         self.Complete()
 
     }

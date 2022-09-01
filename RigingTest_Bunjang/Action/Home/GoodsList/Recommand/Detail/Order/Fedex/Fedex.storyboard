@@ -1728,6 +1728,16 @@
             </objects>
             <point key="canvasLocation" x="6108.6956521739139" y="-680.35714285714278"/>
         </scene>
+        <!--mainTabbarVC-->
+        <scene sceneID="sLR-J1-Rd1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="mainTabbarVC" storyboardName="mainTabbar" referencedIdentifier="mainTabbarVC" id="cls-W8-0hO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tnw-7F-PkH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjm-rl-efT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4862" y="-117"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IMG_1996" width="1109" height="310"/>

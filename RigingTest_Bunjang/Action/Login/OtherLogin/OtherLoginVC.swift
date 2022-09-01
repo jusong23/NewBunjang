@@ -22,17 +22,19 @@ class OtherLoginVC: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-
+//        makeRootVC()
     }
     
-    @IBAction func tapToMainTabbar(_ sender: Any) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") else { return }
-            self.navigationController?.pushViewController(viewController, animated: true)
-    }
+//    func makeRootVC() {
+//        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "OtherLoginVC") as? OtherLoginVC else {return}
+//        self.view.window?.rootViewController = viewController
+//        self.view.window?.makeKeyAndVisible()
+//    }
     
-    @IBAction func tapOkButton(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: true)
-    }
+//    @IBAction func tapToMainTabbar(_ sender: Any) {
+//        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") else { return }
+//            self.navigationController?.pushViewController(viewController, animated: true)
+//    }
     
 
     @IBAction func signUp(_ sender: Any) {
@@ -41,6 +43,15 @@ class OtherLoginVC: UIViewController {
             phoneNumber: self.phoneNumberTextField.text ?? "",
             birth: self.birthTextField.text ?? ""
         )
+       
+        DispatchQueue.main.async {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") else { return }
+            self.view.window?.rootViewController = viewController
+            self.view.window?.makeKeyAndVisible()
+            self.navigationController?.pushViewController(viewController, animated: true)
+
+        }
+        
     }
 
 }
