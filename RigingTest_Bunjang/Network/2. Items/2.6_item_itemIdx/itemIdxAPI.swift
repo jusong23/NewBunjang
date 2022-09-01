@@ -11,8 +11,8 @@ import Alamofire
 
 // MARK: - [GET] 2.6 상품 목록 가져오기(최신순) /items/:itemIdx
 class get_2_6_item_itemIdx{
-    func getItemsIdx(accessToken:String, itemIdx:Int, onCompleted: @escaping (Result<ItemIdx,Error>)-> Void) {
-        let url = "https://prod.jinsoo.shop/items/\(itemIdx)"
+    func getItemsIdx(accessToken:String, itemIdx:Int, userIdx:String, onCompleted: @escaping (Result<ItemIdx,Error>)-> Void) {
+        let url = "https://prod.jinsoo.shop/items/\(itemIdx)/\(userIdx)"
         AF.request(url,
                    method:.get, // 어떤 통신방식을 사용할 지
                    parameters: nil, // 서버로 보낼 parameter를 담는 것(POST)

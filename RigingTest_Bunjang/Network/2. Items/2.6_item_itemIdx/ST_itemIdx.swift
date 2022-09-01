@@ -10,12 +10,13 @@ struct ItemIdx: Codable {
     let isSuccess: Bool
     let code: Int
     let message: String
-    let baseResult: BaseResult
+    let baseResult: BaseResult_2_6
 }
 
 // MARK: - BaseResult
-struct BaseResult: Codable {
-    let imageURLList, tagList, similarItemList, commentList: [JSONAny]
+struct BaseResult_2_6: Codable {
+    let imageURLList: [String]
+    let tagList, similarItemList, commentList: [JSONAny_2_6]
     let cost, itemName, address, period: String
     let isLike, likeCount: Int
     let itemCount: String
@@ -25,20 +26,21 @@ struct BaseResult: Codable {
     let isFollowCheck, star, storeItemCount: Int
     let storeImageURL: String
     let isCanCheck, isSafePayment, commentCount: Int
+    let status: String
 
     enum CodingKeys: String, CodingKey {
         case imageURLList = "imageUrlList"
         case tagList, similarItemList, commentList, cost, itemName, address, period, isLike, likeCount, itemCount, isCanExchange, isIncludeOrderTip, isUsed, itemContent, viewCount, chatCount, userIdx, followingCount, isFollowCheck, star, storeItemCount
         case storeImageURL = "storeImageUrl"
-        case isCanCheck, isSafePayment, commentCount
+        case isCanCheck, isSafePayment, commentCount, status
     }
 }
 
 // MARK: - Encode/decode helpers
 
-class JSONNull: Codable, Hashable {
+class JSONNull_2_6: Codable, Hashable {
 
-    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
+    public static func == (lhs: JSONNull_2_6, rhs: JSONNull_2_6) -> Bool {
         return true
     }
 
@@ -51,7 +53,7 @@ class JSONNull: Codable, Hashable {
     public required init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         if !container.decodeNil() {
-            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
+            throw DecodingError.typeMismatch(JSONNull_2_6.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull_2_6"))
         }
     }
 
@@ -61,7 +63,7 @@ class JSONNull: Codable, Hashable {
     }
 }
 
-class JSONCodingKey: CodingKey {
+class JSONCodingKey_2_6: CodingKey {
     let key: String
 
     required init?(intValue: Int) {
@@ -81,17 +83,17 @@ class JSONCodingKey: CodingKey {
     }
 }
 
-class JSONAny: Codable {
+class JSONAny_2_6: Codable {
 
     let value: Any
 
     static func decodingError(forCodingPath codingPath: [CodingKey]) -> DecodingError {
-        let context = DecodingError.Context(codingPath: codingPath, debugDescription: "Cannot decode JSONAny")
-        return DecodingError.typeMismatch(JSONAny.self, context)
+        let context = DecodingError.Context(codingPath: codingPath, debugDescription: "Cannot decode JSONAny_2_6")
+        return DecodingError.typeMismatch(JSONAny_2_6.self, context)
     }
 
     static func encodingError(forValue value: Any, codingPath: [CodingKey]) -> EncodingError {
-        let context = EncodingError.Context(codingPath: codingPath, debugDescription: "Cannot encode JSONAny")
+        let context = EncodingError.Context(codingPath: codingPath, debugDescription: "Cannot encode JSONAny_2_6")
         return EncodingError.invalidValue(value, context)
     }
 
@@ -109,7 +111,7 @@ class JSONAny: Codable {
             return value
         }
         if container.decodeNil() {
-            return JSONNull()
+            return JSONNull_2_6()
         }
         throw decodingError(forCodingPath: container.codingPath)
     }
@@ -129,19 +131,19 @@ class JSONAny: Codable {
         }
         if let value = try? container.decodeNil() {
             if value {
-                return JSONNull()
+                return JSONNull_2_6()
             }
         }
         if var container = try? container.nestedUnkeyedContainer() {
             return try decodeArray(from: &container)
         }
-        if var container = try? container.nestedContainer(keyedBy: JSONCodingKey.self) {
+        if var container = try? container.nestedContainer(keyedBy: JSONCodingKey_2_6.self) {
             return try decodeDictionary(from: &container)
         }
         throw decodingError(forCodingPath: container.codingPath)
     }
 
-    static func decode(from container: inout KeyedDecodingContainer<JSONCodingKey>, forKey key: JSONCodingKey) throws -> Any {
+    static func decode(from container: inout KeyedDecodingContainer<JSONCodingKey_2_6>, forKey key: JSONCodingKey_2_6) throws -> Any {
         if let value = try? container.decode(Bool.self, forKey: key) {
             return value
         }
@@ -156,13 +158,13 @@ class JSONAny: Codable {
         }
         if let value = try? container.decodeNil(forKey: key) {
             if value {
-                return JSONNull()
+                return JSONNull_2_6()
             }
         }
         if var container = try? container.nestedUnkeyedContainer(forKey: key) {
             return try decodeArray(from: &container)
         }
-        if var container = try? container.nestedContainer(keyedBy: JSONCodingKey.self, forKey: key) {
+        if var container = try? container.nestedContainer(keyedBy: JSONCodingKey_2_6.self, forKey: key) {
             return try decodeDictionary(from: &container)
         }
         throw decodingError(forCodingPath: container.codingPath)
@@ -177,7 +179,7 @@ class JSONAny: Codable {
         return arr
     }
 
-    static func decodeDictionary(from container: inout KeyedDecodingContainer<JSONCodingKey>) throws -> [String: Any] {
+    static func decodeDictionary(from container: inout KeyedDecodingContainer<JSONCodingKey_2_6>) throws -> [String: Any] {
         var dict = [String: Any]()
         for key in container.allKeys {
             let value = try decode(from: &container, forKey: key)
@@ -196,13 +198,13 @@ class JSONAny: Codable {
                 try container.encode(value)
             } else if let value = value as? String {
                 try container.encode(value)
-            } else if value is JSONNull {
+            } else if value is JSONNull_2_6 {
                 try container.encodeNil()
             } else if let value = value as? [Any] {
                 var container = container.nestedUnkeyedContainer()
                 try encode(to: &container, array: value)
             } else if let value = value as? [String: Any] {
-                var container = container.nestedContainer(keyedBy: JSONCodingKey.self)
+                var container = container.nestedContainer(keyedBy: JSONCodingKey_2_6.self)
                 try encode(to: &container, dictionary: value)
             } else {
                 throw encodingError(forValue: value, codingPath: container.codingPath)
@@ -210,9 +212,9 @@ class JSONAny: Codable {
         }
     }
 
-    static func encode(to container: inout KeyedEncodingContainer<JSONCodingKey>, dictionary: [String: Any]) throws {
+    static func encode(to container: inout KeyedEncodingContainer<JSONCodingKey_2_6>, dictionary: [String: Any]) throws {
         for (key, value) in dictionary {
-            let key = JSONCodingKey(stringValue: key)!
+            let key = JSONCodingKey_2_6(stringValue: key)!
             if let value = value as? Bool {
                 try container.encode(value, forKey: key)
             } else if let value = value as? Int64 {
@@ -221,13 +223,13 @@ class JSONAny: Codable {
                 try container.encode(value, forKey: key)
             } else if let value = value as? String {
                 try container.encode(value, forKey: key)
-            } else if value is JSONNull {
+            } else if value is JSONNull_2_6 {
                 try container.encodeNil(forKey: key)
             } else if let value = value as? [Any] {
                 var container = container.nestedUnkeyedContainer(forKey: key)
                 try encode(to: &container, array: value)
             } else if let value = value as? [String: Any] {
-                var container = container.nestedContainer(keyedBy: JSONCodingKey.self, forKey: key)
+                var container = container.nestedContainer(keyedBy: JSONCodingKey_2_6.self, forKey: key)
                 try encode(to: &container, dictionary: value)
             } else {
                 throw encodingError(forValue: value, codingPath: container.codingPath)
@@ -244,7 +246,7 @@ class JSONAny: Codable {
             try container.encode(value)
         } else if let value = value as? String {
             try container.encode(value)
-        } else if value is JSONNull {
+        } else if value is JSONNull_2_6 {
             try container.encodeNil()
         } else {
             throw encodingError(forValue: value, codingPath: container.codingPath)
@@ -253,25 +255,25 @@ class JSONAny: Codable {
 
     public required init(from decoder: Decoder) throws {
         if var arrayContainer = try? decoder.unkeyedContainer() {
-            self.value = try JSONAny.decodeArray(from: &arrayContainer)
-        } else if var container = try? decoder.container(keyedBy: JSONCodingKey.self) {
-            self.value = try JSONAny.decodeDictionary(from: &container)
+            self.value = try JSONAny_2_6.decodeArray(from: &arrayContainer)
+        } else if var container = try? decoder.container(keyedBy: JSONCodingKey_2_6.self) {
+            self.value = try JSONAny_2_6.decodeDictionary(from: &container)
         } else {
             let container = try decoder.singleValueContainer()
-            self.value = try JSONAny.decode(from: container)
+            self.value = try JSONAny_2_6.decode(from: container)
         }
     }
 
     public func encode(to encoder: Encoder) throws {
         if let arr = self.value as? [Any] {
             var container = encoder.unkeyedContainer()
-            try JSONAny.encode(to: &container, array: arr)
+            try JSONAny_2_6.encode(to: &container, array: arr)
         } else if let dict = self.value as? [String: Any] {
-            var container = encoder.container(keyedBy: JSONCodingKey.self)
-            try JSONAny.encode(to: &container, dictionary: dict)
+            var container = encoder.container(keyedBy: JSONCodingKey_2_6.self)
+            try JSONAny_2_6.encode(to: &container, dictionary: dict)
         } else {
             var container = encoder.singleValueContainer()
-            try JSONAny.encode(to: &container, value: self.value)
+            try JSONAny_2_6.encode(to: &container, value: self.value)
         }
     }
 }
