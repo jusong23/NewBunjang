@@ -354,6 +354,9 @@
                                                         <color key="tintColor" red="0.3957346907" green="0.3957346907" blue="0.3957346907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="magnifyingglass" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="DoSearch:" destination="Jpr-l1-XtF" eventType="touchUpInside" id="4FO-6Q-rtd"/>
+                                                        </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="브랜드 검색" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT1-NJ-8LK">
                                                         <rect key="frame" x="39" y="11" width="327" height="18.5"/>
