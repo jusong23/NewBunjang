@@ -27,6 +27,7 @@ class SearchVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "RcmdCell", bundle: .main), forCellReuseIdentifier: "RcmdCell")
+        
         gettingSearch()
         InitialSearch()
     }

@@ -72,6 +72,8 @@
 		9B5B80B028C04290001AAFB9 /* ST_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80AF28C04290001AAFB9 /* ST_Search.swift */; };
 		9B5B80B628C06A27001AAFB9 /* BrandsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80B528C06A27001AAFB9 /* BrandsAPI.swift */; };
 		9B5B80B828C06A3A001AAFB9 /* ST_Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80B728C06A3A001AAFB9 /* ST_Brands.swift */; };
+		9B5B80BB28C06B7F001AAFB9 /* BrandLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80BA28C06B7F001AAFB9 /* BrandLists.swift */; };
+		9B5B80BD28C06B91001AAFB9 /* BrandListsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B80BC28C06B91001AAFB9 /* BrandListsModel.swift */; };
 		9B5D18FD28B8E5E100B24CEB /* SelectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D18FC28B8E5E100B24CEB /* SelectKey.swift */; };
 		9B5E239628B3975800432616 /* TalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E239528B3975700432616 /* TalkVC.swift */; };
 		9B5E23A328B398DB00432616 /* TalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E23A128B398DB00432616 /* TalkCell.swift */; };
@@ -227,6 +229,8 @@
 		9B5B80AF28C04290001AAFB9 /* ST_Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_Search.swift; sourceTree = "<group>"; };
 		9B5B80B528C06A27001AAFB9 /* BrandsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsAPI.swift; sourceTree = "<group>"; };
 		9B5B80B728C06A3A001AAFB9 /* ST_Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_Brands.swift; sourceTree = "<group>"; };
+		9B5B80BA28C06B7F001AAFB9 /* BrandLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLists.swift; sourceTree = "<group>"; };
+		9B5B80BC28C06B91001AAFB9 /* BrandListsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListsModel.swift; sourceTree = "<group>"; };
 		9B5D18FC28B8E5E100B24CEB /* SelectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectKey.swift; sourceTree = "<group>"; };
 		9B5E239528B3975700432616 /* TalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkVC.swift; sourceTree = "<group>"; };
 		9B5E23A128B398DB00432616 /* TalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkCell.swift; sourceTree = "<group>"; };
@@ -558,6 +562,7 @@
 		9B3D97E028B608F0006B4D32 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9B5B80B928C06B6F001AAFB9 /* Brands */,
 				9B9DDA9928BF66CF0051C7FA /* LastSeen */,
 				9B1358DD28BF462A00501F5B /* Zzeam */,
 				9B3D97E528B60923006B4D32 /* Recommand */,
@@ -805,6 +810,15 @@
 				9B5B80B728C06A3A001AAFB9 /* ST_Brands.swift */,
 			);
 			path = "8.2 Brands";
+			sourceTree = "<group>";
+		};
+		9B5B80B928C06B6F001AAFB9 /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				9B5B80BA28C06B7F001AAFB9 /* BrandLists.swift */,
+				9B5B80BC28C06B91001AAFB9 /* BrandListsModel.swift */,
+			);
+			path = Brands;
 			sourceTree = "<group>";
 		};
 		9B5E239728B3978800432616 /* Cell */ = {
@@ -1386,6 +1400,7 @@
 				9B3E6A1528BB1357003B06CC /* My_Tabbman.swift in Sources */,
 				9B048FEC28B10313009DC9B2 /* BannerCell.swift in Sources */,
 				9B1358CA28BF404A00501F5B /* ST_GetLikes.swift in Sources */,
+				9B5B80BD28C06B91001AAFB9 /* BrandListsModel.swift in Sources */,
 				9B65EECF28B9EB6000A548E0 /* paymentAPI_POST.swift in Sources */,
 				9B938B8928BF721100C8D8B5 /* ST_chatRooms.swift in Sources */,
 				9B45337628B1F09F003163FE /* ZzeamVC.swift in Sources */,
@@ -1453,6 +1468,7 @@
 				9B938B8728BF71FC00C8D8B5 /* chatRoomsAPI.swift in Sources */,
 				9B9DDA9D28BF66F10051C7FA /* SalesViewListDataModel.swift in Sources */,
 				9B5E239628B3975800432616 /* TalkVC.swift in Sources */,
+				9B5B80BB28C06B7F001AAFB9 /* BrandLists.swift in Sources */,
 				9B04173828B623B20029A45C /* UIColor.swift in Sources */,
 				9BB8918F28B358CA00CC08D8 /* mainTabbarVC.swift in Sources */,
 				9B2779A028B8CD750025B744 /* ST_orderIndirect.swift in Sources */,
