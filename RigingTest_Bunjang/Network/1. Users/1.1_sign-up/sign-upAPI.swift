@@ -53,6 +53,8 @@ func postSignUp(userName:String, phoneNumber:String, birth: String) {
                     return
                 }
                 
+                
+                
                 print(jsonObject["message"])
                 
                 

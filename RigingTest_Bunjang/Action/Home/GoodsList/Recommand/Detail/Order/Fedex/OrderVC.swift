@@ -12,14 +12,19 @@ protocol returnToHomeDelegate: AnyObject {
     func onPop()
 }
 
+protocol AppearAlertDelegate: AnyObject {
+    func onAlert()
+}
+
 class OrderVC : UIViewController {
     
     var getOrderIndirect = get_12_1_order_indirect ()
     var postOrder = post_12_3 ()
     var typeCheck = 1
     var SELECTED_KEY_ORDER: Int?
-    var delegate: returnToHomeDelegate?
-
+    weak var delegate: returnToHomeDelegate?
+    weak var AlertDelegate: AppearAlertDelegate?
+    
     @IBOutlet var quickDealCheck: UIButton!
     @IBOutlet var otherDealCheck: UIButton!
     @IBOutlet var personCheck: UIButton!
@@ -154,6 +159,13 @@ class OrderVC : UIViewController {
     
     @IBAction func register(_ sender: Any) {
         
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "성공", message: " 결제가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "확인", style: .default) { (action) in }
+            alert.addAction(okAction)
+            self.present(alert, animated: false, completion: nil)
+        }
+        
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbarVC") as? mainTabbarVC else {return}
         
         postOrder.post_12_3_payment(accessToken: JwtToken.token,
@@ -163,21 +175,15 @@ class OrderVC : UIViewController {
                                     orderRequest: self.orderMemo.text ?? "요청사항 없음",
                                     isDirectDeal: DealType.Idx ?? 999,
                                     paymentIdx: Payment.Idx ?? 9999)
-//        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         self.view.window?.rootViewController = viewController
         self.view.window?.makeKeyAndVisible()
         
+        self.AlertDelegate?.onAlert()
+        
         self.navigationController?.pushViewController(viewController, animated: true)
-        self.Complete()
+        }
 
-    }
 
-    func Complete() {
-        let alert = UIAlertController(title: "성공", message: " 결제가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
-        let okAction = UIAlertAction(title: "확인", style: .default) { (action) in }
-        alert.addAction(okAction)
-        present(alert, animated: false, completion: nil)
-    }
     
 }
 

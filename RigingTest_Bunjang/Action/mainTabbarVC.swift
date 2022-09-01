@@ -20,6 +20,9 @@ class mainTabbarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderVC") as? OrderVC else {return}
+        viewController.AlertDelegate = self
     }
 
     
@@ -48,4 +51,12 @@ extension mainTabbarVC : UITabBarControllerDelegate {
     
 }
 
-
+extension mainTabbarVC: AppearAlertDelegate {
+    func onAlert() {
+        print("it working")
+        let alert = UIAlertController(title: "성공", message: " 결제가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "확인", style: .default) { (action) in }
+        alert.addAction(okAction)
+        self.present(alert, animated: false, completion: nil)
+    }
+}

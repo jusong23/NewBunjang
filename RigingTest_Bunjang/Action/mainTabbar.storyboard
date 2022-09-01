@@ -6,6 +6,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--OrderVC-->
+        <scene sceneID="zhh-HG-tRj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OrderVC" storyboardName="Fedex" referencedIdentifier="OrderVC" id="8Kf-AN-cYv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrL-pX-Gcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-501" y="695"/>
+        </scene>
         <!--Main TabbarVC-->
         <scene sceneID="XAz-kO-f93">
             <objects>
