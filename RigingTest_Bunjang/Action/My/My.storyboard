@@ -441,6 +441,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="NumberOfZzeam" destination="ELI-T5-Xed" id="L9q-mk-oMM"/>
                         <outlet property="UserName" destination="56a-hl-ore" id="enK-0N-bse"/>
                         <outlet property="userImage" destination="CEe-ZQ-MIh" id="d1a-Xa-cba"/>
                     </connections>

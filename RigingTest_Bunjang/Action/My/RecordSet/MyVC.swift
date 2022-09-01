@@ -13,6 +13,7 @@ class MyVC: UIViewController {
     var getUserInfo = get_1_5_UserInfo ()
     
     @IBOutlet weak var UserName: UILabel!
+    @IBOutlet weak var NumberOfZzeam: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
