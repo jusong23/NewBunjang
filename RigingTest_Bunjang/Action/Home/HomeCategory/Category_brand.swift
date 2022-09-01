@@ -10,6 +10,7 @@ import UIKit
 class Category_brand: UIViewController {
 
     var GetBrands = get_8_1_brands ()
+    var PostBrandFollow = post_15_1 ()
     var BrandsDataModel = BrandListDataModel ()
     var searchCheck = 0
     
@@ -68,6 +69,10 @@ extension Category_brand: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        var cellBrandIdx = self.BrandsDataModel.getBrandIdx(index: indexPath.row)
+        
+        self.PostBrandFollow.post_15_1_BrandFollow(accessToken: JwtToken.token, userIdx: User.Idx, brandIdx: cellBrandIdx)
     }
     
     

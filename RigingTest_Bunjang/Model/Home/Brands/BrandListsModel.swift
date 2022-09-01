@@ -37,6 +37,10 @@ class BrandListDataModel {
         return BrandListsStruct[index].brandItemCount ?? ""
     }
     
+    public func getBrandIdx(index: Int) -> Int {
+        return BrandListsStruct[index].brandIdx ?? 0
+    }
+    
     public func inputData(brandIdx:Int, brandName:String, brandSubName:String, brandItemCount:String, isFollowCheck:Int, storeImageUrl:String) {
         self.BrandListsStruct.append(BrandList_Tab(brandIdx: brandIdx, brandName: brandName, brandSubName: brandSubName, brandItemCount: brandItemCount, isFollowCheck: isFollowCheck, storeImageUrl: storeImageUrl))
     }}

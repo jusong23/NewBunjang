@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jP-a0-ITQ">
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jP-a0-ITQ">
                         <rect key="frame" x="330" y="18.5" width="61" height="31"/>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -26,7 +26,6 @@
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                         <color key="tintColor" red="0.82745098039999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="팔로우"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="6"/>
@@ -75,16 +74,25 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팔로우" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-8U-mIr">
+                        <rect key="frame" x="330" y="27.5" width="61" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                        <color key="textColor" red="0.82745098039999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="r1v-At-Gwp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="0pg-Dp-itI"/>
                     <constraint firstItem="j0B-gR-1ON" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="0r1-gO-Ydu"/>
                     <constraint firstAttribute="trailing" secondItem="0jP-a0-ITQ" secondAttribute="trailing" constant="23" id="2ET-My-ebe"/>
+                    <constraint firstItem="IRf-8U-mIr" firstAttribute="trailing" secondItem="0jP-a0-ITQ" secondAttribute="trailing" id="7bX-jD-dCN"/>
                     <constraint firstItem="j0B-gR-1ON" firstAttribute="leading" secondItem="onS-1J-8o6" secondAttribute="trailing" constant="4.5" id="9SE-ve-URb"/>
+                    <constraint firstItem="IRf-8U-mIr" firstAttribute="centerY" secondItem="0jP-a0-ITQ" secondAttribute="centerY" id="CKA-cK-eok"/>
                     <constraint firstItem="r1v-At-Gwp" firstAttribute="leading" secondItem="j0B-gR-1ON" secondAttribute="trailing" constant="4" id="GnE-00-2BW"/>
                     <constraint firstItem="jbT-9m-O6t" firstAttribute="leading" secondItem="YbL-yC-HXn" secondAttribute="trailing" constant="8" symbolic="YES" id="KuL-sd-tha"/>
                     <constraint firstItem="YbL-yC-HXn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PM5-Nk-WDN"/>
+                    <constraint firstItem="IRf-8U-mIr" firstAttribute="leading" secondItem="0jP-a0-ITQ" secondAttribute="leading" id="RTI-9o-h0z"/>
                     <constraint firstItem="onS-1J-8o6" firstAttribute="leading" secondItem="YbL-yC-HXn" secondAttribute="trailing" constant="8" symbolic="YES" id="VfZ-xm-rYk"/>
                     <constraint firstItem="YbL-yC-HXn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Y6x-mK-n4R"/>
                     <constraint firstItem="0jP-a0-ITQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cLe-wu-pHD"/>

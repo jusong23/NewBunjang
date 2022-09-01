@@ -94,6 +94,8 @@
 		9B70F9AD28B86D4F006BE642 /* DealPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70F9AC28B86D4F006BE642 /* DealPage.swift */; };
 		9B70F9B128B88F37006BE642 /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70F9B028B88F36006BE642 /* OrderVC.swift */; };
 		9B70F9B528B898A3006BE642 /* RegisterAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70F9B428B898A3006BE642 /* RegisterAddressVC.swift */; };
+		9B88153A28C0E9CF00DB769F /* ST_BrandFollow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B88153928C0E9CF00DB769F /* ST_BrandFollow.swift */; };
+		9B88153C28C0EA1C00DB769F /* BrandFollewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B88153B28C0EA1C00DB769F /* BrandFollewAPI.swift */; };
 		9B8E696428BB3123007BFC6D /* SellReserve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8E696328BB3123007BFC6D /* SellReserve.storyboard */; };
 		9B8E696628BB317C007BFC6D /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E696528BB317C007BFC6D /* MyVC.swift */; };
 		9B9366CC28B374520029149B /* Rg_Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9366CB28B374520029149B /* Rg_Category.swift */; };
@@ -256,6 +258,8 @@
 		9B70F9AC28B86D4F006BE642 /* DealPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealPage.swift; sourceTree = "<group>"; };
 		9B70F9B028B88F36006BE642 /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
 		9B70F9B428B898A3006BE642 /* RegisterAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAddressVC.swift; sourceTree = "<group>"; };
+		9B88153928C0E9CF00DB769F /* ST_BrandFollow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_BrandFollow.swift; sourceTree = "<group>"; };
+		9B88153B28C0EA1C00DB769F /* BrandFollewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandFollewAPI.swift; sourceTree = "<group>"; };
 		9B8E696328BB3123007BFC6D /* SellReserve.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SellReserve.storyboard; sourceTree = "<group>"; };
 		9B8E696528BB317C007BFC6D /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		9B9366CB28B374520029149B /* Rg_Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rg_Category.swift; sourceTree = "<group>"; };
@@ -724,6 +728,7 @@
 				9B9DDA9F28BF6EDA0051C7FA /* 10. Chats */,
 				9B27799928B8CC9D0025B744 /* 12. Orders */,
 				9B65EECA28B9EAEC00A548E0 /* 13. Payment */,
+				9B88153728C0E96900DB769F /* 15. Brand Follow */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -923,6 +928,23 @@
 				9B65EED528B9F13800A548E0 /* ST_patments_userId(GET).swift */,
 			);
 			path = "13.2_payments_userId(GET)";
+			sourceTree = "<group>";
+		};
+		9B88153728C0E96900DB769F /* 15. Brand Follow */ = {
+			isa = PBXGroup;
+			children = (
+				9B88153828C0E9B600DB769F /* 15.1 Brand Follow */,
+			);
+			path = "15. Brand Follow";
+			sourceTree = "<group>";
+		};
+		9B88153828C0E9B600DB769F /* 15.1 Brand Follow */ = {
+			isa = PBXGroup;
+			children = (
+				9B88153928C0E9CF00DB769F /* ST_BrandFollow.swift */,
+				9B88153B28C0EA1C00DB769F /* BrandFollewAPI.swift */,
+			);
+			path = "15.1 Brand Follow";
 			sourceTree = "<group>";
 		};
 		9B8E696228BB3106007BFC6D /* SellReserve */ = {
@@ -1499,6 +1521,7 @@
 				9B9DDA9028BF61880051C7FA /* salesViewAPI.swift in Sources */,
 				9B95468B28BD13770076C798 /* RecordsTabman.swift in Sources */,
 				9B65EEBF28B9C96300A548E0 /* SelectCard.swift in Sources */,
+				9B88153C28C0EA1C00DB769F /* BrandFollewAPI.swift in Sources */,
 				9B32B9E128BAEA6A00FB7651 /* Idx.swift in Sources */,
 				9B938B8728BF71FC00C8D8B5 /* chatRoomsAPI.swift in Sources */,
 				9B9DDA9D28BF66F10051C7FA /* SalesViewListDataModel.swift in Sources */,
@@ -1513,6 +1536,7 @@
 				9B9546AB28BD1FAA0076C798 /* UserInfoAPI.swift in Sources */,
 				9B5B80AA28C041A3001AAFB9 /* RecommandModel.swift in Sources */,
 				9B3D97E928B60968006B4D32 /* ItemLists.swift in Sources */,
+				9B88153A28C0E9CF00DB769F /* ST_BrandFollow.swift in Sources */,
 				9B5E23AE28B4B87D00432616 /* OtherLoginVC.swift in Sources */,
 				9B08CF9F28B0C4E7006782C4 /* LoginVC.swift in Sources */,
 				9B9DDA8528BF47430051C7FA /* ZzeamListModel.swift in Sources */,

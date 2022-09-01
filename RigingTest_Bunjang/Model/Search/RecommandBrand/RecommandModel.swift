@@ -37,6 +37,7 @@ class RecommandBrandListDataModel {
         return RecommandBrandListsStruct[index].brandItemCnt ?? ""
     }
     
+    
     public func inputData(brandName:String, brandSubName:String, imageUrl:String, brandItemCnt:String, isFollowing:Int) {
         self.RecommandBrandListsStruct.append(BrandList(brandName: brandName, brandSubName: brandSubName, imageUrl: imageUrl, brandItemCnt: brandItemCnt, isFollowing: isFollowing))
     }}
