@@ -13,6 +13,7 @@ class Category_brand: UIViewController {
     var BrandsDataModel = BrandListDataModel ()
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +21,13 @@ class Category_brand: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "RcmdCell", bundle: .main), forCellReuseIdentifier: "RcmdCell")
-        
         gettingBrands()
+        self.searchTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
     }
+    
+    @objc func textFieldDidChange(_ sender: Any?) {
+            print(self.searchTextField?.text)
+        }
 
     func gettingBrands() {
         self.GetBrands.getBrands(accessToken: JwtToken.token, userIdx: User.Idx, onCompleted: {

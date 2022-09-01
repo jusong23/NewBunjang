@@ -299,12 +299,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwq-cB-bAU">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="802"/>
                                         <subviews>
-                                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="브랜드 검색" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWW-Y1-wo5">
-                                                <rect key="frame" x="10" y="10" width="394" height="51"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </searchBar>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNK-gV-mig">
-                                                <rect key="frame" x="0.0" y="81" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="65" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가나다순" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-Wq-Zwn">
                                                         <rect key="frame" x="19" y="18" width="70" height="24"/>
@@ -347,22 +343,52 @@
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-Zt-HfW">
-                                                <rect key="frame" x="0.0" y="141" width="414" height="661"/>
+                                                <rect key="frame" x="0.0" y="125" width="414" height="677"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qX-Wv-ubU">
+                                                <rect key="frame" x="20" y="15" width="374" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" horizontalCompressionResistancePriority="300" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3S-nG-NMJ">
+                                                        <rect key="frame" x="10" y="9" width="21" height="22"/>
+                                                        <color key="tintColor" red="0.3957346907" green="0.3957346907" blue="0.3957346907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="브랜드 검색" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT1-NJ-8LK">
+                                                        <rect key="frame" x="39" y="11" width="327" height="18.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HW5-ZE-gBu"/>
+                                                    <constraint firstItem="fT1-NJ-8LK" firstAttribute="centerY" secondItem="9qX-Wv-ubU" secondAttribute="centerY" id="NxY-3c-mJD"/>
+                                                    <constraint firstItem="m3S-nG-NMJ" firstAttribute="leading" secondItem="9qX-Wv-ubU" secondAttribute="leading" constant="10" id="PcM-V4-XrI"/>
+                                                    <constraint firstItem="fT1-NJ-8LK" firstAttribute="leading" secondItem="m3S-nG-NMJ" secondAttribute="trailing" constant="8" symbolic="YES" id="ZXa-6L-E7B"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fT1-NJ-8LK" secondAttribute="trailing" constant="8" id="dAe-eL-Lib"/>
+                                                    <constraint firstItem="m3S-nG-NMJ" firstAttribute="centerY" secondItem="9qX-Wv-ubU" secondAttribute="centerY" id="mbG-Si-tEP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="oNK-gV-mig" secondAttribute="trailing" id="8ie-qd-49h"/>
+                                            <constraint firstItem="9qX-Wv-ubU" firstAttribute="top" secondItem="Cwq-cB-bAU" secondAttribute="top" constant="15" id="BGf-pI-Bwx"/>
                                             <constraint firstAttribute="trailing" secondItem="zAa-Zt-HfW" secondAttribute="trailing" id="J31-ud-fK6"/>
-                                            <constraint firstItem="pWW-Y1-wo5" firstAttribute="top" secondItem="Cwq-cB-bAU" secondAttribute="top" constant="10" id="PME-hZ-1qa"/>
                                             <constraint firstItem="zAa-Zt-HfW" firstAttribute="top" secondItem="oNK-gV-mig" secondAttribute="bottom" id="TXQ-in-JFg"/>
-                                            <constraint firstItem="pWW-Y1-wo5" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" constant="10" id="TzT-dM-S5N"/>
                                             <constraint firstItem="zAa-Zt-HfW" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" id="UJc-6X-qjz"/>
-                                            <constraint firstItem="oNK-gV-mig" firstAttribute="top" secondItem="pWW-Y1-wo5" secondAttribute="bottom" constant="20" id="leg-0e-dQL"/>
+                                            <constraint firstItem="oNK-gV-mig" firstAttribute="top" secondItem="9qX-Wv-ubU" secondAttribute="bottom" constant="10" id="jry-sQ-93U"/>
                                             <constraint firstAttribute="bottom" secondItem="zAa-Zt-HfW" secondAttribute="bottom" id="lop-V6-3R0"/>
                                             <constraint firstItem="oNK-gV-mig" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" id="rF9-Xt-POp"/>
-                                            <constraint firstAttribute="trailing" secondItem="pWW-Y1-wo5" secondAttribute="trailing" constant="10" id="tYX-MD-T2K"/>
+                                            <constraint firstAttribute="trailing" secondItem="9qX-Wv-ubU" secondAttribute="trailing" constant="20" id="w2o-Gs-vpu"/>
+                                            <constraint firstItem="9qX-Wv-ubU" firstAttribute="leading" secondItem="Cwq-cB-bAU" secondAttribute="leading" constant="20" id="wPf-ir-A6h"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -392,6 +418,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchTextField" destination="fT1-NJ-8LK" id="aRF-LX-JeA"/>
                         <outlet property="tableView" destination="zAa-Zt-HfW" id="TmF-I1-Bw9"/>
                     </connections>
                 </viewController>
@@ -409,9 +436,13 @@
         <image name="IMG_1940" width="1242" height="210"/>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
